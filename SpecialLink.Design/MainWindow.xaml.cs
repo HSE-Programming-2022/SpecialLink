@@ -24,5 +24,15 @@ namespace SpecialLink.Design
         {
             InitializeComponent();
         }
+
+        private void Autorization_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Registration_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

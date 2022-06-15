@@ -5,8 +5,88 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpecialLink.Design"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid Background="MistyRose">
-        <TextBlock Text="Testing commits" />
+    Title="MainWindow" Height="450" Width="800">
+
+    <Window.Background>
+        <ImageBrush ImageSource="/Pictures/Background1.jpg"/>
+    </Window.Background>
+
+    <Grid>
+        <Grid DataContext="{Binding ElementName=root}">
+            <Border  Visibility="{Binding Visibility}">
+                <Border BorderBrush="Black"
+                        Height="200"
+                        Width="300"
+                        BorderThickness="1" 
+                        Background="GhostWhite" 
+                        CornerRadius="10,10,10,10" 
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                    <Border.BitmapEffect>
+                        <DropShadowBitmapEffect Color="Black" 
+                  Opacity="0.5" Direction="270" 
+                  ShadowDepth="0.7" />
+                    </Border.BitmapEffect>
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <TextBlock
+                            Grid.Row="0"
+                            Text="Логин"
+                            Margin="10"
+                            VerticalAlignment="Top"
+                            FontSize="20"/>
+
+                        <TextBox
+                            Grid.Row="0"
+                            Name="loginTextBox"
+                            Margin="10"
+                            Width="200"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Bottom"
+                            Background="LightGray"/>
+
+                        <TextBlock
+                            Grid.Row="1"
+                            Text="Пароль"
+                            Margin="10"
+                            VerticalAlignment="Top"
+                            FontSize="20"/>
+
+                        <PasswordBox
+                            Grid.Row="1"
+                            Width="200"
+                            HorizontalAlignment="Left"
+                            Name="PasswordTextBox"
+                            Margin="10"
+                            VerticalAlignment="Bottom"
+                            Background="LightGray"/>
+
+                        <UniformGrid 
+                            Grid.Row="3" 
+                            Margin="5" 
+                            Columns="2" 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Bottom">
+                            <Button 
+                                x:Name="Autorization"  
+                                Content="Авторизоваться"
+                                Click="Autorization_Click"
+                                Margin="10"  />
+                            <Button 
+                                x:Name="Registration" 
+                                Content="Зарегистрироваться" 
+                                Click="Registration_Click"
+                                Margin="10" />
+                        </UniformGrid>
+                    </Grid>
+                </Border>
+            </Border>
+        </Grid>
+
     </Grid>
 </Window>
