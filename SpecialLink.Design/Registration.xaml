@@ -15,7 +15,7 @@
         <Grid DataContext="{Binding ElementName=root}">
             <Border  Visibility="{Binding Visibility}">
                 <Border BorderBrush="Black"
-                        Height="200"
+                        Height="267"
                         Width="300"
                         BorderThickness="1" 
                         Background="GhostWhite" 
@@ -31,18 +31,35 @@
                         <Grid.RowDefinitions>
                             <RowDefinition />
                             <RowDefinition />
+                            <RowDefinition />
                             <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
 
                         <TextBlock
                             Grid.Row="0"
-                            Text="Электронная почта"
+                            Text="Ваше имя"
                             Margin="10"
                             VerticalAlignment="Top"
                             FontSize="20"/>
 
                         <TextBox
                             Grid.Row="0"
+                            Name="NameTextBox"
+                            Margin="10"
+                            Width="257"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Bottom"
+                            Background="LightGray"/>
+
+                        <TextBlock
+                            Grid.Row="1"
+                            Text="Электронная почта"
+                            Margin="10"
+                            VerticalAlignment="Top"
+                            FontSize="20"/>
+
+                        <TextBox
+                            Grid.Row="1"
                             Name="emailTextBox"
                             Margin="10"
                             Width="257"
@@ -52,7 +69,7 @@
 
                         <TextBlock
                             TextWrapping="Wrap"
-                            Grid.Row="1"
+                            Grid.Row="2"
                             Text="На вашу электронную почту будет выслан уникальный логин и пароль, по которым вы сможете войти в приложение."
                             Margin="5"
                             Width="258"
