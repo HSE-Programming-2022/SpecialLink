@@ -8,6 +8,6 @@ namespace SpecialLink.Core.Models.Results
 {
     public class QuestionBasedResult : Result
     {
-        public int ScoreResult { get; set; }
+        public int NumberOfMatches { get; set; }
     }
 }
