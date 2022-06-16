@@ -11,6 +11,16 @@ namespace SpecialLink.Core.Models
         public string QuestionText { get; set; }
         public string FirstAnswer { get; set; }
         public string SecondAnswer { get; set; }
-        public int Weight { get; set; }
+        private int Weight { get; set; }
+
+        public int ReturnWeight()
+        {
+            return Weight;
+        }
+
+        public void ChangeWeight(int newWeight)
+        {
+            Weight = newWeight;
+        }
     }
 }
