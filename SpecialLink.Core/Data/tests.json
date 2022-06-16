@@ -1,0 +1,16 @@
+[
+  {
+    "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
+    "Explanations": [
+      {
+        "LowestScore": 10,
+        "HighestScore": 20,
+        "Explanation": "wqorijwi"
+      }
+    ],
+    "Name": "test1",
+    "Description": "nothing",
+    "ImageSource": "wefiefi",
+    "AmountOfTimesTaken": 5
+  }
+]

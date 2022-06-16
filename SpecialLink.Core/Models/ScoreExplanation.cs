@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpecialLink.Core.Models
 {
-    class ScoreExplanation
+    public class ScoreExplanation
     {
         public int LowestScore { get; set; }
         public int HighestScore { get; set; }

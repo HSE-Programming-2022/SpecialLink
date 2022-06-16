@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpecialLink.Core.Models
 {
-    class Combination
+    public class Combination
     {
         public string FirstValue { get; set; }
         public string SecondValue { get; set; }

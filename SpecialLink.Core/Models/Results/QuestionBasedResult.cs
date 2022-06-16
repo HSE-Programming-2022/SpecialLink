@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace SpecialLink.Core.Models.Results
 {
-    class QuestionBasedResult : Result
+    public class QuestionBasedResult : Result
     {
-        public int FirstResult { get; set; }
-        public int SecondResult { get; set; }
+        public int ScoreResult { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpecialLink.Core.Models.People
 {
-    class Admin : Person
+    public class Admin : Person
     {
         public DateTime LastLogin { get; set; }
     }

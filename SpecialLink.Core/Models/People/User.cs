@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SpecialLink.Core.Models.People
 {
-    class User : Person
+    public class User : Person
     {
         public string Name { get; set; }
         public string Email { get; set; }

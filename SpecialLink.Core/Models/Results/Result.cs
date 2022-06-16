@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpecialLink.Core.Models.Results
 {
-    abstract class Result
+    public abstract class Result
     {
         public string TestName { get; set; }
         public int Score { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpecialLink.Core.Models.People
 {
-    abstract class Person
+    public abstract class Person
     {
         public string Login { get; set; }
         public string Password { get; set; }

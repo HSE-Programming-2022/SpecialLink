@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpecialLink.Core.Models
 {
-    class Question
+    public class Question
     {
         public string QuestionText { get; set; }
         public string FirstAnswer { get; set; }
