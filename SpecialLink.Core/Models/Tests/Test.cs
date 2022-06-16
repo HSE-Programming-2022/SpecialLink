@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SpecialLink.Core.Models.Tests
 {
-    abstract class Test
+    public abstract class Test
     {
         public string Name { get; set; }
         public string Description { get; set; }

@@ -88,5 +88,9 @@
             </Border>
         </Grid>
 
+        <!--<ListBox
+            Margin="50"
+            Name="TestingListBox"/>-->
+
     </Grid>
 </Window>

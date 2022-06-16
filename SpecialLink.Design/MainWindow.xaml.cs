@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SpecialLink.Core;
+using SpecialLink.Core.Models.People;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,38 @@ namespace SpecialLink.Design
     /// </summary>
     public partial class MainWindow : Window
     {
+        IStorage _storage = Factory.GetInstance().Storage;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            //_storage.GetPersons.Add(new Admin
+            //{
+            //    Login = "admin200",
+            //    Password = "qwirqwbicw",
+            //    LastLogin = DateTime.Now
+            //}
+            //);
+            //_storage.Save();
+
+            //List<string> check = new List<string>();
+
+            //List<string> namesTest = new List<string>();
+            //foreach (var t in Factory.GetInstance().Storage.GetTests)
+            //{
+            //    namesTest.Add(t.Name);
+            //    check.Add(t.Name);
+            //}
+
+            //List<string> LoginPerson = new List<string>();
+            //foreach (var p in Factory.GetInstance().Storage.GetPersons)
+            //{
+            //    LoginPerson.Add(p.Login);
+            //    check.Add(p.Login);
+            //}
+
+            //TestingListBox.ItemsSource = check;
         }
 
         private void Autorization_Click(object sender, RoutedEventArgs e)

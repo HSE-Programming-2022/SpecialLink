@@ -1,0 +1,23 @@
+[
+  {
+    "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
+    "Name": "vikusya",
+    "Email": "meow@gmail.com",
+    "ImageSource": "wefiuwegf",
+    "Results": [],
+    "Login": "user1",
+    "Password": "wiurhwefb"
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
+    "LastLogin": "2022-06-16T17:00:41.4901371+03:00",
+    "Login": "admin1",
+    "Password": "wiurhwer233ffb"
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
+    "LastLogin": "2022-06-16T17:53:05.9292614+03:00",
+    "Login": "admin200",
+    "Password": "qwirqwbicw"
+  }
+]

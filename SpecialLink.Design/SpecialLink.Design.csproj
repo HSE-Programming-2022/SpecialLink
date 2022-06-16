@@ -111,5 +111,11 @@
   <ItemGroup>
     <Resource Include="Pictures\Background1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpecialLink.Core\SpecialLink.Core.csproj">
+      <Project>{F53E1AE7-B04F-4792-9C9E-A134F1CFF0B2}</Project>
+      <Name>SpecialLink.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

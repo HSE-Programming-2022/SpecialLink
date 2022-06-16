@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SpecialLink.Core.Models.Tests
 {
-    class QuestionBasedTest : Test
+    public class QuestionBasedTest : Test
     {
         public List<Question> Questions { get; set; }
         public List<ScoreExplanation> Explanations { get; set; }
