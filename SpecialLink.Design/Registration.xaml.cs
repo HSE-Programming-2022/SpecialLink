@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Net.Mail;
+using System.Net;
 
 namespace SpecialLink.Design
 {
@@ -34,6 +36,16 @@ namespace SpecialLink.Design
         private void NewRegistration_Click(object sender, RoutedEventArgs e)
         {
 
+            MailAddress from = new MailAddress("SpecialLinkInfo@gmail.com", "Special Link");
+            MailAddress to = new MailAddress(emailTextBox.Text);
+            MailMessage m = new MailMessage(from, to);
+            m.Subject = "Данные аккаунта на Special Link";
+            m.Body = $"<Здравствуй, {NameTextBox.Text}!\n\nРады приветствовать тебя в нашем приложении!\nНиже указаны данные для твоего личного кабинета на Special Link:\n\tЛогин:\n\tПароль:\nС предсказанием для тебя,\nКоманда разработчиков Special Link <3";
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+            smtp.Credentials = new NetworkCredential("SpecialLinkInfo@gmail.com", "ljjdqjbfpesjzsoq");
+            smtp.EnableSsl = true;
+            smtp.Send(m);
+            Console.Read();
         }
     }
 }
