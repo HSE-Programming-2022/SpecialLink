@@ -16,7 +16,7 @@ namespace SpecialLink.Core.Models.Tests
             var firstValue = valueOne as string;
             var secondValue = valueTwo as string;
             // супер умные расчеты вики
-            Result result = new ComputingOrAnswerBasedResult();
+            ComputingOrAnswerBasedResult result = new ComputingOrAnswerBasedResult();
             return result;
         }
     }
