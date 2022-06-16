@@ -41,9 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NamesTest.cs" />
+    <Compile Include="Models\Combination.cs" />
+    <Compile Include="Models\People\Admin.cs" />
+    <Compile Include="Models\People\Person.cs" />
+    <Compile Include="Models\People\User.cs" />
+    <Compile Include="Models\Question.cs" />
+    <Compile Include="Models\Results\ComputingOrAnswerBasedResult.cs" />
+    <Compile Include="Models\Results\QuestionBasedResult.cs" />
+    <Compile Include="Models\Results\Result.cs" />
+    <Compile Include="Models\ScoreExplanation.cs" />
+    <Compile Include="Models\Tests\AnswerBasedTest.cs" />
+    <Compile Include="Models\Tests\ComputationBasedTest.cs" />
+    <Compile Include="Models\Tests\QuestionBasedTest.cs" />
+    <Compile Include="Models\Tests\Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
