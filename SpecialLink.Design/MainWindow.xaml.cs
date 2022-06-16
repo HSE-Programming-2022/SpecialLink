@@ -1,5 +1,6 @@
 ﻿using SpecialLink.Core;
 using SpecialLink.Core.Models.People;
+using SpecialLink.Design.UserWindows.TestWindows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,7 +59,9 @@ namespace SpecialLink.Design
 
         private void Autorization_Click(object sender, RoutedEventArgs e)
         {
-
+            TestsWindow testsWindow = new TestsWindow();
+            testsWindow.Show();
+            this.Close();
         }
 
         private void Registration_Click(object sender, RoutedEventArgs e)
