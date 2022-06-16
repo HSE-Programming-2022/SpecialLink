@@ -10,31 +10,30 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SpecialLink.Design
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Registration.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Registration : Window
     {
-        public MainWindow()
+        public Registration()
         {
             InitializeComponent();
         }
 
-        private void Autorization_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
 
-        private void Registration_Click(object sender, RoutedEventArgs e)
+        private void NewRegistration_Click(object sender, RoutedEventArgs e)
         {
-            Registration registration = new Registration();
-            registration.Show();
-            this.Close();
+
         }
     }
 }
