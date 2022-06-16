@@ -51,6 +51,7 @@
                             Background="LightGray"/>
 
                         <TextBlock
+                            Name="NameTextBlock"
                             Grid.Row="1"
                             Text="Пароль"
                             Margin="10"
