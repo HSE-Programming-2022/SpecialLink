@@ -15,19 +15,16 @@ namespace SpecialLink.Core.Models.Tests
         {
             var firstValue = valueOne as string;
             var secondValue = valueTwo as string;
-            Result result = new ComputingOrAnswerBasedResult();
+            ComputingOrAnswerBasedResult result = new ComputingOrAnswerBasedResult();
             foreach (var combination in Combinations)
             {
                 if (((firstValue == combination.FirstValue) && (secondValue == combination.SecondValue))||
                         ((firstValue == combination.SecondValue) && (secondValue == combination.FirstValue)))
                 {
-                    result = new ComputingOrAnswerBasedResult()
-                    {
-                        FirstValue = firstValue,
-                        SecondValue = secondValue,
-                        Score = combination.Score,
-                        Explanation = combination.Explanation
-                    };
+                    result.FirstValue = firstValue;
+                    result.SecondValue = secondValue;
+                    result.Score = combination.Score;
+                    result.Explanation = combination.Explanation;
                 }
             }
             return result;
