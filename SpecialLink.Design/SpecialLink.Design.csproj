@@ -106,16 +106,40 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pictures\BackgroundNew.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Pictures\Background1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\SpecialLink.Core\SpecialLink.Core.csproj">
       <Project>{F53E1AE7-B04F-4792-9C9E-A134F1CFF0B2}</Project>
       <Name>SpecialLink.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background_sRGB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background_Pair_1.jpg" />
+    <Resource Include="Pictures\Background_Pair_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Profile\profile1.jpg" />
+    <Resource Include="Pictures\Profile\profile10.jpg" />
+    <Resource Include="Pictures\Profile\profile11.jpg" />
+    <Resource Include="Pictures\Profile\profile12.jpg" />
+    <Resource Include="Pictures\Profile\profile2.jpg" />
+    <Resource Include="Pictures\Profile\profile3.jpg" />
+    <Resource Include="Pictures\Profile\profile4.jpg" />
+    <Resource Include="Pictures\Profile\profile5.jpg" />
+    <Resource Include="Pictures\Profile\profile6.jpg" />
+    <Resource Include="Pictures\Profile\profile7.jpg" />
+    <Resource Include="Pictures\Profile\profile8.jpg" />
+    <Resource Include="Pictures\Profile\profile9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background2.jpg" />
+    <Resource Include="Pictures\Background3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Icons\icon1.jpg" />
+    <Resource Include="Pictures\Icons\icon2.jpg" />
+    <Resource Include="Pictures\Icons\icon3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

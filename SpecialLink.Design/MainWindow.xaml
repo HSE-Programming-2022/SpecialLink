@@ -8,10 +8,11 @@
     Title="MainWindow" Height="450" Width="800">
 
     <Window.Background>
-        <ImageBrush ImageSource="/Pictures/BackgroundNew.jpg"/>
+        <ImageBrush ImageSource="/Pictures/Background_sRGB.jpg"/>
     </Window.Background>
 
     <Grid>
+
         <Grid DataContext="{Binding ElementName=root}">
             <Border  Visibility="{Binding Visibility}">
                 <Border BorderBrush="Black"
