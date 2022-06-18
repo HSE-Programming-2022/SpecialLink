@@ -162,5 +162,29 @@
     <Resource Include="Pictures\Profiles\profile8.jpg" />
     <Resource Include="Pictures\Profiles\profile9.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds_CMYK\Back1.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back2.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Icons_CMYK\icon_1.jpg" />
+    <Resource Include="Pictures\Icons_CMYK\icon_2.jpg" />
+    <Resource Include="Pictures\Icons_CMYK\icon_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Profiles_CMYK\profile_1.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_10.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_11.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_12.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_2.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_3.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_4.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_5.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_6.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_7.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_8.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_9.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
