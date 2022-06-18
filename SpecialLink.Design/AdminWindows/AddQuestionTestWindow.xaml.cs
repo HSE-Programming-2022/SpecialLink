@@ -34,6 +34,13 @@ namespace SpecialLink.Design.AdminWindows
             QuestionsListBox.ItemsSource = _questionBasedTest.Questions;
         }
 
+        //public AddQuestionTestWindow()
+        //{
+        //    InitializeComponent();
+        //    QuestionsListBox.ItemsSource = new List<Question>();
+        //    //QuestionsListBox.ItemsSource = _questionBasedTest.Questions;
+        //}
+
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
             AdminMenuWindow adminMenuWindow = new AdminMenuWindow(_admin);
@@ -58,18 +65,22 @@ namespace SpecialLink.Design.AdminWindows
                 }
                 else
                 {
-                    if (DescriptionTextBox.Text != "")
+                    if (DescriptionTextBox.Text != "" & DescriptionTextBox.Text.Length <= 130)
                     {
                         _questionBasedTest.Description = DescriptionTextBox.Text;
+                        _questionBasedTest.Name = NameForTestTextBox.Text;
+                        _questionBasedTest.ImageSource = "icon_2.jpg";
+                        _storage.GetTests.Add(_questionBasedTest);
+                        _storage.Save();
+                        MessageBox.Show("Тест успешно добавлен!");
+                        AdminMenuWindow adminMenuWindow = new AdminMenuWindow(_admin);
+                        adminMenuWindow.Show();
+                        Close();
                     }
-                    _questionBasedTest.Name = NameForTestTextBox.Text;
-                    _questionBasedTest.ImageSource = "icon_2.jpg";
-                    _storage.GetTests.Add(_questionBasedTest);
-                    _storage.Save();
-                    MessageBox.Show("Тест успешно добавлен!");
-                    AdminMenuWindow adminMenuWindow = new AdminMenuWindow(_admin);
-                    adminMenuWindow.Show();
-                    Close();
+                    else
+                    {
+                        MessageBox.Show("Упс, максимальная длина описания - 130 знаков");
+                    }
                 }
             }
             else
@@ -106,14 +117,27 @@ namespace SpecialLink.Design.AdminWindows
         {
             TextBlock Answer_1_TextBlock = sender as TextBlock;
             Question question = Answer_1_TextBlock.DataContext as Question;
-            Answer_1_TextBlock.Text = question.FirstAnswer;
+            Answer_1_TextBlock.Text = "ответ №1: " + question.FirstAnswer;
         }
 
         private void Answer_2_TextBlock_Initialized(object sender, EventArgs e)
         {
             TextBlock Answer_2_TextBlock = sender as TextBlock;
             Question question = Answer_2_TextBlock.DataContext as Question;
-            Answer_2_TextBlock.Text = question.SecondAnswer;
+            Answer_2_TextBlock.Text = "ответ №2: " + question.SecondAnswer;
+        }
+
+        private bool QuestionExist(string name)
+        {
+            bool questionIsAlreadyHere =false;
+            foreach (var q in _questionBasedTest.Questions)
+            {
+                if (q.QuestionText == name)
+                {
+                    questionIsAlreadyHere = true;
+                }
+            }
+            return questionIsAlreadyHere;
         }
 
         private void AddQuestionButton_Click(object sender, RoutedEventArgs e)
@@ -128,22 +152,30 @@ namespace SpecialLink.Design.AdminWindows
             {
                 if (child5Answer1.Text != child6Answer2.Text)
                 {
-                    Question question = new Question();
-                    question.QuestionText = child2Name.Text;
-                    question.FirstAnswer = child5Answer1.Text;
-                    question.SecondAnswer = child6Answer2.Text;
-                    _questionBasedTest.Questions.Add(question);
+                    if (QuestionExist(child2Name.Text))
+                    {
+                        MessageBox.Show("Упс,такой вопрос уже есть в списке, попробуйте ещё раз");
+                        child2Name.Clear();
+                    }
+                    else
+                    {
+                        Question question = new Question();
+                        question.QuestionText = child2Name.Text;
+                        question.FirstAnswer = child5Answer1.Text;
+                        question.SecondAnswer = child6Answer2.Text;
+                        _questionBasedTest.Questions.Add(question);
 
-                    QuestionsListBox.ItemsSource = "";
-                    QuestionsListBox.ItemsSource = _questionBasedTest.Questions;
+                        QuestionsListBox.ItemsSource = "";
+                        QuestionsListBox.ItemsSource = _questionBasedTest.Questions;
 
-                    child2Name.Clear();
-                    child5Answer1.Clear();
-                    child6Answer2.Clear();
+                        child2Name.Clear();
+                        child5Answer1.Clear();
+                        child6Answer2.Clear();
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Упс, ответы должны различаться");
+                    MessageBox.Show("Упс, ответы должны различаться,  попробуйте ещё раз");
                     child6Answer2.Clear();
                 }
             }
@@ -151,6 +183,16 @@ namespace SpecialLink.Design.AdminWindows
             {
                 MessageBox.Show("Упс, не все поля заполнены, попробуйте снова");
             }
+        }
+
+        private void QuestionNumberTextBlock_Initialized(object sender, EventArgs e)
+        {
+            TextBlock QuestionNumberTextBlock = sender as TextBlock;
+            Question question = QuestionNumberTextBlock.DataContext as Question;
+
+            int index = _questionBasedTest.Questions.FindIndex(a => a.QuestionText == question.QuestionText);
+
+            QuestionNumberTextBlock.Text = "Вопрос № " + (index + 1).ToString();
         }
     }
 }

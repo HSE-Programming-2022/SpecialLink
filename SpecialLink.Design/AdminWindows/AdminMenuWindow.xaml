@@ -8,7 +8,7 @@
         Title="AdminMenuWindow" Height="450" Width="800">
 
     <Window.Background>
-        <ImageBrush ImageSource="/Pictures/BackgroundShadedPlum.jpg"/>
+        <ImageBrush ImageSource="/Pictures/Backgrounds_CMYK/Back6.jpg"/>
     </Window.Background>
 
     <Grid>
