@@ -8,9 +8,9 @@ namespace SpecialLink.Core.Models
 {
     public class ScoreExplanation
     {
-        private int LowestScore { get; set; }
-        private int HighestScore { get; set; }
-        private string Explanation { get; set; }
+        public int LowestScore { get; set; }
+        public int HighestScore { get; set; }
+        public string Explanation { get; set; }
 
         public ScoreExplanation(int bottom, int top, string text)
         {
