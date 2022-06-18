@@ -1,5 +1,6 @@
 ﻿using SpecialLink.Core;
 using SpecialLink.Core.Models.People;
+using SpecialLink.Design.AdminWindows;
 using SpecialLink.Design.UserWindows;
 using SpecialLink.Design.UserWindows.TestWindows;
 using System;
@@ -60,9 +61,16 @@ namespace SpecialLink.Design
 
         private void Autorization_Click(object sender, RoutedEventArgs e)
         {
-            UserMenuWindow userMenuWindow = new UserMenuWindow();
-            userMenuWindow.Show();
-            this.Close();
+            //UserMenuWindow userMenuWindow = new UserMenuWindow();
+            //userMenuWindow.Show();
+            //this.Close();
+
+            Admin admin = _storage.GetPersons[1] as Admin;
+
+            AdminMenuWindow adminMenuWindow = new AdminMenuWindow(admin);
+            adminMenuWindow.Show();
+            Close();
+
         }
 
         private void Registration_Click(object sender, RoutedEventArgs e)

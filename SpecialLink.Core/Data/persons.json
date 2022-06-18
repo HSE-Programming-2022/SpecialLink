@@ -10,9 +10,9 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-18T21:47:15.3178438+03:00",
+    "LastLogin": "2022-06-19T00:22:59.5837782+03:00",
     "Login": "admin1",
-    "Password": "123456"
+    "Password": "00000"
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
@@ -23,7 +23,7 @@
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
     "LastLogin": "0001-01-01T00:00:00",
-    "Login": "admin1230984",
-    "Password": "123254678"
+    "Login": "qwefcds",
+    "Password": "12364553yh"
   }
 ]
