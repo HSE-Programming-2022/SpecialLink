@@ -3,14 +3,172 @@
     "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
     "Explanations": [
       {
-        "LowestScore": 10,
-        "HighestScore": 20,
-        "Explanation": "wqorijwi"
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Достаточно хорошая совметимость, но не исключены недопонимания"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
       }
     ],
     "Name": "test1",
     "Description": "nothing",
-    "ImageSource": "wefiefi",
+    "ImageSource": "icon_3.jpg",
     "AmountOfTimesTaken": 5
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
+    "Questions": [
+      {
+        "QuestionText": "цупуи",
+        "FirstAnswer": "124",
+        "SecondAnswer": "34е5н"
+      },
+      {
+        "QuestionText": "32к23е53678",
+        "FirstAnswer": "цйа",
+        "SecondAnswer": "325"
+      },
+      {
+        "QuestionText": "кшнщукц",
+        "FirstAnswer": "234",
+        "SecondAnswer": "45768"
+      }
+    ],
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Вы достаточно хорошо знаете друг друга"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      }
+    ],
+    "Name": "Тест 10",
+    "Description": null,
+    "ImageSource": "icon_2.jpg",
+    "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
+    "Questions": [
+      {
+        "QuestionText": "знаешь макса +100500?",
+        "FirstAnswer": "да",
+        "SecondAnswer": "нет"
+      },
+      {
+        "QuestionText": "кто такой шрек?",
+        "FirstAnswer": "не знаю",
+        "SecondAnswer": "знаю"
+      },
+      {
+        "QuestionText": "цзущалп",
+        "FirstAnswer": "23",
+        "SecondAnswer": "345е"
+      }
+    ],
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Вы достаточно хорошо знаете друг друга"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      }
+    ],
+    "Name": "тест 100500",
+    "Description": null,
+    "ImageSource": "icon_2.jpg",
+    "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
+    "Questions": [
+      {
+        "QuestionText": "знаю любимый цвет",
+        "FirstAnswer": "да",
+        "SecondAnswer": "нет"
+      },
+      {
+        "QuestionText": "знаю любимый чай",
+        "FirstAnswer": "да",
+        "SecondAnswer": "нет"
+      },
+      {
+        "QuestionText": "любите гулять?",
+        "FirstAnswer": "точно нет",
+        "SecondAnswer": "да!"
+      },
+      {
+        "QuestionText": "она/он носит носки?",
+        "FirstAnswer": "да...",
+        "SecondAnswer": "конечно, нет"
+      }
+    ],
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Вы достаточно хорошо знаете друг друга"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      }
+    ],
+    "Name": "тест на дружбу",
+    "Description": "тест на определение крепкой дружбы",
+    "ImageSource": "icon_2.jpg",
+    "AmountOfTimesTaken": 0
   }
 ]
