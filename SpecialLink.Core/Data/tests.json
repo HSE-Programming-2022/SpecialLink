@@ -2,15 +2,29 @@
   {
     "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
     "Explanations": [
-      {
-        "LowestScore": 10,
-        "HighestScore": 20,
-        "Explanation": "wqorijwi"
-      }
+      {},
+      {},
+      {},
+      {},
+      {}
     ],
-    "Name": "test1",
-    "Description": "nothing",
+    "Name": "Test for testing :)",
+    "Description": "��� ����� ������� ��������� ���������� ������, ������� ����� ������� � ������� ��� ����, ����� � ��������� ����������� �� ������ � ����� ����������. ��������� ������ ������� � �������� ������� ������ ���� ������� ����� ����� ���� ��� ������ ������ ������� �� ���-�� ��� � ��������",
     "ImageSource": "wefiefi",
-    "AmountOfTimesTaken": 5
+    "AmountOfTimesTaken": 50
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
+    "Explanations": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "Name": "Test for testing v2:)",
+    "Description": "Проверка того, что из кода нормально считается русский.",
+    "ImageSource": "wefiefi",
+    "AmountOfTimesTaken": 20
   }
 ]

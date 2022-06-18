@@ -155,7 +155,7 @@
     <Resource Include="Pictures\Icons\icon3.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pictures\BackgroundShadedPlum.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\BackgroundShadedPlum.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Profiles\profile1.jpg" />
@@ -172,7 +172,6 @@
     <Resource Include="Pictures\Profiles\profile9.jpg" />
   </ItemGroup>
   <ItemGroup>
-
     <Resource Include="Pictures\Profiles\profile0.jpg" />
     <Resource Include="Pictures\Backgrounds_CMYK\Back1.jpg" />
     <Resource Include="Pictures\Backgrounds_CMYK\Back2.jpg" />

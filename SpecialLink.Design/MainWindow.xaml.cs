@@ -1,5 +1,7 @@
 ﻿using SpecialLink.Core;
+using SpecialLink.Core.Models;
 using SpecialLink.Core.Models.People;
+using SpecialLink.Core.Models.Tests;
 using SpecialLink.Design.UserWindows;
 using SpecialLink.Design.UserWindows.TestWindows;
 using System;
@@ -56,6 +58,19 @@ namespace SpecialLink.Design
             //}
 
             //TestingListBox.ItemsSource = check;
+
+            /* _storage.GetTests.Add(new QuestionBasedTest
+             { AmountOfTimesTaken = 0,
+               Description="Тест с вопросами для провеерки листбокса.",
+               Name = "QuestionTest",
+               Questions = new List<Question>()
+               {
+                   new Question{ QuestionText }
+               }
+             } */
+
+            /*_storage.GetTests[1].Description = "Проверка того, что из кода нормально считается русский.";
+            _storage.Save(); */
         }
 
         private void Autorization_Click(object sender, RoutedEventArgs e)
