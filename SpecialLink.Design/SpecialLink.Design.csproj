@@ -58,8 +58,8 @@
     <Compile Include="Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserWindows\TestWindows\TestsWindow.xaml.cs">
-      <DependentUpon>TestsWindow.xaml</DependentUpon>
+    <Compile Include="UserWindows\TestWindows\ComputationTestWindow.xaml.cs">
+      <DependentUpon>ComputationTestWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserWindows\UserMenuWindow.xaml.cs">
       <DependentUpon>UserMenuWindow.xaml</DependentUpon>
@@ -84,7 +84,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserWindows\TestWindows\TestsWindow.xaml">
+    <Page Include="UserWindows\TestWindows\ComputationTestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -147,7 +147,9 @@
     <Resource Include="Pictures\Icons\icon2.jpg" />
     <Resource Include="Pictures\Icons\icon3.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Pictures\BackgroundShadedPlum.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Profiles\profile1.jpg" />
     <Resource Include="Pictures\Profiles\profile10.jpg" />
@@ -161,6 +163,9 @@
     <Resource Include="Pictures\Profiles\profile7.jpg" />
     <Resource Include="Pictures\Profiles\profile8.jpg" />
     <Resource Include="Pictures\Profiles\profile9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Profiles\profile0.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
