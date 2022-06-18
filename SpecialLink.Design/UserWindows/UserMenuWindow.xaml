@@ -8,7 +8,7 @@
         Title="UserMenuWindow" Height="450" Width="800">
 
     <Window.Background>
-        <ImageBrush ImageSource="/Pictures/BackgroundNew.jpg"/>
+        <ImageBrush ImageSource="/Pictures/BackgroundShadedPlum.jpg"/>
     </Window.Background>
     
     <Grid>
@@ -16,7 +16,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -27,7 +27,7 @@
             <Border  Visibility="{Binding Visibility}">
                 <Border BorderBrush="Black"
                         Height="90"
-                        Width="250"
+                        Width="200"
                         BorderThickness="1" 
                         Background="GhostWhite" 
                         CornerRadius="10,10,10,10" 
@@ -42,12 +42,12 @@
 
                         <TextBlock
                             Text="Ваше имя: "
-                            Margin=" 5 12 0 0"
+                            Margin="2 12 0 0"
                             VerticalAlignment="Top"
                             FontSize="16" TextWrapping="WrapWithOverflow"/>
                         <TextBlock
                             Text="Ваш логин: "
-                            Margin="5 12 0 12"
+                            Margin="2 12 0 12"
                             VerticalAlignment="Bottom"
                             FontSize="16" TextWrapping="WrapWithOverflow"/>
                     </Grid>
@@ -55,14 +55,14 @@
             </Border>
         </Grid>
 
-        <Image Source="/Pictures/BackgroundNew.jpg" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15" Width="200" Height="200" />
-        <Button Height="50" Width="150" Grid.Row="3" Grid.Column="1" FontWeight="Bold" Foreground="GhostWhite">
-            <TextBlock Text="Результаты пройденных тестов" TextWrapping="WrapWithOverflow" TextAlignment="Center"/> 
+        <Image Source="/Pictures/Profiles/profile0.jpg" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15" Width="200" Height="200" />
+        <Button Height="30" Width="95" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="15 15 15 0" FontWeight="Bold" Foreground="GhostWhite">
+            <TextBlock Text="Результаты" TextWrapping="WrapWithOverflow" TextAlignment="Center"/> 
         </Button>
-        <Button Height="30" Width="100" Grid.Row="2" Content="Редактировать" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10 0 0 0" FontWeight="Bold" Foreground="GhostWhite"/>
+        <Button Height="30" Width="95" Grid.Row="2" Content="Редактировать" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15 15 0 0" FontWeight="Bold" Foreground="GhostWhite"/>
 
 
-        <ListBox Name="TestsListBox" Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Margin="0 30 10 0" Background="GhostWhite" ScrollViewer.CanContentScroll="False">
+        <ListBox Name="TestsListBox" Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Margin="20 15 20 0" Background="GhostWhite" ScrollViewer.CanContentScroll="False">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -77,16 +77,17 @@
                             <ColumnDefinition Width="6*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Image Initialized="TestImage_Initialized" Name="TestImage" Source="/Pictures/BackgroundNew.jpg" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Height="100" Width="100" Margin="10" VerticalAlignment="Top"/>
+                        <Image Initialized="TestImage_Initialized" Name="TestImage" Source="/Pictures/Icons/icon3.jpg" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Height="100" Width="100" Margin="10" VerticalAlignment="Top"/>
                         <TextBlock Initialized="TestNameTextBlock_Initialized" Name="TestNameTextBlock" Grid.Row="0" Grid.Column="1"  FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" > Test Name</TextBlock>
                         <TextBlock Initialized="TestDescriptionTextBlock_Initialized" Name="TestDescriptionTextBlock" Grid.Row="1" Grid.Column="1" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" > Test Description</TextBlock>
                         <TextBlock Initialized="TimesTakenTextBlock_Initialized" Name="TimesTakenTextBlock" Grid.Row="2" Grid.Column="1"  FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" > Taken N amount of times</TextBlock>
-                        <Button Initialized="TakeTestButton_Initialized" Name="TakeTestButton" Grid.Row="3" Grid.Column="1" Height="30" Width="60" Margin="4" HorizontalAlignment="Left" VerticalAlignment="Center" Background="RoyalBlue" Foreground="GhostWhite">Take test</Button>
+                        <Button Initialized="TakeTestButton_Initialized" Name="TakeTestButton" Grid.Row="3" Grid.Column="1" Height="30" Width="60" Margin="7" HorizontalAlignment="Left" VerticalAlignment="Center" Background="RoyalBlue" Foreground="GhostWhite">Take test</Button>
 
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
 
+        <Button Name="ExitButton" Content="Выйти" Foreground="GhostWhite" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right" Margin=" 0 0 20 0" Height="35" Width="70" FontWeight="Bold"  />
     </Grid>
 </Window>
