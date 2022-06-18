@@ -58,6 +58,9 @@
     <Compile Include="Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserWindows\TestWindows\AnswerTestWindow.xaml.cs">
+      <DependentUpon>AnswerTestWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserWindows\TestWindows\ComputationTestWindow.xaml.cs">
       <DependentUpon>ComputationTestWindow.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserWindows\TestWindows\AnswerTestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
