@@ -85,9 +85,12 @@
                 FontSize="18"
                 Grid.ColumnSpan="2"
                 TextWrapping="Wrap"
-                Background="RoyalBlue"
+                
                 Margin="10"
-                Foreground="GhostWhite"/>
+                Background="GhostWhite"
+                BorderThickness="3"
+                BorderBrush="RoyalBlue"
+                Foreground="Black"/>
 
             <TextBlock
                 Grid.Row="3" 
@@ -100,9 +103,12 @@
                 Grid.Row="4"
                 Name="PassowdAdminPasswordBox"
                 FontSize="18"
-                Background="RoyalBlue"
+                
                 Margin="10"
-                Foreground="GhostWhite"/>
+                Background="GhostWhite"
+                BorderThickness="3"
+                BorderBrush="RoyalBlue"
+                Foreground="Black"/>
 
         </Grid>
 

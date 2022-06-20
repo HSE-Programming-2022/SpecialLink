@@ -52,9 +52,12 @@
             Grid.Column="0"
             FontSize="20"
             TextWrapping="Wrap"
-            Background="RoyalBlue"
             Margin="20 15 20 5"
-            Foreground="GhostWhite"/>
+            Background="GhostWhite"
+            BorderThickness="3"
+            BorderBrush="RoyalBlue"
+            Foreground="Black"
+            VerticalAlignment="Center"/>
 
         <Grid
             Name="AddQuestionGrid"
@@ -100,11 +103,13 @@
                 Name="NameForQuestionTextBox"
                 Grid.Column="0"
                 FontSize="15"
-                
                 TextWrapping="Wrap"
-                Background="RoyalBlue"
                 Margin="10"
-                Foreground="GhostWhite"/>
+                VerticalAlignment="Center"
+                Background="GhostWhite"
+                BorderThickness="2"
+                BorderBrush="RoyalBlue"
+                Foreground="Black"/>
 
             <TextBlock
                 Grid.Row="3" 
@@ -126,21 +131,27 @@
                 Grid.Row="4"
                 Grid.Column="0"
                 Name="Answer1TextBox"
-                FontSize="18"
+                FontSize="15"
                 TextWrapping="Wrap"
-                Background="RoyalBlue"
+                VerticalAlignment="Center"
                 Margin="10"
-                Foreground="GhostWhite"/>
+                Background="GhostWhite"
+                BorderThickness="2"
+                BorderBrush="RoyalBlue"
+                Foreground="Black"/>
 
             <TextBox
                 Grid.Row="4"
                 Grid.Column="1"
                 Name="Answer2TextBox"
-                FontSize="18"
+                FontSize="15"
                 TextWrapping="Wrap"
-                Background="RoyalBlue"
+                VerticalAlignment="Center"
                 Margin="10"
-                Foreground="GhostWhite"/>
+                Background="GhostWhite"
+                BorderThickness="2"
+                BorderBrush="RoyalBlue"
+                Foreground="Black"/>
 
             <TextBlock
                 Grid.Row="1" 
@@ -157,9 +168,13 @@
                 Grid.Column="1"
                 FontSize="15"
                 TextWrapping="Wrap"
-                Background="RoyalBlue"
+                VerticalAlignment="Center"
                 Margin="10"
-                Foreground="GhostWhite"/>
+                Background="GhostWhite"
+                BorderThickness="2"
+                BorderBrush="RoyalBlue"
+                Foreground="Black" 
+                />
 
 
 
@@ -176,14 +191,17 @@
             />
 
         <TextBox
-            Background="RoyalBlue"
-            Foreground="GhostWhite"
+            Background="GhostWhite"
+            BorderThickness="3"
+            BorderBrush="RoyalBlue"
+            Foreground="Black"
             FontSize="22"
             TextWrapping="Wrap"
             Grid.Row="3"
             Grid.Column="1"
             Margin="20 70 20 15"
-            Name="DescriptionTextBox"/>
+            Name="DescriptionTextBox"
+            VerticalAlignment="Center"/>
 
 
         <ListBox Name="QuestionsListBox" 
@@ -192,6 +210,8 @@
                  Grid.RowSpan="2" 
                  Grid.ColumnSpan="3"
                  Margin="20 15 20 0" 
+                 BorderBrush="RoyalBlue"
+                 BorderThickness="3"
                  Background="GhostWhite" 
                  ScrollViewer.CanContentScroll="False">
             <ListBox.ItemTemplate>
@@ -237,8 +257,7 @@
                             Grid.Row="2" 
                             Grid.Column="0" 
                             FontSize="15"
-                            Background="RoyalBlue"
-                            Foreground="GhostWhite"
+                            FontStyle="Italic"
                             TextWrapping="Wrap"
                             Margin="5"
                             
@@ -250,9 +269,8 @@
                             Grid.Column="0"  
                             FontSize="15"
                             Margin="5"
+                            FontStyle="Italic"
                             
-                            Background="RoyalBlue"
-                            Foreground="GhostWhite"
                             TextWrapping="Wrap"
                             VerticalAlignment="Center" > Answer_2</TextBlock>
 

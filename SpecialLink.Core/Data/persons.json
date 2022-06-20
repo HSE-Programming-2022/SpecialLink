@@ -122,5 +122,11 @@
     "LastLogin": "0001-01-01T00:00:00",
     "Login": "qwerhggdr",
     "Password": "12352674t3ggre"
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Login": "3ц435н53уа",
+    "Password": "35аукпуке"
   }
 ]
