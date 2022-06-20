@@ -3,8 +3,105 @@
     "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
     "Name": "vikusya",
     "Email": "meow@gmail.com",
-    "ImageSource": "wefiuwegf",
-    "Results": [],
+    "ImageSource": "profile_3.jpg",
+    "Results": [
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Anita",
+        "SecondValue": "Vika",
+        "TestName": "test1",
+        "Score": 43,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Vika",
+        "SecondValue": "Masha",
+        "TestName": "test1",
+        "Score": 36,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Вика",
+        "SecondValue": "Вадим",
+        "TestName": "test1",
+        "Score": 86,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Маша",
+        "SecondValue": "Даня",
+        "TestName": "test1",
+        "Score": 35,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Марина",
+        "SecondValue": "Парень Марины",
+        "TestName": "test1",
+        "Score": 5,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Юра",
+        "SecondValue": "Прога",
+        "TestName": "test1",
+        "Score": 40,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Михаил",
+        "SecondValue": "Александр",
+        "TestName": "test1",
+        "Score": 46,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "В",
+        "SecondValue": "В",
+        "TestName": "test1",
+        "Score": 87,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "A",
+        "SecondValue": "B",
+        "TestName": "test1",
+        "Score": 35,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "женский пол",
+        "SecondValue": "женский пол",
+        "TestName": "Тест по гендерной совместимости",
+        "Score": 100,
+        "Explanation": "О-о, у вас хороший вкус. Так держать, вы шикарны!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "женский пол",
+        "SecondValue": "мужской пол",
+        "TestName": "Тест по гендерной совместимости",
+        "Score": 78,
+        "Explanation": "Не ужасно, но могло бы быть и лучше."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "мужской пол",
+        "SecondValue": "мужской пол",
+        "TestName": "Тест по гендерной совместимости",
+        "Score": 100,
+        "Explanation": "10/10, вы прекрасны, ВШЭ хочет вас в студенты."
+      }
+    ],
     "Login": "user1",
     "Password": "wiurhwefb"
   },

@@ -16,6 +16,7 @@ namespace SpecialLink.Core.Models.Tests
         public QuestionBasedTest()
         {
             Explanations = CreateExplanations();
+            ImageSource = "icon_2.jpg";
         }
 
         [JsonConstructor]
