@@ -107,6 +107,7 @@ namespace SpecialLink.Design
             //adminMenuWindow.Show();
             //Close();
 
+            // Маша тебе нужно здесь сделать авторизацию тк я хз как там с хешированием паролей проверка работает
         }
 
         private void Registration_Click(object sender, RoutedEventArgs e)

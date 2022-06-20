@@ -21,7 +21,7 @@ namespace SpecialLink.Core.Models.Tests
         [JsonConstructor]
         public ComputationBasedTest(int useless)
         {
-
+            ImageSource = "icon_3.jpg";
         }
 
         private List<ScoreExplanation> CreateExplanations()
