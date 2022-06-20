@@ -8,7 +8,7 @@
         Title="UserMenuWindow" Height="550" Width="800">
 
     <Window.Background>
-        <ImageBrush ImageSource="/Pictures/BackgroundShadedPlum.jpg"/>
+        <ImageBrush ImageSource="/Pictures/Backgrounds_CMYK/Back7.jpg"/>
     </Window.Background>
     
     <Grid>

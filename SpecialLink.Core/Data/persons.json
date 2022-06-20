@@ -4,7 +4,16 @@
     "Name": "vikusya",
     "Email": "meow@gmail.com",
     "ImageSource": "profile_3.jpg",
-    "Results": [],
+    "Results": [
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Anita",
+        "SecondValue": "Vika",
+        "TestName": "test1",
+        "Score": 43,
+        "Explanation": "У вас есть шансы, но их мало..."
+      }
+    ],
     "Login": "user1",
     "Password": "wiurhwefb"
   },

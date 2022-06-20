@@ -8,11 +8,11 @@
         Title="ComputationTestWindow" Height="450" Width="800">
 
     <Window.Background>
-        <ImageBrush ImageSource="/Pictures/BackgroundPair_1.jpg"/>
+        <ImageBrush ImageSource="/Pictures/Backgrounds_CMYK/Back1.jpg"/>
     </Window.Background>
     <Grid>
-        <Button Name="CalculateButton" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="100">
-            <TextBlock Text="Вычислить совместимость" Foreground="GhostWhite" FontWeight="Bold" TextWrapping="WrapWithOverflow" TextAlignment="Center"/>
+        <Button Name="CalculateButton" Click="CalculateButton_Click" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="40">
+            <TextBlock Text="♡" Foreground="GhostWhite" FontSize="26" FontWeight="Bold" TextWrapping="WrapWithOverflow" TextAlignment="Center"/>
         </Button>
         <TextBox Background="GhostWhite" Name="FirstValueTextBox" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="80" BorderBrush="Plum" />
         <TextBox Background="GhostWhite" Name="SecondValueTextBox" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="80" />

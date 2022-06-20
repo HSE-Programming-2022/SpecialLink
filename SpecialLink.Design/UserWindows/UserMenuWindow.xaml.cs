@@ -95,7 +95,7 @@ namespace SpecialLink.Design.UserWindows
             Test test = TakeTestButton.DataContext as Test;
             if (test is ComputationBasedTest)
             {
-                ComputationTestWindow computationTestWindow = new ComputationTestWindow(test);
+                ComputationTestWindow computationTestWindow = new ComputationTestWindow(test, _user);
                 computationTestWindow.Show();
                 this.Close();
             }

@@ -73,6 +73,9 @@
     <Compile Include="UserWindows\TestWindows\ComputationTestWindow.xaml.cs">
       <DependentUpon>ComputationTestWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserWindows\TestWindows\Results.xaml.cs">
+      <DependentUpon>Results.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserWindows\UserMenuWindow.xaml.cs">
       <DependentUpon>UserMenuWindow.xaml</DependentUpon>
     </Compile>
@@ -113,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserWindows\TestWindows\ComputationTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserWindows\TestWindows\Results.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
