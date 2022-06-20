@@ -61,15 +61,16 @@ namespace SpecialLink.Design
 
         private void Autorization_Click(object sender, RoutedEventArgs e)
         {
-            //UserMenuWindow userMenuWindow = new UserMenuWindow();
-            //userMenuWindow.Show();
-            //this.Close();
+            User user = _storage.GetPersons[0] as User;
+            UserMenuWindow userMenuWindow = new UserMenuWindow(user);
+            userMenuWindow.Show();
+            this.Close();
 
-            Admin admin = _storage.GetPersons[1] as Admin;
+            //Admin admin = _storage.GetPersons[1] as Admin;
 
-            AdminMenuWindow adminMenuWindow = new AdminMenuWindow(admin);
-            adminMenuWindow.Show();
-            Close();
+            //AdminMenuWindow adminMenuWindow = new AdminMenuWindow(admin);
+            //adminMenuWindow.Show();
+            //Close();
 
         }
 

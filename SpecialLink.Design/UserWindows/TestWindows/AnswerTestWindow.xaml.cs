@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SpecialLink.Core.Models.Tests;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,16 @@ namespace SpecialLink.Design.UserWindows.TestWindows
     /// </summary>
     public partial class AnswerTestWindow : Window
     {
+        Test _test;
         public AnswerTestWindow()
         {
             InitializeComponent();
+        }
+
+        public AnswerTestWindow(Test test)
+        {
+            InitializeComponent();
+            _test = test;
         }
     }
 }
