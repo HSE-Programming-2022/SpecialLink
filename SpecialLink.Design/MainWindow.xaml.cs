@@ -1,5 +1,7 @@
 ﻿using SpecialLink.Core;
+using SpecialLink.Core.Models;
 using SpecialLink.Core.Models.People;
+using SpecialLink.Core.Models.Tests;
 using SpecialLink.Design.AdminWindows;
 using SpecialLink.Design.UserWindows;
 using SpecialLink.Design.UserWindows.TestWindows;
@@ -57,6 +59,39 @@ namespace SpecialLink.Design
             //}
 
             //TestingListBox.ItemsSource = check;
+
+            /*AnswerBasedTest newTest = new AnswerBasedTest()
+            {
+                AmountOfTimesTaken = 0,
+                Name = "Тест по гендерной совместимости",
+                Description = "Гейские приколы для тестинга окна для этого типа тестов",
+                Combinations = new List<Combination>()
+                {
+                    new Combination()
+                    {
+                        FirstValue = "мужской пол",
+                        SecondValue = "мужской пол",
+                        Score = 100,
+                        Explanation = "10/10, вы прекрасны, ВШЭ хочет вас в студенты."
+                    },
+                    new Combination()
+                    {
+                        FirstValue = "мужской пол",
+                        SecondValue = "женский пол",
+                        Score = 78,
+                        Explanation = "Не ужасно, но могло бы быть и лучше."
+                    },
+                    new Combination()
+                    {
+                        FirstValue = "женский пол",
+                        SecondValue = "женский пол",
+                        Score = 100,
+                        Explanation = "О-о, у вас хороший вкус. Так держать, вы шикарны!"
+                    }
+                }
+            };
+            _storage.GetTests.Add(newTest);
+            _storage.Save(); */
         }
 
         private void Autorization_Click(object sender, RoutedEventArgs e)

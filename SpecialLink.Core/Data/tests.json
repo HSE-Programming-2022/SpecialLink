@@ -26,7 +26,7 @@
     "Name": "test1",
     "Description": "nothing",
     "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 6
+    "AmountOfTimesTaken": 9
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
@@ -180,5 +180,78 @@
     "Description": "тест для теста",
     "ImageSource": "icon_2.jpg",
     "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
+    "Questions": [
+      {
+        "QuestionText": "Кошки или собаки?",
+        "FirstAnswer": "Кошки",
+        "SecondAnswer": "Собаки"
+      },
+      {
+        "QuestionText": "Чай или кофе?",
+        "FirstAnswer": "Чай",
+        "SecondAnswer": "Кофе"
+      },
+      {
+        "QuestionText": "Пастернак или Мандельштам?",
+        "FirstAnswer": "Пастернак",
+        "SecondAnswer": "Мандельштам"
+      }
+    ],
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Вы достаточно хорошо знаете друг друга"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      }
+    ],
+    "Name": "Вопросы Анны Ахматовой",
+    "Description": "Эти три вопроса Ахматова задавала людям, чтобы понять, какой у них типаж.",
+    "ImageSource": "icon_2.jpg",
+    "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
+    "Combinations": [
+      {
+        "FirstValue": "мужской пол",
+        "SecondValue": "мужской пол",
+        "Score": 100,
+        "Explanation": "10/10, вы прекрасны, ВШЭ хочет вас в студенты."
+      },
+      {
+        "FirstValue": "мужской пол",
+        "SecondValue": "женский пол",
+        "Score": 78,
+        "Explanation": "Не ужасно, но могло бы быть и лучше."
+      },
+      {
+        "FirstValue": "женский пол",
+        "SecondValue": "женский пол",
+        "Score": 100,
+        "Explanation": "О-о, у вас хороший вкус. Так держать, вы шикарны!"
+      }
+    ],
+    "Name": "Тест по гендерной совместимости",
+    "Description": "Гейские приколы для тестинга окна для этого типа тестов",
+    "ImageSource": "icon_1.jpg",
+    "AmountOfTimesTaken": 3
   }
 ]

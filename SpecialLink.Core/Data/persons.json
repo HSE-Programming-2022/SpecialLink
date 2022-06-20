@@ -52,6 +52,54 @@
         "TestName": "test1",
         "Score": 40,
         "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Михаил",
+        "SecondValue": "Александр",
+        "TestName": "test1",
+        "Score": 46,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "В",
+        "SecondValue": "В",
+        "TestName": "test1",
+        "Score": 87,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "A",
+        "SecondValue": "B",
+        "TestName": "test1",
+        "Score": 35,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "женский пол",
+        "SecondValue": "женский пол",
+        "TestName": "Тест по гендерной совместимости",
+        "Score": 100,
+        "Explanation": "О-о, у вас хороший вкус. Так держать, вы шикарны!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "женский пол",
+        "SecondValue": "мужской пол",
+        "TestName": "Тест по гендерной совместимости",
+        "Score": 78,
+        "Explanation": "Не ужасно, но могло бы быть и лучше."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "мужской пол",
+        "SecondValue": "мужской пол",
+        "TestName": "Тест по гендерной совместимости",
+        "Score": 100,
+        "Explanation": "10/10, вы прекрасны, ВШЭ хочет вас в студенты."
       }
     ],
     "Login": "user1",
@@ -59,7 +107,7 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-20T18:50:37.843768+03:00",
+    "LastLogin": "2022-06-20T22:40:43.284963+03:00",
     "Login": "admin1",
     "Password": "00000"
   },

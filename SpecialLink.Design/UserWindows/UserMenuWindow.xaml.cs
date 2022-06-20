@@ -101,7 +101,9 @@ namespace SpecialLink.Design.UserWindows
             }
             else if (test is AnswerBasedTest)
             {
-                AnswerTestWindow answerTestWindow = new AnswerTestWindow(test);
+                AnswerTestWindow answerTestWindow = new AnswerTestWindow(test, _user);
+                answerTestWindow.Show();
+                this.Close();
             }
         }
 
