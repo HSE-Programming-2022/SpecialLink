@@ -101,11 +101,11 @@ namespace SpecialLink.Design
             userMenuWindow.Show();
             this.Close();
 
-            //Admin admin = _storage.GetPersons[1] as Admin;
+            /*Admin admin = _storage.GetPersons[1] as Admin;
 
-            //AdminMenuWindow adminMenuWindow = new AdminMenuWindow(admin);
-            //adminMenuWindow.Show();
-            //Close();
+            AdminMenuWindow adminMenuWindow = new AdminMenuWindow(admin);
+            adminMenuWindow.Show();
+            Close(); */
 
             // Маша тебе нужно здесь сделать авторизацию тк я хз как там с хешированием паролей проверка работает
         }

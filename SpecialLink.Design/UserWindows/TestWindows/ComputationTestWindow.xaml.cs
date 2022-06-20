@@ -50,6 +50,7 @@ namespace SpecialLink.Design.UserWindows.TestWindows
                     {
                         (person as User).Results.Add(result);
                         _storage.Save();
+                        _user = (person as User);
                     }
                 }
                 _test.AmountOfTimesTaken += 1;

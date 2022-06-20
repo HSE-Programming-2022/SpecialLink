@@ -79,6 +79,9 @@
     <Compile Include="UserWindows\UserMenuWindow.xaml.cs">
       <DependentUpon>UserMenuWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserWindows\UserResultsWindow.xaml.cs">
+      <DependentUpon>UserResultsWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AdminWindows\AddQuestionTestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -124,6 +127,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserWindows\UserMenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserWindows\UserResultsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

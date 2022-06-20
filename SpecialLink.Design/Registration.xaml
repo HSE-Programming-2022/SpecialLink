@@ -84,12 +84,14 @@
                             HorizontalAlignment="Center"
                             VerticalAlignment="Bottom">
                             <Button 
-                                x:Name="Back"  
+                                x:Name="Back"
+                                Cursor="Hand"
                                 Content="Назад"
                                 Click="Back_Click"
                                 Margin="10"  />
                             <Button 
                                 x:Name="NewRegistration" 
+                                Cursor="Hand"
                                 Content="Зарегистрироваться" 
                                 Click="NewRegistration_Click"
                                 Margin="10" />

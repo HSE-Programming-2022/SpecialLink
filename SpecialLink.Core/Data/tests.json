@@ -26,7 +26,7 @@
     "Name": "test1",
     "Description": "nothing",
     "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 9
+    "AmountOfTimesTaken": 10
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
@@ -236,17 +236,20 @@
       {
         "QuestionText": "Кошки или собаки?",
         "FirstAnswer": "Кошки",
-        "SecondAnswer": "Собаки"
+        "SecondAnswer": "Собаки",
+        "Weight": 0
       },
       {
         "QuestionText": "Чай или кофе?",
         "FirstAnswer": "Чай",
-        "SecondAnswer": "Кофе"
+        "SecondAnswer": "Кофе",
+        "Weight": 0
       },
       {
         "QuestionText": "Пастернак или Мандельштам?",
         "FirstAnswer": "Пастернак",
-        "SecondAnswer": "Мандельштам"
+        "SecondAnswer": "Мандельштам",
+        "Weight": 0
       }
     ],
     "Explanations": [
@@ -301,6 +304,6 @@
     "Name": "Тест по гендерной совместимости",
     "Description": "Гейские приколы для тестинга окна для этого типа тестов",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 3
+    "AmountOfTimesTaken": 8
   }
 ]
