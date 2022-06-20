@@ -13,7 +13,7 @@
         <Grid DataContext="{Binding ElementName=root}" Grid.Row="1" Grid.Column="0">
             <Border  Visibility="{Binding Visibility}">
                 <Border BorderBrush="Black"
-                        Height="200"
+                        Height="Auto"
                         Width="400"
                         BorderThickness="1" 
                         Background="GhostWhite" 
@@ -34,9 +34,10 @@
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
 
-                        <TextBlock Grid.Row="0" Name="TestNameTextBlock" Text="TestName" FontSize="22" FontWeight="Bold" TextAlignment="Center" />
-                        <TextBlock Grid.Row="1" Name="ScoreTextBlock" Text="♡ Compatability: 100% ♡" FontSize="17" FontWeight="SemiBold" TextAlignment="Center" />
-                        <TextBlock Grid.Row="2" Name="ExplanationTextBlock" Text="Explanation" FontSize="16"  TextAlignment="Center" />
+                        <TextBlock Grid.Row="0" Initialized="TestNameTextBlock_Initialized" Name="TestNameTextBlock" Text="TestName" FontSize="22" TextWrapping="WrapWithOverflow" FontWeight="Bold" TextAlignment="Center" />
+                        <TextBlock Grid.Row="1" Initialized="ScoreTextBlock_Initialized" Name="ScoreTextBlock" Text="Compatability: 100%" FontSize="17" FontWeight="SemiBold" TextAlignment="Center" />
+                        <TextBlock Grid.Row="2" Name="SeparatorTextBlock" Text="♡" FontSize="30"  TextAlignment="Center" />
+                        <TextBlock Grid.Row="3" Initialized="ExplanationTextBlock_Initialized"  Name="ExplanationTextBlock" Text="ResultExplanation" FontSize="16"  TextAlignment="Center" TextWrapping="WrapWithOverflow" />
                     </Grid>
                 </Border>
             </Border>
