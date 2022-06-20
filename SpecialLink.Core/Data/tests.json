@@ -34,17 +34,20 @@
       {
         "QuestionText": "знаешь макса +100500?",
         "FirstAnswer": "да",
-        "SecondAnswer": "нет"
+        "SecondAnswer": "нет",
+        "Weight": 5
       },
       {
         "QuestionText": "кто такой шрек?",
         "FirstAnswer": "не знаю",
-        "SecondAnswer": "знаю"
+        "SecondAnswer": "знаю",
+        "Weight": 1
       },
       {
         "QuestionText": "цзущалп",
         "FirstAnswer": "23",
-        "SecondAnswer": "345е"
+        "SecondAnswer": "345е",
+        "Weight": 3
       }
     ],
     "Explanations": [
@@ -80,22 +83,26 @@
       {
         "QuestionText": "знаю любимый цвет",
         "FirstAnswer": "да",
-        "SecondAnswer": "нет"
+        "SecondAnswer": "нет",
+        "Weight": 1
       },
       {
         "QuestionText": "знаю любимый чай",
         "FirstAnswer": "да",
-        "SecondAnswer": "нет"
+        "SecondAnswer": "нет",
+        "Weight": 1
       },
       {
         "QuestionText": "любите гулять?",
         "FirstAnswer": "точно нет",
-        "SecondAnswer": "да!"
+        "SecondAnswer": "да!",
+        "Weight": 1
       },
       {
         "QuestionText": "она/он носит носки?",
         "FirstAnswer": "да...",
-        "SecondAnswer": "конечно, нет"
+        "SecondAnswer": "конечно, нет",
+        "Weight": 1
       }
     ],
     "Explanations": [
@@ -123,35 +130,28 @@
     "Name": "тест на дружбу",
     "Description": "тест на определение крепкой дружбы",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 0
+    "AmountOfTimesTaken": 5
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
     "Questions": [
       {
-        "QuestionText": "первый вопрос",
-        "FirstAnswer": "первый",
-        "SecondAnswer": "второй"
+        "QuestionText": "wagesv",
+        "FirstAnswer": "weferg",
+        "SecondAnswer": "ewrgr",
+        "Weight": 234
       },
       {
-        "QuestionText": "второй ахахха",
-        "FirstAnswer": "36",
-        "SecondAnswer": "35"
+        "QuestionText": "ergeg",
+        "FirstAnswer": "qegr",
+        "SecondAnswer": "ere",
+        "Weight": 2
       },
       {
-        "QuestionText": "ну и третий",
-        "FirstAnswer": "ыукп",
-        "SecondAnswer": "пмвы"
-      },
-      {
-        "QuestionText": "оп, 4-ый",
-        "FirstAnswer": "ыв",
-        "SecondAnswer": "вы"
-      },
-      {
-        "QuestionText": "заключительный",
-        "FirstAnswer": "мяу",
-        "SecondAnswer": "мяу 2 раза"
+        "QuestionText": "wefr",
+        "FirstAnswer": "erger",
+        "SecondAnswer": "aegsreg",
+        "Weight": 2
       }
     ],
     "Explanations": [
@@ -176,8 +176,57 @@
         "Explanation": "Ого! Да вы просто созданы друг для друга!"
       }
     ],
-    "Name": "тестик",
-    "Description": "тест для теста",
+    "Name": "erhstrhshsb",
+    "Description": "wage",
+    "ImageSource": "icon_2.jpg",
+    "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
+    "Questions": [
+      {
+        "QuestionText": "ц е5е",
+        "FirstAnswer": "керр",
+        "SecondAnswer": "куеноне",
+        "Weight": 1
+      },
+      {
+        "QuestionText": "икыетеноуено6о6о76о6ко",
+        "FirstAnswer": "цыкоееоко",
+        "SecondAnswer": "ц4оре4оу6у5оо5оу56о",
+        "Weight": 1233432546
+      },
+      {
+        "QuestionText": "ыаиптткпивеипвериветвенен",
+        "FirstAnswer": "44е46",
+        "SecondAnswer": "нвапап",
+        "Weight": 32423
+      }
+    ],
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Вы достаточно хорошо знаете друг друга"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      }
+    ],
+    "Name": "4 5е уукн4534й4",
+    "Description": "яыпяепкер5к6",
     "ImageSource": "icon_2.jpg",
     "AmountOfTimesTaken": 0
   },
