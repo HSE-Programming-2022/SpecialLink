@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpecialLink.Design.UserWindows"
         mc:Ignorable="d"
-        Title="UserMenuWindow" Height="450" Width="800">
+        Title="UserMenuWindow" Height="550" Width="800">
 
     <Window.Background>
         <ImageBrush ImageSource="/Pictures/BackgroundShadedPlum.jpg"/>
@@ -40,26 +40,30 @@
                     </Border.BitmapEffect>
                     <Grid Margin="10">
 
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
                         <TextBlock
                             Name="NameTextBlock"
+                            Grid.Row="0"
                             Initialized="NameTextBlock_Initialized"
                             Text="Ваше имя: "
-                            Margin="2 12 0 0"
                             VerticalAlignment="Top"
                             FontSize="16" TextWrapping="WrapWithOverflow"/>
                         <TextBlock
+                            Grid.Row="1"
                             Name="LoginTextBlock"
                             Initialized="LoginTextBlock_Initialized"
                             Text="Ваш логин: "
-                            Margin="2 12 0 12"
-                            VerticalAlignment="Bottom"
+                            VerticalAlignment="Top"
                             FontSize="16" TextWrapping="WrapWithOverflow"/>
                     </Grid>
                 </Border>
             </Border>
         </Grid>
 
-        <Image Name="UserImage" Source="/Pictures/Profiles/profile0.jpg" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15" Width="200" Height="200" />
+        <Image Name="UserImage" Initialized="UserImage_Initialized" Source="/Pictures/Profiles/profile0.jpg" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15" Width="200" Height="200" />
         <Button Height="30" Width="95" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="15 15 15 0" FontWeight="Bold" Foreground="GhostWhite">
             <TextBlock Text="Результаты" TextWrapping="WrapWithOverflow" TextAlignment="Center"/> 
         </Button>

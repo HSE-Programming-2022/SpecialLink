@@ -114,5 +114,20 @@ namespace SpecialLink.Design.UserWindows
         {
             NameTextBlock.Text = "Ваше имя: " + _user.Name;
         }
+
+        private void UserImage_Initialized(object sender, EventArgs e)
+        {
+            BitmapImage bitmapImage = new BitmapImage();
+
+            using (var fileStream = new FileStream("../../Pictures/Profiles_CMYK/" + _user.ImageSource, FileMode.Open))
+            {
+                bitmapImage.BeginInit();
+                bitmapImage.StreamSource = fileStream;
+                bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                bitmapImage.EndInit();
+            }
+
+            UserImage.Source = bitmapImage;
+        }
     }
 }
