@@ -26,7 +26,7 @@
     "Name": "test1",
     "Description": "nothing",
     "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 5
+    "AmountOfTimesTaken": 6
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",

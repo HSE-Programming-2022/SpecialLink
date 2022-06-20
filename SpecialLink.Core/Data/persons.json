@@ -12,6 +12,46 @@
         "TestName": "test1",
         "Score": 43,
         "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Vika",
+        "SecondValue": "Masha",
+        "TestName": "test1",
+        "Score": 36,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Вика",
+        "SecondValue": "Вадим",
+        "TestName": "test1",
+        "Score": 86,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Маша",
+        "SecondValue": "Даня",
+        "TestName": "test1",
+        "Score": 35,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Марина",
+        "SecondValue": "Парень Марины",
+        "TestName": "test1",
+        "Score": 5,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Юра",
+        "SecondValue": "Прога",
+        "TestName": "test1",
+        "Score": 40,
+        "Explanation": "У вас есть шансы, но их мало..."
       }
     ],
     "Login": "user1",

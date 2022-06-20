@@ -1,6 +1,5 @@
 ﻿using SpecialLink.Core.Models.People;
 using SpecialLink.Core.Models.Results;
-using SpecialLink.Core.Models.Tests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,17 +17,17 @@ using System.Windows.Shapes;
 namespace SpecialLink.Design.UserWindows.TestWindows
 {
     /// <summary>
-    /// Логика взаимодействия для Results.xaml
+    /// Логика взаимодействия для ResultsWindow.xaml
     /// </summary>
-    public partial class Results : Window
+    public partial class ResultsWindow : Window
     {
         Result _result;
         User _user;
-        public Results()
+        public ResultsWindow()
         {
             InitializeComponent();
         }
-        public Results(Result result, User user)
+        public ResultsWindow(Result result, User user)
         {
             _result = result;
             _user = user;
@@ -48,6 +47,13 @@ namespace SpecialLink.Design.UserWindows.TestWindows
         private void ExplanationTextBlock_Initialized(object sender, EventArgs e)
         {
             ExplanationTextBlock.Text = _result.Explanation;
+        }
+
+        private void MenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            UserMenuWindow userMenuWindow = new UserMenuWindow(_user);
+            userMenuWindow.Show();
+            this.Close();
         }
     }
 }

@@ -52,7 +52,18 @@ namespace SpecialLink.Design.UserWindows.TestWindows
                         _storage.Save();
                     }
                 }
-                
+                _test.AmountOfTimesTaken += 1;
+                foreach (var test in _storage.GetTests)
+                {
+                    if ((test.Name == _test.Name) && (test.Description == _test.Description))
+                    {
+                        test.AmountOfTimesTaken += 1;
+                        _storage.Save();
+                    }
+                }
+                ResultsWindow resultsWindow = new ResultsWindow(result, _user);
+                resultsWindow.Show();
+                this.Close();
             }
             else
             {
