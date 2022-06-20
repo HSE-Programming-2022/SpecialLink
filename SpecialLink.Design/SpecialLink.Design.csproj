@@ -55,6 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdminWindows\AddQuestionTestWindow.xaml.cs">
+      <DependentUpon>AddQuestionTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWindows\AdminMenuWindow.xaml.cs">
+      <DependentUpon>AdminMenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWindows\ChangeAdminListWindow.xaml.cs">
+      <DependentUpon>ChangeAdminListWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
@@ -67,6 +76,18 @@
     <Compile Include="UserWindows\UserMenuWindow.xaml.cs">
       <DependentUpon>UserMenuWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="AdminWindows\AddQuestionTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminWindows\AdminMenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminWindows\ChangeAdminListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dictionary1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -195,6 +216,15 @@
     <Resource Include="Pictures\Profiles_CMYK\profile_7.jpg" />
     <Resource Include="Pictures\Profiles_CMYK\profile_8.jpg" />
     <Resource Include="Pictures\Profiles_CMYK\profile_9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Profiles_CMYK\profile_admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds_CMYK\Back4.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back5.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back6.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back7.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
