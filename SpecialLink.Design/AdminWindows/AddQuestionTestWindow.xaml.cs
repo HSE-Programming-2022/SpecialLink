@@ -146,9 +146,10 @@ namespace SpecialLink.Design.AdminWindows
             TextBox child2Name = children[2] as TextBox;
             TextBox child5Answer1 = children[5] as TextBox;
             TextBox child6Answer2 = children[6] as TextBox;
+            TextBox child8Weight = children[8] as TextBox;
 
 
-            if (child2Name.Text != "" & child5Answer1.Text != "" & child6Answer2.Text != "")
+            if (child2Name.Text != "" & child5Answer1.Text != "" & child6Answer2.Text != "" & child8Weight.Text != "")
             {
                 if (child5Answer1.Text != child6Answer2.Text)
                 {
@@ -159,18 +160,40 @@ namespace SpecialLink.Design.AdminWindows
                     }
                     else
                     {
-                        Question question = new Question();
-                        question.QuestionText = child2Name.Text;
-                        question.FirstAnswer = child5Answer1.Text;
-                        question.SecondAnswer = child6Answer2.Text;
-                        _questionBasedTest.Questions.Add(question);
+                        try
+                        {
+                            int weightForQ = int.Parse(child8Weight.Text);
 
-                        QuestionsListBox.ItemsSource = "";
-                        QuestionsListBox.ItemsSource = _questionBasedTest.Questions;
+                            if (weightForQ > 0)
+                            {
+                                Question question = new Question();
+                                question.QuestionText = child2Name.Text;
+                                question.FirstAnswer = child5Answer1.Text;
+                                question.SecondAnswer = child6Answer2.Text;
+                                question.Weight = weightForQ;
+                                _questionBasedTest.Questions.Add(question);
 
-                        child2Name.Clear();
-                        child5Answer1.Clear();
-                        child6Answer2.Clear();
+                                QuestionsListBox.ItemsSource = "";
+                                QuestionsListBox.ItemsSource = _questionBasedTest.Questions;
+
+                                child2Name.Clear();
+                                child5Answer1.Clear();
+                                child6Answer2.Clear();
+                                child8Weight.Clear();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Упс,вес вопроса введён некорректно, попробуйте ещё раз");
+                                child8Weight.Clear();
+                            }
+
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("Упс,вес вопроса введён некорректно, попробуйте ещё раз");
+                            child8Weight.Clear();
+                        }
+                        
                     }
                 }
                 else
@@ -193,6 +216,13 @@ namespace SpecialLink.Design.AdminWindows
             int index = _questionBasedTest.Questions.FindIndex(a => a.QuestionText == question.QuestionText);
 
             QuestionNumberTextBlock.Text = "Вопрос № " + (index + 1).ToString();
+        }
+
+        private void WeightTextBlock_Initialized(object sender, EventArgs e)
+        {
+            TextBlock WeightTextBlock = sender as TextBlock;
+            Question question = WeightTextBlock.DataContext as Question;
+            WeightTextBlock.Text = "Вес:  " + question.Weight.ToString();
         }
     }
 }
