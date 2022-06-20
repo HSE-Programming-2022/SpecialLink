@@ -64,10 +64,10 @@
         </Grid>
 
         <Image Name="UserImage" Initialized="UserImage_Initialized" Source="/Pictures/Profiles/profile0.jpg" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15" Width="200" Height="200" />
-        <Button Height="30" Width="95" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="15 15 15 0" FontWeight="Bold" Foreground="GhostWhite">
+        <Button Cursor="Hand" Click="ResultsButton_Click" Name="ResultsButton" Height="30" Width="95" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="15 15 15 0" FontWeight="Bold" Foreground="GhostWhite">
             <TextBlock Text="Результаты" TextWrapping="WrapWithOverflow" TextAlignment="Center"/> 
         </Button>
-        <Button Height="30" Width="95" Grid.Row="2" Content="Редактировать" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15 15 0 0" FontWeight="Bold" Foreground="GhostWhite"/>
+        <Button Cursor="Hand" Name="RedactButton" Height="30" Width="95" Grid.Row="2" Content="Редактировать" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15 15 0 0" FontWeight="Bold" Foreground="GhostWhite"/>
 
 
         <ListBox Name="TestsListBox" Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Margin="20 15 20 0" Background="GhostWhite" ScrollViewer.CanContentScroll="False">
@@ -84,7 +84,7 @@
                         </Grid.ColumnDefinitions>
 
                         <Image Initialized="TestImage_Initialized" Name="TestImage" Source="/Pictures/Icons_CMYK/icon_2.jpg" Grid.Column="0" Grid.Row="0" Height="100" Width="100" Margin="10" VerticalAlignment="Top"/>
-                        <Button Initialized="TakeTestButton_Initialized" Click="TakeTestButton_Click" FontWeight="Bold" Name="TakeTestButton" Grid.Row="1" Grid.Column="0" Height="30" Width="100" Margin="10 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="RoyalBlue" Foreground="GhostWhite">Take test</Button>
+                        <Button Cursor="Hand" Initialized="TakeTestButton_Initialized" Click="TakeTestButton_Click" FontWeight="Bold" Name="TakeTestButton" Grid.Row="1" Grid.Column="0" Height="30" Width="100" Margin="10 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="RoyalBlue" Foreground="GhostWhite">Take test</Button>
 
                         <Grid Grid.Column="1" Grid.Row="0" Grid.RowSpan="2">
                             <Grid.RowDefinitions>
@@ -102,6 +102,6 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <Button Name="ExitButton" Content="Выйти" Foreground="GhostWhite" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right" Margin=" 0 0 20 0" Height="35" Width="70" FontWeight="Bold" Click="ExitButton_Click"  />
+        <Button Cursor="Hand" Name="ExitButton" Content="Выйти" Foreground="GhostWhite" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Right" Margin=" 0 0 20 0" Height="35" Width="70" FontWeight="Bold" Click="ExitButton_Click"  />
     </Grid>
 </Window>

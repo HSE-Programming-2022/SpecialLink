@@ -39,7 +39,7 @@
                         <TextBlock Grid.Row="1" Initialized="ScoreTextBlock_Initialized" Name="ScoreTextBlock" Text="Compatability: 100%" FontSize="17" FontWeight="SemiBold" TextAlignment="Center" />
                         <TextBlock Grid.Row="2" Name="SeparatorTextBlock" Text="♡" FontSize="30"  TextAlignment="Center" />
                         <TextBlock Grid.Row="3" Initialized="ExplanationTextBlock_Initialized"  Name="ExplanationTextBlock" Text="ResultExplanation" FontSize="16"  TextAlignment="Center" TextWrapping="WrapWithOverflow" />
-                        <Button Name="MenuButton" Content="Меню" FontWeight="Bold" Grid.Row="4" Margin="0 20 0 5" Width="60" Height="20" Click="MenuButton_Click"/>
+                        <Button Cursor="Hand" Name="MenuButton" Content="Меню" FontWeight="Bold" Grid.Row="4" Margin="0 20 0 5" Width="60" Height="20" Click="MenuButton_Click"/>
                     </Grid>
                 </Border>
             </Border>

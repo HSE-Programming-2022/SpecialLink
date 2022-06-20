@@ -11,7 +11,7 @@
     </Window.Background>
     <Grid>
 
-        <Button Name="CalculateButton" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="40" Click="CalculateButton_Click">
+        <Button Cursor="Hand" Name="CalculateButton" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="40" Click="CalculateButton_Click">
             <TextBlock Text="♡" Foreground="GhostWhite" FontSize="26" FontWeight="Bold" TextWrapping="WrapWithOverflow" TextAlignment="Center"/>
         </Button>
         <ComboBox Background="GhostWhite" BorderBrush="Plum" Grid.Column="0" Name="FirstValueComboBox" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="80"/>

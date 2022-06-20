@@ -138,5 +138,12 @@ namespace SpecialLink.Design.UserWindows
             mainWindow.Show();
             this.Close();
         }
+
+        private void ResultsButton_Click(object sender, RoutedEventArgs e)
+        {
+            UserResultsWindow userResultsWindow = new UserResultsWindow(_user);
+            userResultsWindow.Show();
+            this.Close();
+        }
     }
 }
