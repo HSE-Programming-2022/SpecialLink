@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpecialLink.Design.UserWindows"
         mc:Ignorable="d"
-        Title="UserResultsWindow" Height="450" Width="800">
+        Title="UserResultsWindow" Height="450" Width="800" MinHeight="450" MinWidth="800" MaxHeight="500" MaxWidth="800">
 
     <Window.Background>
         <ImageBrush ImageSource="/Pictures/Backgrounds_CMYK/Back6.jpg"/>
