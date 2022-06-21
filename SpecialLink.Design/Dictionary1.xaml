@@ -38,7 +38,7 @@
                             <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="GhostWhite"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter Property="Background" TargetName="border" Value="Red"/>
+                            <Setter Property="Background" TargetName="border" Value="Plum"/>
                             <Setter Property="BorderBrush" TargetName="border" Value="#FFADB2B5"/>
                             <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="GhostWhite"/>
                         </Trigger>
