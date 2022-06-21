@@ -1,9 +1,9 @@
 [
   {
     "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
-    "Name": "Виктория",
+    "Name": "Вика",
     "Email": "meow@gmail.com",
-    "ImageSource": "profile_4.jpg",
+    "ImageSource": "profile_12.jpg",
     "Results": [
       {
         "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
@@ -20,6 +20,62 @@
         "TestName": "тест По цветам",
         "Score": 41,
         "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "0",
+        "SecondValue": "1",
+        "TestName": "тест бинарный",
+        "Score": 100,
+        "Explanation": "противоположности притягиваются!!!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "мужской пол",
+        "SecondValue": "женский пол",
+        "TestName": "Тест по гендерной совместимости",
+        "Score": 78,
+        "Explanation": "Не ужасно, но могло бы быть и лучше."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "чай",
+        "SecondValue": "чай",
+        "TestName": "Любимый напиток",
+        "Score": 100,
+        "Explanation": "Вы будете заваривать литровые чайники любимого чая друг друга, а в комнате всегда будет витать приятный аромат."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "чай",
+        "SecondValue": "кофе",
+        "TestName": "Любимый напиток",
+        "Score": 40,
+        "Explanation": "\"Я первый поставил воду!\" -- вот что вы нередко будете слышать, если только любитель кофе в вашей паре не пурист и не варит его в турке."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "вода",
+        "SecondValue": "чай",
+        "TestName": "Любимый напиток",
+        "Score": 60,
+        "Explanation": "Ничего особенного. Отторжение может возникнуть, если ваш партнер попробует остудить ваш чай путем добавления туда холодной воды."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "кофе",
+        "SecondValue": "кофе",
+        "TestName": "Любимый напиток",
+        "Score": 99,
+        "Explanation": "Минус один процент за треморы и бессоницу, которые вы оба заработаете к тридцати :)"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "вода",
+        "SecondValue": "вода",
+        "TestName": "Любимый напиток",
+        "Score": 80,
+        "Explanation": "Немного скучновато, но имеет место быть :) Главное не забывайте про все возможности, которые эта жизнь может вам предложить!"
       }
     ],
     "Login": "a.virra",
@@ -27,7 +83,7 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-21T19:25:31.611999+03:00",
+    "LastLogin": "2022-06-21T21:26:08.3292412+03:00",
     "Login": "admin1",
     "Password": "12445646456"
   },

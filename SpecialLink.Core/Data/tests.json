@@ -3,55 +3,6 @@
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
     "Questions": [
       {
-        "QuestionText": "знаешь макса +100500?",
-        "FirstAnswer": "да",
-        "SecondAnswer": "нет",
-        "Weight": 5
-      },
-      {
-        "QuestionText": "кто такой шрек?",
-        "FirstAnswer": "не знаю",
-        "SecondAnswer": "знаю",
-        "Weight": 1
-      },
-      {
-        "QuestionText": "цзущалп",
-        "FirstAnswer": "23",
-        "SecondAnswer": "345е",
-        "Weight": 3
-      }
-    ],
-    "Explanations": [
-      {
-        "LowestScore": 0,
-        "HighestScore": 24,
-        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
-      },
-      {
-        "LowestScore": 25,
-        "HighestScore": 49,
-        "Explanation": "У вас есть шансы на будущее, но их мало..."
-      },
-      {
-        "LowestScore": 50,
-        "HighestScore": 74,
-        "Explanation": "Вы достаточно хорошо знаете друг друга"
-      },
-      {
-        "LowestScore": 75,
-        "HighestScore": 100,
-        "Explanation": "Ого! Да вы просто созданы друг для друга!"
-      }
-    ],
-    "Name": "тест 100500",
-    "Description": null,
-    "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 0
-  },
-  {
-    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
-    "Questions": [
-      {
         "QuestionText": "знаю любимый цвет",
         "FirstAnswer": "да",
         "SecondAnswer": "нет",
@@ -177,7 +128,7 @@
     "Name": "Тест по гендерной совместимости",
     "Description": "Гейские приколы для тестинга окна для этого типа тестов",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 8
+    "AmountOfTimesTaken": 9
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
@@ -262,6 +213,51 @@
     "Name": "тест бинарный",
     "Description": "0 или 1? вот в чём вопрос...",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 0
+    "AmountOfTimesTaken": 1
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
+    "Combinations": [
+      {
+        "FirstValue": "чай",
+        "SecondValue": "чай",
+        "Score": 100,
+        "Explanation": "Вы будете заваривать литровые чайники любимого чая друг друга, а в комнате всегда будет витать приятный аромат."
+      },
+      {
+        "FirstValue": "чай",
+        "SecondValue": "кофе",
+        "Score": 40,
+        "Explanation": "\"Я первый поставил воду!\" -- вот что вы нередко будете слышать, если только любитель кофе в вашей паре не пурист и не варит его в турке."
+      },
+      {
+        "FirstValue": "чай",
+        "SecondValue": "вода",
+        "Score": 60,
+        "Explanation": "Ничего особенного. Отторжение может возникнуть, если ваш партнер попробует остудить ваш чай путем добавления туда холодной воды."
+      },
+      {
+        "FirstValue": "кофе",
+        "SecondValue": "кофе",
+        "Score": 99,
+        "Explanation": "Минус один процент за треморы и бессоницу, которые вы оба заработаете к тридцати :)"
+      },
+      {
+        "FirstValue": "кофе",
+        "SecondValue": "вода",
+        "Score": 20,
+        "Explanation": "Будьте готовы к непониманию вашего выбора со стороны партнера. "
+      },
+      {
+        "FirstValue": "вода",
+        "SecondValue": "вода",
+        "Score": 80,
+        "Explanation": "Немного скучновато, но имеет место быть :) Главное не забывайте про все возможности, которые эта жизнь может вам предложить!"
+      }
+    ],
+    "Name": "Любимый напиток",
+    "Description": "определим вашу совместимость по вашем любимым напиткам <3",
+    "ImageSource": "icon_1.jpg",
+    "AmountOfTimesTaken": 5
   }
 ]
