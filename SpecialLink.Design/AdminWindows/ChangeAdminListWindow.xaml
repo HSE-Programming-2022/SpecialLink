@@ -5,7 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpecialLink.Design.AdminWindows"
         mc:Ignorable="d"
-        Title="ChangeAdminListWindow" Height="450" Width="800">
+        Title="ChangeAdminListWindow" 
+        Height="450" 
+        Width="800"
+        MinHeight="450"
+        MinWidth="800"
+        MaxHeight="500"
+        MaxWidth="1000">
 
     <Window.Background>
         <ImageBrush ImageSource="/Pictures/Backgrounds_CMYK/Back5.jpg"/>
