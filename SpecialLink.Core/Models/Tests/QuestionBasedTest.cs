@@ -1,4 +1,5 @@
-﻿using SpecialLink.Core.Models.Results;
+﻿using Newtonsoft.Json;
+using SpecialLink.Core.Models.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,19 +15,27 @@ namespace SpecialLink.Core.Models.Tests
 
         public QuestionBasedTest()
         {
-            CreateExplanations();
+            Explanations = CreateExplanations();
+            ImageSource = "icon_2.jpg";
         }
 
-        private void CreateExplanations()
+        [JsonConstructor]
+        public QuestionBasedTest(int useless)
+        {
+
+        }
+
+        private List<ScoreExplanation> CreateExplanations()
         {
             // это проценты
-            Explanations = new List<ScoreExplanation>
+            List<ScoreExplanation> explanations = new List<ScoreExplanation>
             {
                 new ScoreExplanation(0, 24, "Ой, в ваших взаимотношениях будет много ссор и неприятностей("),
                 new ScoreExplanation(25, 49, "У вас есть шансы на будущее, но их мало..."),
                 new ScoreExplanation(50, 74, "Вы достаточно хорошо знаете друг друга"),
                 new ScoreExplanation(75, 100, "Ого! Да вы просто созданы друг для друга!"),
             };
+            return explanations;
         }
 
         private string GetExplanationByScore(int score)

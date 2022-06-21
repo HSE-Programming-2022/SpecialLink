@@ -55,12 +55,66 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdminWindows\AddQuestionTestWindow.xaml.cs">
+      <DependentUpon>AddQuestionTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWindows\AdminMenuWindow.xaml.cs">
+      <DependentUpon>AdminMenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWindows\ChangeAdminListWindow.xaml.cs">
+      <DependentUpon>ChangeAdminListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWindows\CreateTests\AddCombinationTestWindow.xaml.cs">
+      <DependentUpon>AddCombinationTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWindows\CreateTests\AddWordTestWindow.xaml.cs">
+      <DependentUpon>AddWordTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWindows\CreateTests\ChooseTestTypeWindow.xaml.cs">
+      <DependentUpon>ChooseTestTypeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Registration.xaml.cs">
       <DependentUpon>Registration.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserWindows\TestWindows\TestsWindow.xaml.cs">
-      <DependentUpon>TestsWindow.xaml</DependentUpon>
+    <Compile Include="UserWindows\TestWindows\AnswerTestWindow.xaml.cs">
+      <DependentUpon>AnswerTestWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserWindows\TestWindows\ComputationTestWindow.xaml.cs">
+      <DependentUpon>ComputationTestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserWindows\TestWindows\ResultsWindow.xaml.cs">
+      <DependentUpon>ResultsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserWindows\UserMenuWindow.xaml.cs">
+      <DependentUpon>UserMenuWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserWindows\UserResultsWindow.xaml.cs">
+      <DependentUpon>UserResultsWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AdminWindows\AddQuestionTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminWindows\AdminMenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminWindows\ChangeAdminListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminWindows\CreateTests\AddCombinationTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminWindows\CreateTests\AddWordTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminWindows\CreateTests\ChooseTestTypeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dictionary1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,7 +135,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserWindows\TestWindows\TestsWindow.xaml">
+    <Page Include="UserWindows\TestWindows\AnswerTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserWindows\TestWindows\ComputationTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserWindows\TestWindows\ResultsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserWindows\UserMenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserWindows\UserResultsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -124,6 +194,75 @@
       <Name>SpecialLink.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Pictures\BackgroundPair_1.jpg" />
+    <Resource Include="Pictures\BackgroundPair_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background2.jpg" />
+    <Resource Include="Pictures\Background3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Icons\icon1.jpg" />
+    <Resource Include="Pictures\Icons\icon2.jpg" />
+    <Resource Include="Pictures\Icons\icon3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\BackgroundShadedPlum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Profiles\profile1.jpg" />
+    <Resource Include="Pictures\Profiles\profile10.jpg" />
+    <Resource Include="Pictures\Profiles\profile11.jpg" />
+    <Resource Include="Pictures\Profiles\profile12.jpg" />
+    <Resource Include="Pictures\Profiles\profile2.jpg" />
+    <Resource Include="Pictures\Profiles\profile3.jpg" />
+    <Resource Include="Pictures\Profiles\profile4.jpg" />
+    <Resource Include="Pictures\Profiles\profile5.jpg" />
+    <Resource Include="Pictures\Profiles\profile6.jpg" />
+    <Resource Include="Pictures\Profiles\profile7.jpg" />
+    <Resource Include="Pictures\Profiles\profile8.jpg" />
+    <Resource Include="Pictures\Profiles\profile9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Profiles\profile0.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back1.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back2.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Icons_CMYK\icon_1.jpg" />
+    <Resource Include="Pictures\Icons_CMYK\icon_2.jpg" />
+    <Resource Include="Pictures\Icons_CMYK\icon_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Profiles_CMYK\profile_1.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_10.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_11.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_12.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_2.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_3.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_4.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_5.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_6.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_7.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_8.jpg" />
+    <Resource Include="Pictures\Profiles_CMYK\profile_9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Profiles_CMYK\profile_admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Backgrounds_CMYK\Back4.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back5.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back6.jpg" />
+    <Resource Include="Pictures\Backgrounds_CMYK\Back7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Git2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

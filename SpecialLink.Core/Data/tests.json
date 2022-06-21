@@ -1,16 +1,267 @@
 [
   {
+    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
+    "Questions": [
+      {
+        "QuestionText": "знаешь макса +100500?",
+        "FirstAnswer": "да",
+        "SecondAnswer": "нет",
+        "Weight": 5
+      },
+      {
+        "QuestionText": "кто такой шрек?",
+        "FirstAnswer": "не знаю",
+        "SecondAnswer": "знаю",
+        "Weight": 1
+      },
+      {
+        "QuestionText": "цзущалп",
+        "FirstAnswer": "23",
+        "SecondAnswer": "345е",
+        "Weight": 3
+      }
+    ],
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Вы достаточно хорошо знаете друг друга"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      }
+    ],
+    "Name": "тест 100500",
+    "Description": null,
+    "ImageSource": "icon_2.jpg",
+    "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
+    "Questions": [
+      {
+        "QuestionText": "знаю любимый цвет",
+        "FirstAnswer": "да",
+        "SecondAnswer": "нет",
+        "Weight": 1
+      },
+      {
+        "QuestionText": "знаю любимый чай",
+        "FirstAnswer": "да",
+        "SecondAnswer": "нет",
+        "Weight": 1
+      },
+      {
+        "QuestionText": "любите гулять?",
+        "FirstAnswer": "точно нет",
+        "SecondAnswer": "да!",
+        "Weight": 1
+      },
+      {
+        "QuestionText": "она/он носит носки?",
+        "FirstAnswer": "да...",
+        "SecondAnswer": "конечно, нет",
+        "Weight": 1
+      }
+    ],
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Вы достаточно хорошо знаете друг друга"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      }
+    ],
+    "Name": "тест на дружбу",
+    "Description": "тест на определение крепкой дружбы",
+    "ImageSource": "icon_2.jpg",
+    "AmountOfTimesTaken": 5
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
+    "Questions": [
+      {
+        "QuestionText": "Кошки или собаки?",
+        "FirstAnswer": "Кошки",
+        "SecondAnswer": "Собаки",
+        "Weight": 0
+      },
+      {
+        "QuestionText": "Чай или кофе?",
+        "FirstAnswer": "Чай",
+        "SecondAnswer": "Кофе",
+        "Weight": 0
+      },
+      {
+        "QuestionText": "Пастернак или Мандельштам?",
+        "FirstAnswer": "Пастернак",
+        "SecondAnswer": "Мандельштам",
+        "Weight": 0
+      }
+    ],
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Вы достаточно хорошо знаете друг друга"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      }
+    ],
+    "Name": "Вопросы Анны Ахматовой",
+    "Description": "Эти три вопроса Ахматова задавала людям, чтобы понять, какой у них типаж.",
+    "ImageSource": "icon_2.jpg",
+    "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
+    "Combinations": [
+      {
+        "FirstValue": "мужской пол",
+        "SecondValue": "мужской пол",
+        "Score": 100,
+        "Explanation": "10/10, вы прекрасны, ВШЭ хочет вас в студенты."
+      },
+      {
+        "FirstValue": "мужской пол",
+        "SecondValue": "женский пол",
+        "Score": 78,
+        "Explanation": "Не ужасно, но могло бы быть и лучше."
+      },
+      {
+        "FirstValue": "женский пол",
+        "SecondValue": "женский пол",
+        "Score": 100,
+        "Explanation": "О-о, у вас хороший вкус. Так держать, вы шикарны!"
+      }
+    ],
+    "Name": "Тест по гендерной совместимости",
+    "Description": "Гейские приколы для тестинга окна для этого типа тестов",
+    "ImageSource": "icon_1.jpg",
+    "AmountOfTimesTaken": 8
+  },
+  {
     "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
     "Explanations": [
       {
-        "LowestScore": 10,
-        "HighestScore": 20,
-        "Explanation": "wqorijwi"
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Достаточно хорошая совметимость, но не исключены недопонимания"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
       }
     ],
-    "Name": "test1",
-    "Description": "nothing",
-    "ImageSource": "wefiefi",
-    "AmountOfTimesTaken": 5
+    "Name": "тест по фамилиям",
+    "Description": "тест анализирует совместимость по фамилиям",
+    "ImageSource": "icon_3.jpg",
+    "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Достаточно хорошая совметимость, но не исключены недопонимания"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      }
+    ],
+    "Name": "тест по крысам",
+    "Description": "тест на определение крыс",
+    "ImageSource": "icon_3.jpg",
+    "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
+    "Combinations": [
+      {
+        "FirstValue": "0",
+        "SecondValue": "0",
+        "Score": 99,
+        "Explanation": "два нолика это почти сотня"
+      },
+      {
+        "FirstValue": "0",
+        "SecondValue": "1",
+        "Score": 100,
+        "Explanation": "противоположности притягиваются!!!"
+      },
+      {
+        "FirstValue": "1",
+        "SecondValue": "1",
+        "Score": 2,
+        "Explanation": "не очень"
+      }
+    ],
+    "Name": "тест бинарный",
+    "Description": "0 или 1? вот в чём вопрос...",
+    "ImageSource": "icon_1.jpg",
+    "AmountOfTimesTaken": 0
   }
 ]

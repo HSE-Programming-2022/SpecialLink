@@ -74,11 +74,13 @@
                             HorizontalAlignment="Center"
                             VerticalAlignment="Bottom">
                             <Button 
+                                Cursor="Hand"
                                 x:Name="Autorization"  
                                 Content="Авторизоваться"
                                 Click="Autorization_Click"
                                 Margin="10"  />
                             <Button 
+                                Cursor="Hand"
                                 x:Name="Registration" 
                                 Content="Зарегистрироваться" 
                                 Click="Registration_Click"
