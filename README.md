@@ -1,7 +1,7 @@
 <h1 align="center">Привет всем!</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h2 align="center"> Мы команда по разработке приложения SpecialLink</a> 
-<h3 align="center">Газизова Анита, Овечкина Мария и Щербакова Виктория</h3>
+<h3 align="center">Овечкина Мария, Щербакова Виктория и Газизова Анита</h3>
 
 ![pic1](SpecialLink.Design/Pictures/Git2.png)
 
