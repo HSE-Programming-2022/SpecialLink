@@ -30,7 +30,7 @@ namespace SpecialLink.Design
         {
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
-            this.Close();
+            Close();
         }
 
         private void NewRegistration_Click(object sender, RoutedEventArgs e)
@@ -50,7 +50,7 @@ namespace SpecialLink.Design
                 MessageBox.Show("Вам на почту доставлено письмо. Обязательно проверьте спам!");
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
-                this.Close();
+                Close();
             }
             catch (FormatException)
             {

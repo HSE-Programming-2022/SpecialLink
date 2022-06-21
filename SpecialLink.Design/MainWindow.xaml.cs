@@ -114,7 +114,7 @@ namespace SpecialLink.Design
         {
             Registration registration = new Registration();
             registration.Show();
-            this.Close();
+            Close();
         }
     }
 }

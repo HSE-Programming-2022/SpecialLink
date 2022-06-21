@@ -19,6 +19,7 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
+    "LastLogin": "2022-06-21T13:16:07.3600388+03:00",
     "LastLogin": "2022-06-21T17:59:45.3651362+03:00",
     "Login": "admin1",
     "Password": "12445646456"
