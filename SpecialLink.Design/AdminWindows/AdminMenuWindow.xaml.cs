@@ -1,6 +1,7 @@
 ﻿using SpecialLink.Core;
 using SpecialLink.Core.Models.People;
 using SpecialLink.Core.Models.Tests;
+using SpecialLink.Design.AdminWindows.CreateTests;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -88,12 +89,16 @@ namespace SpecialLink.Design.AdminWindows
 
         private void Addtest_Click(object sender, RoutedEventArgs e)
         {
-            QuestionBasedTest questionBasedTest = new QuestionBasedTest();
-            questionBasedTest.Questions = new List<Core.Models.Question>();
-
-            AddQuestionTestWindow addQuestionTestWindow = new AddQuestionTestWindow(_admin, questionBasedTest);
-            addQuestionTestWindow.Show();
+            ChooseTestTypeWindow chooseTestTypeWindow = new ChooseTestTypeWindow(_admin);
+            chooseTestTypeWindow.Show();
             Close();
+
+            //QuestionBasedTest questionBasedTest = new QuestionBasedTest();
+            //questionBasedTest.Questions = new List<Core.Models.Question>();
+
+            //AddQuestionTestWindow addQuestionTestWindow = new AddQuestionTestWindow(_admin, questionBasedTest);
+            //addQuestionTestWindow.Show();
+            //Close();
         }
 
         private void Deletetest_Click(object sender, RoutedEventArgs e)
