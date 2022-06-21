@@ -38,7 +38,12 @@ namespace SpecialLink.Design.AdminWindows.CreateTests
 
         private void combinationTestButton_Click(object sender, RoutedEventArgs e)
         {
+            AnswerBasedTest answerBasedTest = new AnswerBasedTest();
+            answerBasedTest.Combinations = new List<Core.Models.Combination>();
 
+            AddCombinationTestWindow addCombinationTestWindow = new AddCombinationTestWindow(_admin, answerBasedTest);
+            addCombinationTestWindow.Show();
+            Close();
         }
 
         private void questionTestButton_Click(object sender, RoutedEventArgs e)
