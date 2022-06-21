@@ -1,6 +1,7 @@
 ﻿using SpecialLink.Core;
 using SpecialLink.Core.Models.People;
 using SpecialLink.Core.Models.Tests;
+using SpecialLink.Design.UserWindows.ChangeWindows;
 using SpecialLink.Design.UserWindows.TestWindows;
 using System;
 using System.Collections.Generic;
@@ -105,6 +106,12 @@ namespace SpecialLink.Design.UserWindows
                 answerTestWindow.Show();
                 this.Close();
             }
+            else if (test is QuestionBasedTest)
+            {
+                QuestionsTestWindow questionsTestWindow = new QuestionsTestWindow(test, _user);
+                questionsTestWindow.Show();
+                this.Close();
+            }
         }
 
         private void LoginTextBlock_Initialized(object sender, EventArgs e)
@@ -143,6 +150,13 @@ namespace SpecialLink.Design.UserWindows
         {
             UserResultsWindow userResultsWindow = new UserResultsWindow(_user);
             userResultsWindow.Show();
+            this.Close();
+        }
+
+        private void RedactButton_Click(object sender, RoutedEventArgs e)
+        {
+            ChoosingChangeWindow choosingChangeWindow = new ChoosingChangeWindow(_user);
+            choosingChangeWindow.Show();
             this.Close();
         }
     }

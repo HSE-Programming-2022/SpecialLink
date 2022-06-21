@@ -58,7 +58,6 @@ namespace SpecialLink.Design.UserWindows.TestWindows
                         _user = (person as User);
                     }
                 }
-                _test.AmountOfTimesTaken += 1;
                 foreach (var test in _storage.GetTests)
                 {
                     if ((test.Name == _test.Name) && (test.Description == _test.Description))
