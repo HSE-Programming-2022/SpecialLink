@@ -1,9 +1,9 @@
 [
   {
     "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
-    "Name": "vikusya",
+    "Name": "Виктория",
     "Email": "meow@gmail.com",
-    "ImageSource": "profile_3.jpg",
+    "ImageSource": "profile_4.jpg",
     "Results": [
       {
         "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
@@ -12,15 +12,22 @@
         "TestName": "Тест по гендерной совместимости",
         "Score": 78,
         "Explanation": "Не ужасно, но могло бы быть и лучше."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Красный",
+        "SecondValue": "Синий",
+        "TestName": "тест По цветам",
+        "Score": 41,
+        "Explanation": "У вас есть шансы, но их мало..."
       }
     ],
-    "Login": "user1",
+    "Login": "a.virra",
     "Password": "wiurhwefb"
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-21T13:16:07.3600388+03:00",
-    "LastLogin": "2022-06-21T17:59:45.3651362+03:00",
+    "LastLogin": "2022-06-21T19:25:31.611999+03:00",
     "Login": "admin1",
     "Password": "12445646456"
   },
@@ -41,5 +48,11 @@
     "LastLogin": "0001-01-01T00:00:00",
     "Login": "3ц435н53уа",
     "Password": "35аукпуке"
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
+    "LastLogin": "0001-01-01T00:00:00",
+    "Login": "f-sunshine",
+    "Password": "f-sunshine"
   }
 ]

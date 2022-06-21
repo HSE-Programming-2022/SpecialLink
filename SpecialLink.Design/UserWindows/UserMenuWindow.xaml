@@ -26,7 +26,8 @@
         <Grid DataContext="{Binding ElementName=root}" Grid.Row="1" Grid.Column="0">
             <Border  Visibility="{Binding Visibility}">
                 <Border BorderBrush="Black"
-                        Height="90"
+                        Height="Auto"
+                        MaxHeight="90"
                         Width="200"
                         BorderThickness="1" 
                         Background="GhostWhite" 
@@ -67,7 +68,7 @@
         <Button Cursor="Hand" Click="ResultsButton_Click" Name="ResultsButton" Height="30" Width="95" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="15 15 15 0" FontWeight="Bold" Foreground="GhostWhite">
             <TextBlock Text="Результаты" TextWrapping="WrapWithOverflow" TextAlignment="Center"/> 
         </Button>
-        <Button Cursor="Hand" Name="RedactButton" Height="30" Width="95" Grid.Row="2" Content="Редактировать" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15 15 0 0" FontWeight="Bold" Foreground="GhostWhite"/>
+        <Button Cursor="Hand" Name="RedactButton" Height="30" Width="95" Grid.Row="2" Content="Редактировать" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15 15 0 0" FontWeight="Bold" Foreground="GhostWhite" Click="RedactButton_Click"/>
 
 
         <ListBox Name="TestsListBox" Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Margin="20 15 20 0" Background="GhostWhite" ScrollViewer.CanContentScroll="False">

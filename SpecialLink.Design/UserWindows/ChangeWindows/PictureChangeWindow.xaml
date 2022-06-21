@@ -1,0 +1,31 @@
+﻿<Window x:Class="SpecialLink.Design.UserWindows.ChangeWindows.PictureChangeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SpecialLink.Design.UserWindows.ChangeWindows"
+        mc:Ignorable="d"
+        Title="PictureChangeWindow" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="/Pictures/Backgrounds_CMYK/Back2.jpg"/>
+    </Window.Background>
+    <Grid>
+
+        <Button Click="BackButton_Click" Cursor="Hand" Name="BackButton" Margin="15" Grid.Row="2" FontWeight="Bold" Grid.ColumnSpan="2" Content="Назад" HorizontalAlignment="Right"  VerticalAlignment="Top" Height="30" Width="80" />
+        
+        <ListBox Name="PicturesListBox" Width="336" Height="350" Background="GhostWhite" ScrollViewer.CanContentScroll="False">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Image Margin="2" Initialized="ProfileImage_Initialized" Grid.Row="0" Name="ProfileImage" Source="/Pictures/Profiles_CMYK/profile_1.jpg" Height="300" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <Button Cursor="Hand" Click="PickImageButton_Click"  Grid.Row="1" Margin="3" Name="PickImageButton" Content="Выбрать" Width="80" Height="30" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

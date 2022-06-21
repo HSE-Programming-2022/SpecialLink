@@ -232,10 +232,10 @@
         "Explanation": "Ого! Да вы просто созданы друг для друга!"
       }
     ],
-    "Name": "тест по крысам",
-    "Description": "тест на определение крыс",
+    "Name": "тест По цветам",
+    "Description": "Тест, который проверяет вашу совместимость по вашему любимому цвету",
     "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 0
+    "AmountOfTimesTaken": 1
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
