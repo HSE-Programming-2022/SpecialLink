@@ -85,7 +85,7 @@
                 FontSize="18"
                 Grid.ColumnSpan="2"
                 TextWrapping="Wrap"
-                
+                Cursor="IBeam"
                 Margin="10"
                 Background="GhostWhite"
                 BorderThickness="3"
@@ -103,7 +103,7 @@
                 Grid.Row="4"
                 Name="PassowdAdminPasswordBox"
                 FontSize="18"
-                
+                Cursor="IBeam"
                 Margin="10"
                 Background="GhostWhite"
                 BorderThickness="3"
@@ -131,6 +131,7 @@
                 Foreground="GhostWhite" 
                 Grid.Column="0" 
                 Grid.Row="3" 
+                Cursor="Hand"
                 HorizontalAlignment="Left" 
                 Margin=" 20 0 20 0" 
                 Height="35" 
@@ -143,6 +144,7 @@
                 Foreground="GhostWhite" 
                 Grid.Column="1" 
                 Grid.Row="3" 
+                Cursor="Hand"
                 HorizontalAlignment="Left" 
                 Margin=" 20 0 20 0" 
                 Height="35" 
@@ -158,6 +160,7 @@
                 HorizontalAlignment="Right" 
                 Margin=" 0 0 20 0" 
                 Height="35" 
+                Cursor="Hand"
                 Width="90" 
                 FontWeight="Bold"  />
 

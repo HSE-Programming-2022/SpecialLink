@@ -59,6 +59,7 @@
 
         <TextBox
             Grid.Row="1" 
+            Cursor="IBeam"
             Grid.ColumnSpan="2"
             Name="NameForTestTextBox"
             Grid.Column="0"
@@ -85,6 +86,7 @@
         <TextBox
             Grid.Row="1" 
             Grid.Column="2"
+            Cursor="IBeam"
             Name="descriptionTextBox"
             FontSize="20"
             TextWrapping="Wrap"
@@ -110,6 +112,7 @@
         <TextBox
             Grid.Row="3" 
             Name="ElementTextBox"
+            Cursor="IBeam"
             Grid.Column="0"
             FontSize="20"
             TextWrapping="Wrap"
@@ -122,6 +125,7 @@
 
         <Button
             Grid.Row="3" 
+            Cursor="Hand"
             Grid.Column="1"
             Margin="20 15 20 5"
             FontSize="16"
@@ -202,6 +206,7 @@
                             VerticalAlignment="Center" ></TextBlock>
 
                         <TextBox
+                            Cursor="IBeam"
                             Grid.Row="1" 
                             Grid.Column="1"  
                             FontSize="15"
@@ -217,6 +222,7 @@
                             VerticalAlignment="Center"/>
 
                         <TextBox
+                            Cursor="IBeam"
                             Grid.Row="2" 
                             Grid.Column="1"  
                             FontSize="15"
@@ -232,6 +238,7 @@
                             VerticalAlignment="Center"/>
 
                         <Button
+                            Cursor="Hand"
                             Grid.Row="1" 
                             Grid.RowSpan="2"
                             Grid.Column="2"
@@ -253,6 +260,7 @@
                 Foreground="GhostWhite" 
                 Grid.Column="0" 
                 Grid.Row="6" 
+                Cursor="Hand"
                 FontSize="17"
                 Grid.ColumnSpan="2"
                 Margin="20 5 20 15 "
@@ -264,6 +272,7 @@
                 Foreground="GhostWhite" 
                 Grid.Column="2" 
                 Grid.Row="6" 
+                Cursor="Hand"
                 FontSize="17"
                 Margin="20 5 20 15 "
                 FontWeight="Bold"  />

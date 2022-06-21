@@ -36,7 +36,7 @@
                         </Grid.RowDefinitions>
 
                         <Button
-                           
+                            Cursor="Hand"
                             Click="wordTestButton_Click"
                             Margin="12"
                             Grid.Row="0"
@@ -45,7 +45,7 @@
                             Name="wordTestButton"/>
 
                         <Button
-                            
+                            Cursor="Hand"
                             Click="combinationTestButton_Click"
                             Margin="12"
                             Grid.Row="1"
@@ -54,7 +54,7 @@
                             Name="combinationTestButton"/>
 
                         <Button
-                            
+                            Cursor="Hand"
                             Click="questionTestButton_Click"
                             Margin="12"
                             Grid.Row="2"
