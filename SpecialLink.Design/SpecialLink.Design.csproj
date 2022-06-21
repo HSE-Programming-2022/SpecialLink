@@ -240,5 +240,8 @@
     <Resource Include="Pictures\Backgrounds_CMYK\Back6.jpg" />
     <Resource Include="Pictures\Backgrounds_CMYK\Back7.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Git2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
