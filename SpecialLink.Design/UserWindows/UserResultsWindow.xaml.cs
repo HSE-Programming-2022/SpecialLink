@@ -52,9 +52,13 @@ namespace SpecialLink.Design.UserWindows
                     (person as User).Results = new List<Result>();
                     _storage.Save();
                     _user = (person as User);
-                    MessageBox.Show("Вы успешно очистили историю прохождения тестов, она будет обновлена при следующем открытии этой страницы.");
+                    MessageBox.Show("Вы успешно очистили историю прохождения тестов.");
+                    break;
                 }
             }
+            UserMenuWindow userMenuWindow = new UserMenuWindow(_user);
+            userMenuWindow.Show();
+            this.Close();
         }
 
         private void TestNameTextBlock_Initialized(object sender, EventArgs e)

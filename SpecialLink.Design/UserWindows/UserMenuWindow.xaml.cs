@@ -106,6 +106,12 @@ namespace SpecialLink.Design.UserWindows
                 answerTestWindow.Show();
                 this.Close();
             }
+            else if (test is QuestionBasedTest)
+            {
+                QuestionsTestWindow questionsTestWindow = new QuestionsTestWindow(test, _user);
+                questionsTestWindow.Show();
+                this.Close();
+            }
         }
 
         private void LoginTextBlock_Initialized(object sender, EventArgs e)

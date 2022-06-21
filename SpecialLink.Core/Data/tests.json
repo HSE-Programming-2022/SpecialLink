@@ -52,7 +52,7 @@
     "Name": "тест на дружбу",
     "Description": "тест на определение крепкой дружбы",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 5
+    "AmountOfTimesTaken": 7
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
@@ -61,19 +61,19 @@
         "QuestionText": "Кошки или собаки?",
         "FirstAnswer": "Кошки",
         "SecondAnswer": "Собаки",
-        "Weight": 0
+        "Weight": 1
       },
       {
         "QuestionText": "Чай или кофе?",
         "FirstAnswer": "Чай",
         "SecondAnswer": "Кофе",
-        "Weight": 0
+        "Weight": 1
       },
       {
         "QuestionText": "Пастернак или Мандельштам?",
         "FirstAnswer": "Пастернак",
         "SecondAnswer": "Мандельштам",
-        "Weight": 0
+        "Weight": 1
       }
     ],
     "Explanations": [
@@ -101,7 +101,7 @@
     "Name": "Вопросы Анны Ахматовой",
     "Description": "Эти три вопроса Ахматова задавала людям, чтобы понять, какой у них типаж.",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 0
+    "AmountOfTimesTaken": 3
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
