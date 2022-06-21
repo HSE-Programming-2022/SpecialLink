@@ -54,14 +54,17 @@ namespace SpecialLink.Design.AdminWindows
             List<string> listNamesOfTests = new List<string>();
             foreach (var q in _storage.GetTests)
             {
-                listNamesOfTests.Add(q.Name);
+                if (q is QuestionBasedTest)
+                {
+                    listNamesOfTests.Add(q.Name);
+                }
             }
 
             if (_questionBasedTest.Questions.Count >= 3 )
             {
                 if (NameForTestTextBox.Text == "" | listNamesOfTests.Contains(NameForTestTextBox.Text))
                 {
-                    MessageBox.Show("Ой, неверное название теста (пустое / тест с таким названием уже создан)");
+                    MessageBox.Show("Ой, неверное название теста (пустое / тест 'по вопросам' с таким названием уже создан)");
                 }
                 else
                 {
