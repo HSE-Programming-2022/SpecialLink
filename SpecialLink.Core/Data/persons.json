@@ -1,77 +1,11 @@
 [
   {
     "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
-    "Name": "Вика",
-    "Email": "meow@gmail.com",
-    "ImageSource": "profile_5.jpg",
-    "Results": [
-      {
-        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
-        "NumberOfMatches": 0,
-        "TestName": "Вопросы Анны Ахматовой",
-        "Score": 0,
-        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
-      },
-      {
-        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
-        "NumberOfMatches": 1,
-        "TestName": "тест на дружбу",
-        "Score": 25,
-        "Explanation": "У вас есть шансы на будущее, но их мало..."
-      },
-      {
-        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
-        "NumberOfMatches": 2,
-        "TestName": "Вопросы Анны Ахматовой",
-        "Score": 66,
-        "Explanation": "Вы достаточно хорошо знаете друг друга"
-      },
-      {
-        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
-        "NumberOfMatches": 3,
-        "TestName": "тест на дружбу",
-        "Score": 75,
-        "Explanation": "Ого! Да вы просто созданы друг для друга!"
-      },
-      {
-        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
-        "NumberOfMatches": 1,
-        "TestName": "Вопросы Анны Ахматовой",
-        "Score": 33,
-        "Explanation": "У вас есть шансы на будущее, но их мало..."
-      }
-    ],
-    "Login": "a.virra",
-    "Password": "wiurhwefb"
-  },
-  {
-    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-21T22:18:33.2245917+03:00",
-    "Login": "admin1",
-    "Password": "12445646456"
-  },
-  {
-    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-16T17:53:05.9292614+03:00",
-    "Login": "admin200",
-    "Password": "qwirqwbicw"
-  },
-  {
-    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "0001-01-01T00:00:00",
-    "Login": "qwerhggdr",
-    "Password": "12352674t3ggre"
-  },
-  {
-    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "0001-01-01T00:00:00",
-    "Login": "3ц435н53уа",
-    "Password": "35аукпуке"
-  },
-  {
-    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "0001-01-01T00:00:00",
-    "Login": "f-sunshine",
-    "Password": "f-sunshine"
+    "Name": "Машуля",
+    "Email": "ovechkina-2015@yandex.ru",
+    "ImageSource": null,
+    "Results": null,
+    "Login": "SLink0",
+    "Password": "oSIlxBFQP7z7KKICrSNxpNkNrxQ="
   }
 ]
