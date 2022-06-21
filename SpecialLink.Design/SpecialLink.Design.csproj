@@ -64,6 +64,9 @@
     <Compile Include="AdminWindows\ChangeAdminListWindow.xaml.cs">
       <DependentUpon>ChangeAdminListWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AdminWindows\CreateTests\AddCombinationTestWindow.xaml.cs">
+      <DependentUpon>AddCombinationTestWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdminWindows\CreateTests\AddWordTestWindow.xaml.cs">
       <DependentUpon>AddWordTestWindow.xaml</DependentUpon>
     </Compile>
@@ -106,6 +109,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AdminWindows\ChangeAdminListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminWindows\CreateTests\AddCombinationTestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
