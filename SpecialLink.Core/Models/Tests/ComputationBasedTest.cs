@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿  using Newtonsoft.Json;
 using SpecialLink.Core.Models.Results;
 using System;
 using System.Collections.Generic;
@@ -12,6 +12,13 @@ namespace SpecialLink.Core.Models.Tests
     public class ComputationBasedTest : Test
     {
         public List<ScoreExplanation> Explanations { get; set; }
+
+        readonly List<string> _explanationTexts1 = new List<string>()
+        {
+            "Ой, в ваших взаимотношениях будет много ссор и неприятностей(",
+            "Результат неутешительный, в ваших отношениях возможны споры и ссоры. Будьте аккуратней друг с другом!",
+            "Это не самый лучший результат. Впрочем, результат совместимости мернкет и бледнеет по сравнению с коммуникацией друг с другом."
+        };
 
         public ComputationBasedTest()
         {
