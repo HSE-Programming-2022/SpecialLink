@@ -5,7 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpecialLink.Design.AdminWindows.CreateTests"
         mc:Ignorable="d"
-        Title="ChooseTestTypeWindow" Height="450" Width="800">
+        Title="ChooseTestTypeWindow" 
+        Height="450" 
+        Width="800"
+        MinHeight="450"
+        MinWidth="800"
+        MaxHeight="500"
+        MaxWidth="1000">
 
     <Window.Background>
         <ImageBrush ImageSource="/Pictures/BackgroundNew.jpg"/>
@@ -36,7 +42,7 @@
                         </Grid.RowDefinitions>
 
                         <Button
-                           
+                            Cursor="Hand"
                             Click="wordTestButton_Click"
                             Margin="12"
                             Grid.Row="0"
@@ -45,7 +51,7 @@
                             Name="wordTestButton"/>
 
                         <Button
-                            
+                            Cursor="Hand"
                             Click="combinationTestButton_Click"
                             Margin="12"
                             Grid.Row="1"
@@ -54,7 +60,7 @@
                             Name="combinationTestButton"/>
 
                         <Button
-                            
+                            Cursor="Hand"
                             Click="questionTestButton_Click"
                             Margin="12"
                             Grid.Row="2"

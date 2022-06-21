@@ -5,7 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpecialLink.Design.AdminWindows"
         mc:Ignorable="d"
-        Title="AdminMenuWindow" Height="450" Width="800">
+        Title="AdminMenuWindow" 
+        Height="450" 
+        Width="800"
+        MinHeight="450"
+        MinWidth="800"
+        MaxHeight="500"
+        MaxWidth="1000">
 
     <Window.Background>
         <ImageBrush ImageSource="/Pictures/Backgrounds_CMYK/Back6.jpg"/>
@@ -80,12 +86,16 @@
                 Grid.Column="1"
                 Name="NewPasswordPasswordBox"
                 Grid.Row="1"
+                Cursor="IBeam"
+                BorderBrush="RoyalBlue"
+                BorderThickness="2"
                 Margin="5"/>
 
             <Button
                 Grid.Column="0"
                 Grid.Row="2"
                 Margin="5"
+                Cursor="Hand"
                 Name="ChangePassword"
                 Click="ChangePassword_Click"
                 Grid.ColumnSpan="2"
@@ -158,6 +168,7 @@
                 Foreground="GhostWhite" 
                 Grid.Column="2" 
                 Grid.Row="3" 
+                Cursor="Hand"
                 HorizontalAlignment="Left" 
                 Margin=" 20 0 20 0" 
                 Height="35" 
@@ -170,6 +181,7 @@
                 Foreground="GhostWhite" 
                 Grid.Column="1" 
                 Grid.Row="3" 
+                Cursor="Hand"
                 HorizontalAlignment="Left" 
                 Margin=" 20 0 20 0" 
                 Height="35" 
@@ -181,6 +193,7 @@
                 Content="Добавить админа" 
                 Foreground="GhostWhite" 
                 Grid.Column="0" 
+                Cursor="Hand"
                 Grid.Row="3" 
                 HorizontalAlignment="Left" 
                 Margin=" 20 0 20 0" 
@@ -194,6 +207,7 @@
                 Foreground="GhostWhite" 
                 Grid.Column="3" 
                 Grid.Row="3" 
+                Cursor="Hand"
                 HorizontalAlignment="Right" 
                 Margin=" 0 0 20 0" 
                 Height="35" 

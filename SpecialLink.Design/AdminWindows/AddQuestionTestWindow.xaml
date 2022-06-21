@@ -5,7 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SpecialLink.Design.AdminWindows"
         mc:Ignorable="d"
-        Title="AddQuestionTestWindow" Height="450" Width="800">
+        Title="AddQuestionTestWindow" 
+        Height="450" 
+        Width="800"
+        MinHeight="450"
+        MinWidth="800"
+        MaxHeight="500"
+        MaxWidth="1000">
 
     <Window.Background>
         <ImageBrush ImageSource="/Pictures/Backgrounds_CMYK/Back7.jpg"/>
@@ -50,6 +56,7 @@
             Grid.Row="1" 
             Name="NameForTestTextBox"
             Grid.Column="0"
+            Cursor="IBeam"
             FontSize="20"
             TextWrapping="Wrap"
             Margin="20 15 20 5"
@@ -103,6 +110,7 @@
                 Name="NameForQuestionTextBox"
                 Grid.Column="0"
                 FontSize="15"
+                Cursor="IBeam"
                 TextWrapping="Wrap"
                 Margin="10"
                 VerticalAlignment="Center"
@@ -132,6 +140,7 @@
                 Grid.Column="0"
                 Name="Answer1TextBox"
                 FontSize="15"
+                Cursor="IBeam"
                 TextWrapping="Wrap"
                 VerticalAlignment="Center"
                 Margin="10"
@@ -148,6 +157,7 @@
                 TextWrapping="Wrap"
                 VerticalAlignment="Center"
                 Margin="10"
+                Cursor="IBeam"
                 Background="GhostWhite"
                 BorderThickness="2"
                 BorderBrush="RoyalBlue"
@@ -167,6 +177,7 @@
                 Name="WeightForQuestionTextBox"
                 Grid.Column="1"
                 FontSize="15"
+                Cursor="IBeam"
                 TextWrapping="Wrap"
                 VerticalAlignment="Center"
                 Margin="10"
@@ -198,6 +209,7 @@
             FontSize="22"
             TextWrapping="Wrap"
             Grid.Row="3"
+            Cursor="IBeam"
             Grid.Column="1"
             Margin="20 70 20 15"
             Name="DescriptionTextBox"
@@ -297,6 +309,7 @@
                 Foreground="GhostWhite" 
                 Grid.Column="0" 
                 Grid.Row="4" 
+                Cursor="Hand"
                 HorizontalAlignment="Left" 
                 Margin=" 20 0 20 0" 
                 Height="35" 
@@ -309,6 +322,7 @@
                 Foreground="GhostWhite" 
                 Grid.Column="1" 
                 Grid.Row="4" 
+                Cursor="Hand"
                 HorizontalAlignment="Left" 
                 Margin=" 20 0 20 0" 
                 Height="35" 
@@ -324,6 +338,7 @@
                 HorizontalAlignment="Right" 
                 Margin=" 0 0 20 0" 
                 Height="35" 
+                Cursor="Hand"
                 Width="100" 
                 FontWeight="Bold"  />
 

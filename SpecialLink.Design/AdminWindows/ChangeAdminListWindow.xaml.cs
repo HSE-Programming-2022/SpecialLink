@@ -155,8 +155,8 @@ namespace SpecialLink.Design.AdminWindows
 
         private void ExitButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            AdminMenuWindow adminMenuWindow = new AdminMenuWindow(_admin);
+            adminMenuWindow.Show();
             Close();
         }
     }
