@@ -362,6 +362,6 @@
     "Name": "тест По цветам",
     "Description": "Тест, который проверяет вашу совместимость по вашему любимому цвету",
     "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 0
+    "AmountOfTimesTaken": 1
   }
 ]

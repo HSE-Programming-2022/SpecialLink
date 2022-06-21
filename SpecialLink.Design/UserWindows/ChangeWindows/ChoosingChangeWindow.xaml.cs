@@ -48,7 +48,9 @@ namespace SpecialLink.Design.UserWindows.ChangeWindows
 
         private void ChangePictureButton_Click(object sender, RoutedEventArgs e)
         {
-
+            PictureChangeWindow pictureChangeWindow = new PictureChangeWindow(_user);
+            pictureChangeWindow.Show();
+            this.Close();
         }
 
         private void MenuButton_Click(object sender, RoutedEventArgs e)

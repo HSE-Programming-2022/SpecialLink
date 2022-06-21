@@ -3,7 +3,7 @@
     "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
     "Name": "Виктория",
     "Email": "meow@gmail.com",
-    "ImageSource": "profile_3.jpg",
+    "ImageSource": "profile_4.jpg",
     "Results": [
       {
         "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
@@ -12,6 +12,14 @@
         "TestName": "Тест по гендерной совместимости",
         "Score": 78,
         "Explanation": "Не ужасно, но могло бы быть и лучше."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Красный",
+        "SecondValue": "Синий",
+        "TestName": "тест По цветам",
+        "Score": 41,
+        "Explanation": "У вас есть шансы, но их мало..."
       }
     ],
     "Login": "a.virra",
