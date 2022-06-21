@@ -334,5 +334,34 @@
     "Description": "тест анализирует совместимость по фамилиям",
     "ImageSource": "icon_3.jpg",
     "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Достаточно хорошая совметимость, но не исключены недопонимания"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Ого! Да вы просто созданы друг для друга!"
+      }
+    ],
+    "Name": "тест По цветам",
+    "Description": "Тест, который проверяет вашу совместимость по вашему любимому цвету",
+    "ImageSource": "icon_3.jpg",
+    "AmountOfTimesTaken": 0
   }
 ]
