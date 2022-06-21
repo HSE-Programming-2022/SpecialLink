@@ -8,6 +8,7 @@ using SpecialLink.Design.UserWindows.TestWindows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -94,6 +95,16 @@ namespace SpecialLink.Design
             _storage.Save(); */
         }
 
+        private static int GenerateSaltForPassword()
+        {
+            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+            byte[] saltBytes = new byte[4];
+            rng.GetNonZeroBytes(saltBytes);
+            return (((int)saltBytes[0]) << 24) + (((int)saltBytes[1]) << 16) + (((int)saltBytes[2]) << 8) + ((int)saltBytes[3]);
+        }
+
+        int salt = GenerateSaltForPassword();
+
         private void Autorization_Click(object sender, RoutedEventArgs e)
         {
             //User user = _storage.GetPersons[0] as User;
@@ -112,7 +123,7 @@ namespace SpecialLink.Design
 
         private void Registration_Click(object sender, RoutedEventArgs e)
         {
-            Registration registration = new Registration();
+            Registration registration = new Registration(salt);
             registration.Show();
             Close();
         }
