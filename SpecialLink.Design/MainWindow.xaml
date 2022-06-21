@@ -45,7 +45,7 @@
                             Grid.Row="0"
                             Name="loginTextBox"
                             Margin="10"
-                            Width="200"
+                            Width="257"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Bottom"
                             Background="LightGray"/>
@@ -60,7 +60,7 @@
 
                         <PasswordBox
                             Grid.Row="1"
-                            Width="200"
+                            Width="257"
                             HorizontalAlignment="Left"
                             Name="PasswordTextBox"
                             Margin="10"
