@@ -91,6 +91,9 @@
     <Compile Include="UserWindows\TestWindows\ComputationTestWindow.xaml.cs">
       <DependentUpon>ComputationTestWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserWindows\TestWindows\QuestionsTestWindow.xaml.cs">
+      <DependentUpon>QuestionsTestWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserWindows\TestWindows\ResultsWindow.xaml.cs">
       <DependentUpon>ResultsWindow.xaml</DependentUpon>
     </Compile>
@@ -161,6 +164,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserWindows\TestWindows\ComputationTestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserWindows\TestWindows\QuestionsTestWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
