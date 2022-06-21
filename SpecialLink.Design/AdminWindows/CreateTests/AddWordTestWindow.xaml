@@ -75,6 +75,7 @@
         <TextBox
             x:Name="nameTextBox"
             Grid.Row="2"
+            Cursor="IBeam"
             Grid.Column="0"
             FontSize="16"
             BorderBrush="RoyalBlue"
@@ -84,6 +85,7 @@
         <TextBox
             x:Name="descriptionTextBox"
             Grid.Row="2"
+            Cursor="IBeam"
             Grid.Column="1"
             FontSize="16"
             BorderBrush="RoyalBlue"
@@ -95,6 +97,7 @@
                 Content="Добавить тест" 
                 Foreground="GhostWhite" 
                 Grid.Row="3"
+                Cursor="Hand"
                 Grid.ColumnSpan="2"
                 HorizontalAlignment="Left" 
                 Margin=" 50 0 50 0" 
