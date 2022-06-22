@@ -51,14 +51,14 @@
                             Initialized="NameTextBlock_Initialized"
                             Text="Ваше имя: "
                             VerticalAlignment="Top"
-                            FontSize="16" TextWrapping="WrapWithOverflow"/>
+                            FontSize="14" TextWrapping="WrapWithOverflow"/>
                         <TextBlock
                             Grid.Row="1"
                             Name="LoginTextBlock"
                             Initialized="LoginTextBlock_Initialized"
                             Text="Ваш логин: "
                             VerticalAlignment="Top"
-                            FontSize="16" TextWrapping="WrapWithOverflow"/>
+                            FontSize="14" TextWrapping="WrapWithOverflow"/>
                     </Grid>
                 </Border>
             </Border>

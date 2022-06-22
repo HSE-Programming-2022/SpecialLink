@@ -59,5 +59,12 @@ namespace SpecialLink.Design.UserWindows.ChangeWindows
             userMenuWindow.Show();
             this.Close();
         }
+
+        private void ChangePassButton_Click(object sender, RoutedEventArgs e)
+        {
+            ChangeNameOrLoginWindow changeNameOrLoginWindow = new ChangeNameOrLoginWindow(_user, "pass");
+            changeNameOrLoginWindow.Show();
+            this.Close();
+        }
     }
 }

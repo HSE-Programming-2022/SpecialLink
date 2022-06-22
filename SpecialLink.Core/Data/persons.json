@@ -1,6 +1,25 @@
 [
   {
     "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
+    "Name": "Анита",
+    "Email": "anita132001@gmail.com",
+    "ImageSource": "profile_3.jpg",
+    "Results": [
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "чай",
+        "SecondValue": "чай",
+        "TestName": "Любимый напиток",
+        "Score": 100,
+        "Explanation": "Вы будете заваривать литровые чайники любимого чая друг друга, а в комнате всегда будет витать приятный аромат."
+      }
+    ],
+    "Login": "f-sunshine",
+    "Password": "D7Lj0q0OcHFX5L5nKQSrf83E8y8=",
+    "Salt": 893838036
+   },
+   {
+    "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
     "Name": "Машуля",
     "Email": "ovechkina-2015@yandex.ru",
     "ImageSource": "profile_8.jpg",

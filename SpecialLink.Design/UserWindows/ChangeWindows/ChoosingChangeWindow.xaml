@@ -32,11 +32,13 @@
                             <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
+                            <RowDefinition/>
                         </Grid.RowDefinitions>
 
                         <Button Click="ChangeNameButton_Click" Cursor="Hand" Margin="10" Grid.Row="0" Name="ChangeNameButton" Height="40" Width="120" FontWeight="Bold" Content="Изменить имя"/>
                         <Button Click="ChangeLoginButton_Click" Cursor="Hand" Margin="10" Grid.Row="1" Name="ChangeLoginButton" Height="40" Width="120" FontWeight="Bold" Content="Изменить логин"/>
-                        <Button Click="ChangePictureButton_Click" Cursor="Hand" Margin="10" Grid.Row="2" Name="ChangePictureButton" Height="40" Width="120" FontWeight="Bold" Content="Изменить аватарку"/>
+                        <Button Click="ChangePassButton_Click" Cursor="Hand" Margin="10" Grid.Row="2" Name="ChangePassButton" Height="40" Width="120" FontWeight="Bold" Content="Изменить пароль"/>
+                        <Button Click="ChangePictureButton_Click" Cursor="Hand" Margin="10" Grid.Row="3" Name="ChangePictureButton" Height="40" Width="120" FontWeight="Bold" Content="Изменить аватарку"/>
                     </Grid>
                 </Border>
             </Border>
