@@ -12,13 +12,21 @@
         "TestName": "Любимый напиток",
         "Score": 100,
         "Explanation": "Вы будете заваривать литровые чайники любимого чая друг друга, а в комнате всегда будет витать приятный аромат."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "кофе",
+        "SecondValue": "чай",
+        "TestName": "Любимый напиток",
+        "Score": 40,
+        "Explanation": "\"Я первый поставил воду!\" -- вот что вы нередко будете слышать, если только любитель кофе в вашей паре не пурист и не варит его в турке."
       }
     ],
     "Login": "f-sunshine",
     "Password": "D7Lj0q0OcHFX5L5nKQSrf83E8y8=",
     "Salt": 893838036
-   },
-   {
+  },
+  {
     "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
     "Name": "Машуля",
     "Email": "ovechkina-2015@yandex.ru",

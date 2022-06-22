@@ -200,7 +200,7 @@
     "Name": "Любимый напиток",
     "Description": "определим вашу совместимость по вашем любимым напиткам <3",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 8
+    "AmountOfTimesTaken": 9
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
