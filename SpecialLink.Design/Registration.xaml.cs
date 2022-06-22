@@ -135,20 +135,30 @@ namespace SpecialLink.Design
         {
             GenerateLog();
             GeneratePass();
+
+            bool checking = false;
+
             try
             {
                 EmailCreator();
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                Close();
+                checking = true;
             }
             catch (FormatException)
             {
                 MessageBox.Show("Неверный формат почты! Пожалйста, попробуйте снова!");
+                emailTextBox.Clear();
                 return;
             }
-            GenerateSaltForPassword();
-            NewUserCreation();
+
+            if (checking)
+            {
+                GenerateSaltForPassword();
+                NewUserCreation();
+                MainWindow mainWindow = new MainWindow();
+                mainWindow.Show();
+                Close();
+            }
+            
         }
     }
 }

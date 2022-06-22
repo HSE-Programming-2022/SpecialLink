@@ -28,12 +28,12 @@ namespace SpecialLink.Design
     /// </summary>
     public partial class MainWindow : Window
     {
-        IStorage _storage = Factory.GetInstance().Storage;
+        IStorage _storage;
 
         public MainWindow()
         {
             InitializeComponent();
-
+            _storage = Factory.GetInstance().Storage;
             //_storage.GetPersons.Add(new Admin
             //{
             //    Login = "admin200",
@@ -120,39 +120,55 @@ namespace SpecialLink.Design
             return hashedPassword.SequenceEqual(correctPasswordHash);
         }
 
+        private int FindPersonByLogin(string loginPerson)
+        {
+            int index = -1;
+
+            for (int i = 0; i < _storage.GetPersons.Count; i++)
+            {
+                if (_storage.GetPersons[i].Login == loginPerson)
+                {
+                    index = i;
+                }
+            }
+            return index;
+        }
+
+
         private void Autorization_Click(object sender, RoutedEventArgs e)
         {
-            foreach (var person in _storage.GetPersons)
+            int tryFindIndex = FindPersonByLogin(loginTextBox.Text);
+            if (tryFindIndex != -1)
             {
-                if (person.Login == loginTextBox.Text)
+                Person person = _storage.GetPersons[tryFindIndex];
+                if (IsPasswordValid(PasswordTextBox.Password, person.Salt, person.Password))
                 {
-                    if (IsPasswordValid(PasswordTextBox.Password, person.Salt, person.Password))
+                    if (person is User)
                     {
-                        if (person is User)
-                        {
-                            UserMenuWindow userMenuWindow = new UserMenuWindow(person as User);
-                            userMenuWindow.Show();
-                            Close();
-                            return;
-                        }
-                        if (person is Admin)
-                        {
-                            AdminMenuWindow adminMenuWindow = new AdminMenuWindow(person as Admin);
-                            adminMenuWindow.Show();
-                            Close();
-                            return;
-                        }
+                        UserMenuWindow userMenuWindow = new UserMenuWindow(person as User);
+                        userMenuWindow.Show();
+                        Close();
+
                     }
-                    else
+                    if (person is Admin)
                     {
-                        MessageBox.Show("Неверный пароль. Введите корректный пароль и попробуйте еще раз.");
-                        return;
+                        AdminMenuWindow adminMenuWindow = new AdminMenuWindow(person as Admin);
+                        adminMenuWindow.Show();
+                        Close();
+
                     }
                 }
-                MessageBox.Show("Пользователь с таким логином не найден в системе. Введите корректный логин и попробуйте еще раз.");
-                return;
+                else
+                {
+                    MessageBox.Show("Неверный пароль. Введите корректный пароль и попробуйте еще раз.");
+                    PasswordTextBox.Clear();
+                }
             }
-
+            else
+            {
+                MessageBox.Show("Такой логин не зарегистрирован.Зарегистрируйтесь или проверьте ваш логин и введите ешё раз");
+                loginTextBox.Clear();
+            }
             //User user = _storage.GetPersons[0] as User;
             //UserMenuWindow userMenuWindow = new UserMenuWindow(user);
             //userMenuWindow.Show();

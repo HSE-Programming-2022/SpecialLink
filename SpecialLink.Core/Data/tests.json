@@ -101,7 +101,7 @@
     "Name": "Вопросы Анны Ахматовой",
     "Description": "Эти три вопроса Ахматова задавала людям, чтобы понять, какой у них типаж.",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 5
+    "AmountOfTimesTaken": 6
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -155,7 +155,7 @@
     "Name": "тест бинарный",
     "Description": "0 или 1? вот в чём вопрос...",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 1
+    "AmountOfTimesTaken": 2
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -229,6 +229,6 @@
     "Name": "тест по именам",
     "Description": "этот тест позволит вам узнать вашу соместимость, рассчитанную с использованием ваших имен.",
     "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 3
+    "AmountOfTimesTaken": 4
   }
 ]
