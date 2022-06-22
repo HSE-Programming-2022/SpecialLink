@@ -34,11 +34,12 @@ namespace SpecialLink.Design
         public Registration()
         {
             InitializeComponent();
-            /*byte[] p = ComputePasswordHash("adminMaria", _salt);
+            /*byte[] p = ComputePasswordHash("admin", _salt);
             _storage.GetPersons.Add(new Admin()
             {
-                Login = "adminMaria",
-                Password = p
+                Login = "admin",
+                Password = p,
+                Salt = _salt
             }
             );
             _storage.Save(); */
