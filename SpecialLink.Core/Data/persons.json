@@ -127,14 +127,23 @@
     "Name": "Анита",
     "Email": "anitargazizova@gmail.com",
     "ImageSource": "profile_3.jpg",
-    "Results": [],
+    "Results": [
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Лев",
+        "SecondValue": "Лев",
+        "TestName": "Совместимость по знаку зодиака",
+        "Score": 100,
+        "Explanation": "Блестящая совместимость. Представители этого знака ценят ярких и уверенных в себе людей, и готовы от всей души одаривать их вниманием."
+      }
+    ],
     "Login": "f-sunshine",
     "Password": "lTuWp7ci/kAJPgCrvVoeJB6v93k=",
     "Salt": 1336478422
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-22T17:13:40.4768309+03:00",
+    "LastLogin": "2022-06-23T02:04:31.4828271+03:00",
     "Login": "admin",
     "Password": "Vy//fCfWv0vVmr13bAQEKrW4JOU=",
     "Salt": -1573236941
