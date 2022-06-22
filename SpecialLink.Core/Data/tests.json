@@ -101,7 +101,7 @@
     "Name": "Вопросы Анны Ахматовой",
     "Description": "Эти три вопроса Ахматова задавала людям, чтобы понять, какой у них типаж.",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 3
+    "AmountOfTimesTaken": 4
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -129,35 +129,6 @@
     "Description": "Гейские приколы для тестинга окна для этого типа тестов",
     "ImageSource": "icon_1.jpg",
     "AmountOfTimesTaken": 12
-  },
-  {
-    "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
-    "Explanations": [
-      {
-        "LowestScore": 0,
-        "HighestScore": 24,
-        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
-      },
-      {
-        "LowestScore": 25,
-        "HighestScore": 49,
-        "Explanation": "У вас есть шансы, но их мало..."
-      },
-      {
-        "LowestScore": 50,
-        "HighestScore": 74,
-        "Explanation": "Достаточно хорошая совметимость, но не исключены недопонимания"
-      },
-      {
-        "LowestScore": 75,
-        "HighestScore": 100,
-        "Explanation": "Ого! Да вы просто созданы друг для друга!"
-      }
-    ],
-    "Name": "тест по фамилиям",
-    "Description": "тест анализирует совместимость по фамилиям",
-    "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 1
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -229,6 +200,35 @@
     "Name": "Любимый напиток",
     "Description": "определим вашу совместимость по вашем любимым напиткам <3",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 6
+    "AmountOfTimesTaken": 7
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях может быть много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "Нельзя сказать, что ваша совместимость оптимальна, но все же она не ноль :)"
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Это очень даже неплохой результат! Ваши отношения могут быть очень успешными."
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Поздравляем, ваши отношения имеют феноменальные шансы на успех. Цените вашего друга или партнера!"
+      }
+    ],
+    "Name": "тест по именам",
+    "Description": "этот тест позволит вам узнать вашу соместимость, рассчитанную с использованием ваших имен.",
+    "ImageSource": "icon_3.jpg",
+    "AmountOfTimesTaken": 2
   }
 ]
