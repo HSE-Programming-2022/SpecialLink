@@ -48,7 +48,7 @@ namespace SpecialLink.Design.AdminWindows.CreateTests
         {
             if (nameTextBox.Text != "")
             {
-                string forCheckeing = "тест " + nameTextBox.Text;
+                string forCheckeing = "Тест " + nameTextBox.Text;
                 if (CheckName(forCheckeing))
                 {
                     MessageBox.Show("Ой, тест 'по словам' с таким названием уже создан");
@@ -58,7 +58,7 @@ namespace SpecialLink.Design.AdminWindows.CreateTests
                 {
                     ComputationBasedTest computationBasedTest = new ComputationBasedTest();
                     computationBasedTest.ImageSource = "icon_3.jpg";
-                    computationBasedTest.Name = "тест " + nameTextBox.Text;
+                    computationBasedTest.Name = "Тест " + nameTextBox.Text;
                     if (descriptionTextBox.Text != "")
                     {
                         computationBasedTest.Description = descriptionTextBox.Text;

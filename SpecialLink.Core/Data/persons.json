@@ -107,7 +107,7 @@
     "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
     "Name": "Викса",
     "Email": "sveshherb2002@gmail.com",
-    "ImageSource": "profile_3.jpg",
+    "ImageSource": "profile_1.jpg",
     "Results": [
       {
         "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
@@ -116,11 +116,26 @@
         "TestName": "тест бинарный",
         "Score": 99,
         "Explanation": "два нолика это почти сотня"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "кошка",
+        "SecondValue": "собака",
+        "TestName": "Кошки или собаки?",
+        "Score": 78,
+        "Explanation": "всё сложно: либо идеальная пара, либо постоянные ссоры"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 3,
+        "TestName": "Cчастливы ли вы вместе?",
+        "Score": 80,
+        "Explanation": "Поздравляем, ваши отношения имеют феноменальные шансы на успех, если вы, конечно, честно проходили наш тест)) Цените вашего друга или партнера!"
       }
     ],
-    "Login": "SLink4",
-    "Password": "or/3UsOfvsY5Nx43MQFmjjNMjgE=",
-    "Salt": -2099070700
+    "Login": "12345",
+    "Password": "abgURkdzVP3plRPgDvc2kE6MNRE=",
+    "Salt": 1794211985
   },
   {
     "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
@@ -134,7 +149,7 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-22T17:13:40.4768309+03:00",
+    "LastLogin": "2022-06-22T23:35:06.1585312+03:00",
     "Login": "admin",
     "Password": "Vy//fCfWv0vVmr13bAQEKrW4JOU=",
     "Salt": -1573236941
