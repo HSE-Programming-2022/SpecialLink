@@ -43,6 +43,7 @@
 
                         <TextBox
                             Grid.Row="0"
+                            Cursor="IBeam"
                             Name="loginTextBox"
                             Margin="10"
                             Width="257"
@@ -60,6 +61,7 @@
 
                         <PasswordBox
                             Grid.Row="1"
+                            Cursor="IBeam"
                             Width="257"
                             HorizontalAlignment="Left"
                             Name="PasswordTextBox"

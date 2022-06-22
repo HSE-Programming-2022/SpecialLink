@@ -43,6 +43,7 @@
                             FontSize="20"/>
 
                         <TextBox
+                            Cursor="IBeam"
                             Grid.Row="0"
                             Name="NameTextBox"
                             Margin="10"
@@ -59,6 +60,7 @@
                             FontSize="20"/>
 
                         <TextBox
+                            Cursor="IBeam"
                             Grid.Row="1"
                             Name="emailTextBox"
                             Margin="10"
