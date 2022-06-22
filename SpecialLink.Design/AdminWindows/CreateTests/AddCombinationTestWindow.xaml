@@ -270,10 +270,25 @@
                 Click="AddFullTestButton_Click"
                 Content="Добавить тест" 
                 Foreground="GhostWhite" 
-                Grid.Column="2" 
+                Grid.Column="2"
+                HorizontalAlignment="Left"
                 Grid.Row="6" 
                 Cursor="Hand"
                 FontSize="17"
+                Width="150"
+                Margin="20 5 20 15 "
+                FontWeight="Bold"  />
+
+        <Button Name="ExitTestButton" 
+                Click="ExitTestButton_Click"
+                Content="Выйти" 
+                Foreground="GhostWhite" 
+                Grid.Column="2"
+                HorizontalAlignment="Right"
+                Grid.Row="6" 
+                Cursor="Hand"
+                FontSize="17"
+                Width="150"
                 Margin="20 5 20 15 "
                 FontWeight="Bold"  />
 

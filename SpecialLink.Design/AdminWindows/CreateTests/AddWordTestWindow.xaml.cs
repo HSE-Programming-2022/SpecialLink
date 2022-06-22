@@ -79,5 +79,13 @@ namespace SpecialLink.Design.AdminWindows.CreateTests
             }
 
         }
+
+        private void ExitTestButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Тест не был создан :(");
+            AdminMenuWindow adminMenuWindow = new AdminMenuWindow(_admin);
+            adminMenuWindow.Show();
+            Close();
+        }
     }
 }
