@@ -48,7 +48,7 @@
                             Width="257"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Bottom"
-                            Background="LightGray"/>
+                            Background="LightGray" />
 
                         <TextBlock
                             Name="NameTextBlock"
@@ -58,7 +58,7 @@
                             VerticalAlignment="Top"
                             FontSize="20"/>
 
-                        <PasswordBox
+                        <TextBox
                             Grid.Row="1"
                             Width="257"
                             HorizontalAlignment="Left"

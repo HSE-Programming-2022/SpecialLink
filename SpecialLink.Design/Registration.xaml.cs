@@ -34,12 +34,6 @@ namespace SpecialLink.Design
         public Registration()
         {
             InitializeComponent();
-        }
-
-        public Registration(int salt)
-        {
-            _salt = salt;
-            InitializeComponent();
             /*byte[] p = ComputePasswordHash("adminMaria", _salt);
             _storage.GetPersons.Add(new Admin()
             {
@@ -48,6 +42,14 @@ namespace SpecialLink.Design
             }
             );
             _storage.Save(); */
+        }
+
+        private void GenerateSaltForPassword()
+        {
+            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+            byte[] saltBytes = new byte[4];
+            rng.GetNonZeroBytes(saltBytes);
+            _salt = (((int)saltBytes[0]) << 24) + (((int)saltBytes[1]) << 16) + (((int)saltBytes[2]) << 8) + ((int)saltBytes[3]);
         }
 
         public void GenerateLog()
@@ -114,13 +116,13 @@ namespace SpecialLink.Design
             {
                 Login = _log,
                 Password = password,
+                Salt = _salt,
                 Name = _name,
-                Email = _email
+                Email = _email,
             }
             );
             _storage.Save();
         }
-
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
@@ -145,6 +147,7 @@ namespace SpecialLink.Design
                 MessageBox.Show("Неверный формат почты! Пожалйста, попробуйте снова!");
                 return;
             }
+            GenerateSaltForPassword();
             NewUserCreation();
         }
     }

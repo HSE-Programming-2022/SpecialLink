@@ -95,22 +95,68 @@ namespace SpecialLink.Design
             _storage.Save(); */
         }
 
-        private static int GenerateSaltForPassword()
+        private byte[] ComputePasswordHash(string password, int salt)
         {
-            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
             byte[] saltBytes = new byte[4];
-            rng.GetNonZeroBytes(saltBytes);
-            return (((int)saltBytes[0]) << 24) + (((int)saltBytes[1]) << 16) + (((int)saltBytes[2]) << 8) + ((int)saltBytes[3]);
+            saltBytes[0] = (byte)(salt >> 24);
+            saltBytes[1] = (byte)(salt >> 16);
+            saltBytes[2] = (byte)(salt >> 8);
+            saltBytes[3] = (byte)(salt);
+
+            byte[] passwordBytes = UTF8Encoding.UTF8.GetBytes(password);
+
+            byte[] preHashed = new byte[saltBytes.Length + passwordBytes.Length];
+            System.Buffer.BlockCopy(passwordBytes, 0, preHashed, 0, passwordBytes.Length);
+            System.Buffer.BlockCopy(saltBytes, 0, preHashed, passwordBytes.Length, saltBytes.Length);
+
+            SHA1 sha1 = SHA1.Create();
+            return sha1.ComputeHash(preHashed);
         }
 
-        int salt = GenerateSaltForPassword();
+        private bool IsPasswordValid(string passwordToValidate, int salt, byte[] correctPasswordHash)
+        {
+            byte[] hashedPassword = ComputePasswordHash(passwordToValidate, salt);
+
+            return hashedPassword.SequenceEqual(correctPasswordHash);
+        }
 
         private void Autorization_Click(object sender, RoutedEventArgs e)
         {
-            User user = _storage.GetPersons[0] as User;
-            UserMenuWindow userMenuWindow = new UserMenuWindow(user);
-            userMenuWindow.Show();
-            this.Close(); 
+            foreach (var person in _storage.GetPersons)
+            {
+                if (person.Login == loginTextBox.Text)
+                {
+                    if (IsPasswordValid(PasswordTextBox.Text, person.Salt, person.Password))
+                    {
+                        if (person is User)
+                        {
+                            UserMenuWindow userMenuWindow = new UserMenuWindow(person as User);
+                            userMenuWindow.Show();
+                            Close();
+                            return;
+                        }
+                        if (person is Admin)
+                        {
+                            AdminMenuWindow adminMenuWindow = new AdminMenuWindow(person as Admin);
+                            adminMenuWindow.Show();
+                            Close();
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Неверный пароль. Введите корректный пароль и попробуйте еще раз.");
+                        return;
+                    }
+                }
+                MessageBox.Show("Пользователь с таким логином не найден в системе. Введите корректный логин и попробуйте еще раз.");
+                return;
+            }
+
+            //User user = _storage.GetPersons[0] as User;
+            //UserMenuWindow userMenuWindow = new UserMenuWindow(user);
+            //userMenuWindow.Show();
+            //this.Close(); 
 
             /*Admin admin = _storage.GetPersons[2] as Admin;
 
@@ -125,7 +171,7 @@ namespace SpecialLink.Design
 
         private void Registration_Click(object sender, RoutedEventArgs e)
         {
-            Registration registration = new Registration(salt);
+            Registration registration = new Registration();
             registration.Show();
             Close();
         }
