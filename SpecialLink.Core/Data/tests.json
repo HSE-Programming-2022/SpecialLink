@@ -3,61 +3,6 @@
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
     "Questions": [
       {
-        "QuestionText": "знаю любимый цвет",
-        "FirstAnswer": "да",
-        "SecondAnswer": "нет",
-        "Weight": 1
-      },
-      {
-        "QuestionText": "знаю любимый чай",
-        "FirstAnswer": "да",
-        "SecondAnswer": "нет",
-        "Weight": 1
-      },
-      {
-        "QuestionText": "любите гулять?",
-        "FirstAnswer": "точно нет",
-        "SecondAnswer": "да!",
-        "Weight": 1
-      },
-      {
-        "QuestionText": "она/он носит носки?",
-        "FirstAnswer": "да...",
-        "SecondAnswer": "конечно, нет",
-        "Weight": 1
-      }
-    ],
-    "Explanations": [
-      {
-        "LowestScore": 0,
-        "HighestScore": 24,
-        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
-      },
-      {
-        "LowestScore": 25,
-        "HighestScore": 49,
-        "Explanation": "У вас есть шансы на будущее, но их мало..."
-      },
-      {
-        "LowestScore": 50,
-        "HighestScore": 74,
-        "Explanation": "Вы достаточно хорошо знаете друг друга"
-      },
-      {
-        "LowestScore": 75,
-        "HighestScore": 100,
-        "Explanation": "Ого! Да вы просто созданы друг для друга!"
-      }
-    ],
-    "Name": "Тест на дружбу",
-    "Description": "тест на определение крепкой дружбы",
-    "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 8
-  },
-  {
-    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
-    "Questions": [
-      {
         "QuestionText": "Кошки или собаки?",
         "FirstAnswer": "Кошки",
         "SecondAnswer": "Собаки",
@@ -102,33 +47,6 @@
     "Description": "Эти три вопроса Ахматова задавала людям, чтобы понять, какой у них типаж.",
     "ImageSource": "icon_2.jpg",
     "AmountOfTimesTaken": 6
-  },
-  {
-    "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
-    "Combinations": [
-      {
-        "FirstValue": "мужской пол",
-        "SecondValue": "мужской пол",
-        "Score": 100,
-        "Explanation": "10/10, вы прекрасны, ВШЭ хочет вас в студенты."
-      },
-      {
-        "FirstValue": "мужской пол",
-        "SecondValue": "женский пол",
-        "Score": 78,
-        "Explanation": "Не ужасно, но могло бы быть и лучше."
-      },
-      {
-        "FirstValue": "женский пол",
-        "SecondValue": "женский пол",
-        "Score": 100,
-        "Explanation": "О-о, у вас хороший вкус. Так держать, вы шикарны!"
-      }
-    ],
-    "Name": "Тест по гендерной совместимости",
-    "Description": "Гейские приколы для тестинга окна для этого типа тестов",
-    "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 12
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -706,7 +624,7 @@
     "Name": "Совместимость по знаку зодиака",
     "Description": "данный тест позволит вам узнать уровень вашей совместимости по знаку зодиака. Важно заметить, что наш тест не является истиной в последней инстанции и был создан, чтобы вызывать положительные эмоции. Если вы не согласны с результатами, смело игнорируйте их :)",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 1
+    "AmountOfTimesTaken": 2
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -733,7 +651,7 @@
     "Name": "Кошки или собаки?",
     "Description": "этот тест определит ваши скрытые мотивы поведения в отношениях",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 1
+    "AmountOfTimesTaken": 2
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
@@ -793,6 +711,115 @@
     ],
     "Name": "Cчастливы ли вы вместе?",
     "Description": "Отвечайте искренне, ведь от этого зависит результат для вас обоих",
+    "ImageSource": "icon_2.jpg",
+    "AmountOfTimesTaken": 2
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
+    "Questions": [
+      {
+        "QuestionText": "Горы или море?",
+        "FirstAnswer": "Горы",
+        "SecondAnswer": "Море",
+        "Weight": 1
+      },
+      {
+        "QuestionText": "Встать пораньше или поспать подольше?",
+        "FirstAnswer": "Встать пораньше",
+        "SecondAnswer": "Поспать подольше",
+        "Weight": 2
+      },
+      {
+        "QuestionText": "Как бы вы предпочли провести свой единственный выходной?",
+        "FirstAnswer": "Остаться дома, заказать вкусную еду и посмотреть новую серию сериала",
+        "SecondAnswer": "Встать пораньше, поехать загород и устроить пикник",
+        "Weight": 4
+      },
+      {
+        "QuestionText": "Вы вышли из метро. До вашего места назначения можно дойти через парк или доехать на автобусе. Как вы поступите?",
+        "FirstAnswer": "Погода хорошая, почему бы и не прогуляться",
+        "SecondAnswer": "Подожду автобуса. Зачем идти пешком, если можно сэкономить время и силы?",
+        "Weight": 2
+      },
+      {
+        "QuestionText": "Пойти в клуб или остаться дома?",
+        "FirstAnswer": "Клуб, конечно.",
+        "SecondAnswer": "Останусь дома, не особо люблю ходить в клубы.",
+        "Weight": 2
+      },
+      {
+        "QuestionText": "Вам выдали сертификат для посещения курсов. Что вы выберете?",
+        "FirstAnswer": "Курс по рисованию.",
+        "SecondAnswer": "Курс по актерскому мастерству.",
+        "Weight": 1
+      },
+      {
+        "QuestionText": "Кто вы?",
+        "FirstAnswer": "интроверт",
+        "SecondAnswer": "экстраверт",
+        "Weight": 3
+      },
+      {
+        "QuestionText": "Вас позвали на свидание и предложили выбрать то, чем вы будете заниматься. Что вы выберете?",
+        "FirstAnswer": "Посиделки в уютном кото-кафе.",
+        "SecondAnswer": "Прогулка по центру города.",
+        "Weight": 2
+      },
+      {
+        "QuestionText": "Ходите в зал?",
+        "FirstAnswer": "да",
+        "SecondAnswer": "нет",
+        "Weight": 1
+      },
+      {
+        "QuestionText": "Хотели бы вы прыгнуть с парашутом?",
+        "FirstAnswer": "разумеется нет",
+        "SecondAnswer": "да!",
+        "Weight": 1
+      },
+      {
+        "QuestionText": "Когда вы последний раз читали книгу?",
+        "FirstAnswer": "Недавно (1-2 недели назад)",
+        "SecondAnswer": "Больше двух недель назад.",
+        "Weight": 2
+      },
+      {
+        "QuestionText": "Что думаете про аниме?",
+        "FirstAnswer": "Если честно, странная штука. Не понимаю как взрослые люди смотрят эти мультики.",
+        "SecondAnswer": "Смотрю аниме/ Не смотрю, но понимаю, почему оно нравится людям.",
+        "Weight": 2
+      },
+      {
+        "QuestionText": "Предпочтете посмотреть фильм дома или в кино?",
+        "FirstAnswer": "В кино! Это делает просмотр фильма особенным.",
+        "SecondAnswer": "Дома, без лишних людей и рекламы.",
+        "Weight": 1
+      }
+    ],
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях может быть много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "В ваших отношениях могут быть разногласия и, время от времени, даже ссоры. Важно с самого начала обсудить значимые для вас вещи!"
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Достаточно хорошая совместимость, но не исключены недопонимания. Почаще общайтесь на важные для вас темы!"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Это невероятный результат. Уровень вашей совместимости вызывает белую зависть у окружающих. А мы просто очень рады за вас."
+      }
+    ],
+    "Name": "Совместимость по предпочтениям в проведении досуга",
+    "Description": "этот тест позволит вам понять, совместимы ли вы с человеком исходя из того, как вы предпочитаете проводить свое свободное время.",
     "ImageSource": "icon_2.jpg",
     "AmountOfTimesTaken": 1
   }
