@@ -201,7 +201,7 @@ namespace SpecialLink.Design.AdminWindows.CreateTests
                 number = -1;
             }
 
-            if (number > 0 & number < 101)
+            if (number >= 0 & number < 101)
             {
                 return number;
             }
