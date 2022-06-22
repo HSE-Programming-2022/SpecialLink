@@ -10,5 +10,6 @@ namespace SpecialLink.Core.Models.People
     {
         public string Login { get; set; }
         public byte[] Password { get; set; }
+        public int Salt { get; set; }
     }
 }

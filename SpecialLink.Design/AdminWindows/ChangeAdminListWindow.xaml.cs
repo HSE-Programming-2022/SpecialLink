@@ -106,6 +106,7 @@ namespace SpecialLink.Design.AdminWindows
                     Admin admin = new Admin();
                     admin.Login = child2Login.Text;
                     admin.Password = ComputePasswordHash(child4Password.Password, salt);
+                    admin.Salt = salt;
 
                     _storage.GetPersons.Add(admin);
                     _storage.Save();

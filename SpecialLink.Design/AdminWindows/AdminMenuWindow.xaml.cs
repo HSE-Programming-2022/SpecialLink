@@ -183,6 +183,7 @@ namespace SpecialLink.Design.AdminWindows
 
                 int index = _storage.GetPersons.FindIndex(a => a.Login == _admin.Login);
                 _storage.GetPersons[index].Password = ComputePasswordHash(child2.Password, salt);
+                _storage.GetPersons[index].Salt = salt;
                 _storage.Save();
 
                 MessageBox.Show("Пароль успешно изменён");
