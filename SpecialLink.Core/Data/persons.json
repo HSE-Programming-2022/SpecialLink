@@ -173,6 +173,13 @@
         "TestName": "Совместимость по знаку зодиака",
         "Score": 10,
         "Explanation": "Повышенная эмоциональность и импульсивность овнов конфликтует с прагматичностью козерогов. В таких отношениях немало ссор и разногласий."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 5,
+        "TestName": "Совместимость по предпочтениям в проведении досуга",
+        "Score": 37,
+        "Explanation": "В ваших отношениях могут быть разногласия и, время от времени, даже ссоры. Важно с самого начала обсудить значимые для вас вещи!"
       }
     ],
     "Login": "f-sunshine",
@@ -181,7 +188,7 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-23T02:23:03.9850239+03:00",
+    "LastLogin": "2022-06-23T02:52:19.7582695+03:00",
     "Login": "admin",
     "Password": "Vy//fCfWv0vVmr13bAQEKrW4JOU=",
     "Salt": -1573236941
