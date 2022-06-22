@@ -52,7 +52,7 @@
     "Name": "тест на дружбу",
     "Description": "тест на определение крепкой дружбы",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 7
+    "AmountOfTimesTaken": 8
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
@@ -101,7 +101,7 @@
     "Name": "Вопросы Анны Ахматовой",
     "Description": "Эти три вопроса Ахматова задавала людям, чтобы понять, какой у них типаж.",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 4
+    "AmountOfTimesTaken": 5
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -200,7 +200,7 @@
     "Name": "Любимый напиток",
     "Description": "определим вашу совместимость по вашем любимым напиткам <3",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 7
+    "AmountOfTimesTaken": 8
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
@@ -229,6 +229,6 @@
     "Name": "тест по именам",
     "Description": "этот тест позволит вам узнать вашу соместимость, рассчитанную с использованием ваших имен.",
     "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 2
+    "AmountOfTimesTaken": 3
   }
 ]
