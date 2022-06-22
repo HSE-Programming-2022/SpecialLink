@@ -39,10 +39,15 @@ namespace SpecialLink.Design.UserWindows.ChangeWindows
                 ParameterTextBlock.Text = "Ваше имя: " + _user.Name;
                 NewParameterTextBlock.Text = "Новое имя: ";
             }
-            else
+            else if (_type == "login")
             {
                 ParameterTextBlock.Text = "Ваш логин: " + _user.Login;
                 NewParameterTextBlock.Text = "Новый логин: ";
+            }
+            else if (_type == "pass")
+            {
+                ParameterTextBlock.Text = "";
+                NewParameterTextBlock.Text = "Новый пароль: ";
             }
         }
 
@@ -90,6 +95,14 @@ namespace SpecialLink.Design.UserWindows.ChangeWindows
                     }
                 }
             }
+            else if (_type == "pass")
+            {
+                // вот сюда нужно вставить логику. Если пароль успешно меняется, прибавь к значению flag единицу.
+                // после сохранения в storage присвой _user значение соответствующего аккаунта из хранилища, как внизу
+                //_user = person as User;
+                //flag += 1;
+                MessageBox.Show("Testing complete");
+            }
             if (flag > 0)
             {
                 ChoosingChangeWindow choosingChangeWindow = new ChoosingChangeWindow(_user);
@@ -122,7 +135,7 @@ namespace SpecialLink.Design.UserWindows.ChangeWindows
                 flag = false;
                 MessageBox.Show("Нельзя задать пустой логин.");
             }
-            if (login == "f")
+            if (login.Substring(0,5) == "SLink")
             {
                 flag = false;
                 MessageBox.Show("Нельзя использовать стандартный паттерн для генерирования логинов. Пожалуйста, используйте другой тип логина.");
