@@ -126,7 +126,7 @@ namespace SpecialLink.Design
             {
                 if (person.Login == loginTextBox.Text)
                 {
-                    if (IsPasswordValid(PasswordTextBox.Text, person.Salt, person.Password))
+                    if (IsPasswordValid(PasswordTextBox.Password, person.Salt, person.Password))
                     {
                         if (person is User)
                         {
