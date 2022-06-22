@@ -3,6 +3,7 @@ using SpecialLink.Core.Models.People;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -51,6 +52,33 @@ namespace SpecialLink.Design.UserWindows.ChangeWindows
             }
         }
 
+        private static int GenerateSaltForPassword()
+        {
+            RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+            byte[] saltBytes = new byte[4];
+            rng.GetNonZeroBytes(saltBytes);
+            return (((int)saltBytes[0]) << 24) + (((int)saltBytes[1]) << 16) + (((int)saltBytes[2]) << 8) + ((int)saltBytes[3]);
+        }
+
+        int salt = GenerateSaltForPassword();
+
+        private byte[] ComputePasswordHash(string password, int salt)
+        {
+            byte[] saltBytes = new byte[4];
+            saltBytes[0] = (byte)(salt >> 24);
+            saltBytes[1] = (byte)(salt >> 16);
+            saltBytes[2] = (byte)(salt >> 8);
+            saltBytes[3] = (byte)(salt);
+
+            byte[] passwordBytes = UTF8Encoding.UTF8.GetBytes(password);
+
+            byte[] preHashed = new byte[saltBytes.Length + passwordBytes.Length];
+            System.Buffer.BlockCopy(passwordBytes, 0, preHashed, 0, passwordBytes.Length);
+            System.Buffer.BlockCopy(saltBytes, 0, preHashed, passwordBytes.Length, saltBytes.Length);
+
+            SHA1 sha1 = SHA1.Create();
+            return sha1.ComputeHash(preHashed);
+        }
 
         private void SaveChangesButton_Click(object sender, RoutedEventArgs e)
         {
@@ -97,11 +125,19 @@ namespace SpecialLink.Design.UserWindows.ChangeWindows
             }
             else if (_type == "pass")
             {
-                // вот сюда нужно вставить логику. Если пароль успешно меняется, прибавь к значению flag единицу.
-                // после сохранения в storage присвой _user значение соответствующего аккаунта из хранилища, как внизу
-                //_user = person as User;
-                //flag += 1;
-                MessageBox.Show("Testing complete");
+                byte[] password = ComputePasswordHash(NewParameterTextBox.Text, salt);
+                foreach (var person in _storage.GetPersons)
+                {
+                    if (person.Login == _user.Login)
+                    {
+                        (person as User).Password = password;
+                        (person as User).Salt = salt;
+                        _storage.Save();
+                        _user = person as User;
+                        flag += 1;
+                        break;
+                    }
+                }
             }
             if (flag > 0)
             {
