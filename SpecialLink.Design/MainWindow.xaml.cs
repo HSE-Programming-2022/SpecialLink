@@ -107,18 +107,20 @@ namespace SpecialLink.Design
 
         private void Autorization_Click(object sender, RoutedEventArgs e)
         {
-            /*User user = _storage.GetPersons[1] as User;
+            User user = _storage.GetPersons[0] as User;
             UserMenuWindow userMenuWindow = new UserMenuWindow(user);
             userMenuWindow.Show();
-            this.Close(); */
+            this.Close(); 
 
-            Admin admin = _storage.GetPersons[2] as Admin;
+            /*Admin admin = _storage.GetPersons[2] as Admin;
 
             AdminMenuWindow adminMenuWindow = new AdminMenuWindow(admin);
             adminMenuWindow.Show();
-            Close();
+            Close(); */
 
             // Маша тебе нужно здесь сделать авторизацию тк я хз как там с хешированием паролей проверка работает
+            // потенциальная проблема! если ты генерируешь соль каждый раз, когда запускаешь приложение, как ты будешь проверять пароли?
+            // у тебя получатся разные пароли, если я правильно поняла.
         }
 
         private void Registration_Click(object sender, RoutedEventArgs e)

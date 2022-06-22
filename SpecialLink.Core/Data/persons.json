@@ -4,7 +4,23 @@
     "Name": "Машуля",
     "Email": "ovechkina-2015@yandex.ru",
     "ImageSource": "profile_5.jpg",
-    "Results": [],
+    "Results": [
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Маша",
+        "SecondValue": "Анита",
+        "TestName": "тест по именам",
+        "Score": 29,
+        "Explanation": "Нельзя сказать, что ваша совместимость оптимальна, но все же она не ноль :)"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 2,
+        "TestName": "Вопросы Анны Ахматовой",
+        "Score": 66,
+        "Explanation": "Вы достаточно хорошо знаете друг друга"
+      }
+    ],
     "Login": "SLink0",
     "Password": "oSIlxBFQP7z7KKICrSNxpNkNrxQ="
   },
@@ -21,6 +37,14 @@
         "TestName": "Любимый напиток",
         "Score": 100,
         "Explanation": "Вы будете заваривать литровые чайники любимого чая друг друга, а в комнате всегда будет витать приятный аромат."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Анита",
+        "SecondValue": "Виктория",
+        "TestName": "тест по именам",
+        "Score": 49,
+        "Explanation": "Нельзя сказать, что ваша совместимость оптимальна, но все же она не ноль :)"
       }
     ],
     "Login": "f-sunshine",
@@ -28,7 +52,7 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-22T02:34:17.0951392+03:00",
+    "LastLogin": "2022-06-22T03:28:17.6059647+03:00",
     "Login": "admin",
     "Password": "E7FXl2dbrHUYnVw++uimsgrPm8s="
   },
@@ -37,5 +61,11 @@
     "LastLogin": "0001-01-01T00:00:00",
     "Login": "adminAnita",
     "Password": "xaK4N9u7K/jmO8j1mlMicA7wYws="
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
+    "LastLogin": "2022-06-22T02:37:43.4512599+03:00",
+    "Login": "adminMaria",
+    "Password": "O8T4+eWsgKLYHLNtTIOa1OJVyCQ="
   }
 ]

@@ -40,12 +40,11 @@ namespace SpecialLink.Design
         {
             _salt = salt;
             InitializeComponent();
-            /*byte[] p = ComputePasswordHash("admin", _salt);
+            /*byte[] p = ComputePasswordHash("adminMaria", _salt);
             _storage.GetPersons.Add(new Admin()
             {
-                Login = "admin",
-                Password = p,
-                LastLogin = DateTime.Now
+                Login = "adminMaria",
+                Password = p
             }
             );
             _storage.Save(); */
