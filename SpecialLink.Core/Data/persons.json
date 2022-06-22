@@ -66,5 +66,60 @@
     "Login": "Pussy Destroyer",
     "Password": "i47ByJ77ACyHlROdUuQdK9IY9JU=",
     "Salt": -1102400086
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
+    "Name": "Виктория",
+    "Email": "shchvirra02@gmail.com",
+    "ImageSource": "profile_12.jpg",
+    "Results": [],
+    "Login": "SLink2",
+    "Password": "mdz/GXbQN3O6gO/UQ4IrDLl7uN8=",
+    "Salt": 549945963
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
+    "Name": "Vika",
+    "Email": "shchvirra02@gmail.com",
+    "ImageSource": "profile_12.jpg",
+    "Results": [
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Вика",
+        "SecondValue": "Вадим",
+        "TestName": "тест по именам",
+        "Score": 81,
+        "Explanation": "Поздравляем, ваши отношения имеют феноменальные шансы на успех. Цените вашего друга или партнера!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 2,
+        "TestName": "Вопросы Анны Ахматовой",
+        "Score": 66,
+        "Explanation": "Вы достаточно хорошо знаете друг друга"
+      }
+    ],
+    "Login": "SLink3",
+    "Password": "R5Ccze1dpQpuvH2yqBCaOv3i5t4=",
+    "Salt": 542030542
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
+    "Name": "Викса",
+    "Email": "sveshherb2002@gmail.com",
+    "ImageSource": "profile_3.jpg",
+    "Results": [
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "0",
+        "SecondValue": "0",
+        "TestName": "тест бинарный",
+        "Score": 99,
+        "Explanation": "два нолика это почти сотня"
+      }
+    ],
+    "Login": "SLink4",
+    "Password": "or/3UsOfvsY5Nx43MQFmjjNMjgE=",
+    "Salt": -2099070700
   }
 ]
