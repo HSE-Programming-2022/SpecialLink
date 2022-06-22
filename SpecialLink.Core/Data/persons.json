@@ -150,6 +150,29 @@
         "TestName": "Совместимость по знаку зодиака",
         "Score": 100,
         "Explanation": "Блестящая совместимость. Представители этого знака ценят ярких и уверенных в себе людей, и готовы от всей души одаривать их вниманием."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 3,
+        "TestName": "Cчастливы ли вы вместе?",
+        "Score": 60,
+        "Explanation": "Процент вашей совместимости достаточно высок, однако, не стоит забывать, что это не гарант идеальных отношений :)"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "кошка",
+        "SecondValue": "кошка",
+        "TestName": "Кошки или собаки?",
+        "Score": 60,
+        "Explanation": "вы будете бесить друг друга своим эгоизмом и чрезмерной харизматичностью, хороший союз может выйти, но не во всех случаях"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Козерог",
+        "SecondValue": "Овен",
+        "TestName": "Совместимость по знаку зодиака",
+        "Score": 10,
+        "Explanation": "Повышенная эмоциональность и импульсивность овнов конфликтует с прагматичностью козерогов. В таких отношениях немало ссор и разногласий."
       }
     ],
     "Login": "f-sunshine",
@@ -158,7 +181,7 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-23T02:04:31.4828271+03:00",
+    "LastLogin": "2022-06-23T02:23:03.9850239+03:00",
     "Login": "admin",
     "Password": "Vy//fCfWv0vVmr13bAQEKrW4JOU=",
     "Salt": -1573236941

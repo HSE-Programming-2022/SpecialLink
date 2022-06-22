@@ -3,61 +3,6 @@
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
     "Questions": [
       {
-        "QuestionText": "знаю любимый цвет",
-        "FirstAnswer": "да",
-        "SecondAnswer": "нет",
-        "Weight": 1
-      },
-      {
-        "QuestionText": "знаю любимый чай",
-        "FirstAnswer": "да",
-        "SecondAnswer": "нет",
-        "Weight": 1
-      },
-      {
-        "QuestionText": "любите гулять?",
-        "FirstAnswer": "точно нет",
-        "SecondAnswer": "да!",
-        "Weight": 1
-      },
-      {
-        "QuestionText": "она/он носит носки?",
-        "FirstAnswer": "да...",
-        "SecondAnswer": "конечно, нет",
-        "Weight": 1
-      }
-    ],
-    "Explanations": [
-      {
-        "LowestScore": 0,
-        "HighestScore": 24,
-        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
-      },
-      {
-        "LowestScore": 25,
-        "HighestScore": 49,
-        "Explanation": "У вас есть шансы на будущее, но их мало..."
-      },
-      {
-        "LowestScore": 50,
-        "HighestScore": 74,
-        "Explanation": "Вы достаточно хорошо знаете друг друга"
-      },
-      {
-        "LowestScore": 75,
-        "HighestScore": 100,
-        "Explanation": "Ого! Да вы просто созданы друг для друга!"
-      }
-    ],
-    "Name": "Тест на дружбу",
-    "Description": "тест на определение крепкой дружбы",
-    "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 8
-  },
-  {
-    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
-    "Questions": [
-      {
         "QuestionText": "Кошки или собаки?",
         "FirstAnswer": "Кошки",
         "SecondAnswer": "Собаки",
@@ -102,33 +47,6 @@
     "Description": "Эти три вопроса Ахматова задавала людям, чтобы понять, какой у них типаж.",
     "ImageSource": "icon_2.jpg",
     "AmountOfTimesTaken": 6
-  },
-  {
-    "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
-    "Combinations": [
-      {
-        "FirstValue": "мужской пол",
-        "SecondValue": "мужской пол",
-        "Score": 100,
-        "Explanation": "10/10, вы прекрасны, ВШЭ хочет вас в студенты."
-      },
-      {
-        "FirstValue": "мужской пол",
-        "SecondValue": "женский пол",
-        "Score": 78,
-        "Explanation": "Не ужасно, но могло бы быть и лучше."
-      },
-      {
-        "FirstValue": "женский пол",
-        "SecondValue": "женский пол",
-        "Score": 100,
-        "Explanation": "О-о, у вас хороший вкус. Так держать, вы шикарны!"
-      }
-    ],
-    "Name": "Тест по гендерной совместимости",
-    "Description": "Гейские приколы для тестинга окна для этого типа тестов",
-    "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 12
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -706,7 +624,7 @@
     "Name": "Совместимость по знаку зодиака",
     "Description": "данный тест позволит вам узнать уровень вашей совместимости по знаку зодиака. Важно заметить, что наш тест не является истиной в последней инстанции и был создан, чтобы вызывать положительные эмоции. Если вы не согласны с результатами, смело игнорируйте их :)",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 1
+    "AmountOfTimesTaken": 2
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -733,7 +651,7 @@
     "Name": "Кошки или собаки?",
     "Description": "этот тест определит ваши скрытые мотивы поведения в отношениях",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 1
+    "AmountOfTimesTaken": 2
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
@@ -794,6 +712,6 @@
     "Name": "Cчастливы ли вы вместе?",
     "Description": "Отвечайте искренне, ведь от этого зависит результат для вас обоих",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 1
+    "AmountOfTimesTaken": 2
   }
 ]
