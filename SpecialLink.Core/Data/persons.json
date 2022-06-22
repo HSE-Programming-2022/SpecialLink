@@ -22,7 +22,7 @@
         "Explanation": "\"Я первый поставил воду!\" -- вот что вы нередко будете слышать, если только любитель кофе в вашей паре не пурист и не варит его в турке."
       }
     ],
-    "Login": "f-sunshine",
+    "Login": "sunshine",
     "Password": "D7Lj0q0OcHFX5L5nKQSrf83E8y8=",
     "Salt": 893838036
   },
@@ -121,5 +121,22 @@
     "Login": "SLink4",
     "Password": "or/3UsOfvsY5Nx43MQFmjjNMjgE=",
     "Salt": -2099070700
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
+    "Name": "Анита",
+    "Email": "anitargazizova@gmail.com",
+    "ImageSource": "profile_3.jpg",
+    "Results": [],
+    "Login": "f-sunshine",
+    "Password": "lTuWp7ci/kAJPgCrvVoeJB6v93k=",
+    "Salt": 1336478422
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
+    "LastLogin": "2022-06-22T16:41:45.8990614+03:00",
+    "Login": "admin",
+    "Password": "lPE5IWIdquDMnrjrWB+sPu+mgJw=",
+    "Salt": 0
   }
 ]
