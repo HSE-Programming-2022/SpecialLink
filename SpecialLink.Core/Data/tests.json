@@ -925,34 +925,5 @@
     "Description": "Система стилей любви — это метод для изучения того, как человек выражает свои чувства. Этот тест позволит определить Ваш стиль.",
     "ImageSource": "icon_2.jpg",
     "AmountOfTimesTaken": 2
-  },
-  {
-    "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
-    "Explanations": [
-      {
-        "LowestScore": 0,
-        "HighestScore": 24,
-        "Explanation": "Результат неутешительный, в ваших отношениях возможны споры и ссоры. Будьте аккуратней друг с другом!"
-      },
-      {
-        "LowestScore": 25,
-        "HighestScore": 49,
-        "Explanation": "У вас есть шансы, но их мало..."
-      },
-      {
-        "LowestScore": 50,
-        "HighestScore": 74,
-        "Explanation": "Процент вашей совместимости достаточно высок, однако, не стоит забывать, что проявлять внимание к партнеру тоже чрезвычайно важно."
-      },
-      {
-        "LowestScore": 75,
-        "HighestScore": 100,
-        "Explanation": "Вам повезло найти 'своего' человека. Цените его/ее/их!"
-      }
-    ],
-    "Name": "Тест по национальностям",
-    "Description": "Этот тест позволит узнать вашу совместимость по национальностям.",
-    "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 3
   }
 ]
