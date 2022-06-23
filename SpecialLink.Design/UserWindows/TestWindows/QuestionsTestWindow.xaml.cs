@@ -29,6 +29,8 @@ namespace SpecialLink.Design.UserWindows.TestWindows
         List<int> _firstPersonAnswers = new List<int>();
         List<int> _secondPersonAnswers = new List<int>();
         IStorage _storage = Factory.GetInstance().Storage;
+        List<int> _firstPersonAnswersChechk = new List<int>();
+        List<int> _secondPersonAnswersCHeck = new List<int>();
 
         public QuestionsTestWindow()
         {
@@ -49,11 +51,19 @@ namespace SpecialLink.Design.UserWindows.TestWindows
 
         private void FirstResultButton_Click(object sender, RoutedEventArgs e)
         {
-            QuestionsFirstListBox.IsEnabled = false;
-            QuestionsFirstListBox.ItemsSource = new List<string>();
-            QuestionsSecondListBox.ItemsSource = (_test as QuestionBasedTest).Questions;
-            FirstResultButton.IsEnabled = false;
-            SecondResultButton.IsEnabled = true;
+            if (_firstPersonAnswersChechk.Contains(0))
+            {
+                MessageBox.Show("Не все вопросы отвечены, нельзя перейти к тесту партнёра. Проверьте свои ответы ещё раз, пожалуйста");
+            }
+            else
+            {
+                QuestionsFirstListBox.IsEnabled = false;
+                QuestionsFirstListBox.ItemsSource = new List<string>();
+                QuestionsSecondListBox.ItemsSource = (_test as QuestionBasedTest).Questions;
+                FirstResultButton.IsEnabled = false;
+                SecondResultButton.IsEnabled = true;
+            }
+            
         }
 
         private void FLQuestionTextBlock_Initialized(object sender, EventArgs e)
@@ -100,35 +110,42 @@ namespace SpecialLink.Design.UserWindows.TestWindows
 
         private void SecondResultButton_Click(object sender, RoutedEventArgs e)
         {
-            QuestionsSecondListBox.IsEnabled = false;
-            QuestionsSecondListBox.ItemsSource = new List<string>();
-            SecondResultButton.IsEnabled = false;
-
-            Result result = _test.GetResult(_firstPersonAnswers, _secondPersonAnswers);
-            result.TestName = _test.Name;
-
-            foreach (var person in _storage.GetPersons)
+            if (_secondPersonAnswersCHeck.Contains(0))
             {
-                if (person.Login == _user.Login)
-                {
-                    (person as User).Results.Add(result);
-                    _storage.Save();
-                    _user = (person as User);
-                    break;
-                }
+                MessageBox.Show("Не все вопросы отвечены, нельзя перейти результатам теста. Проверьте свои ответы ещё раз, пожалуйста");
             }
-            foreach (var test in _storage.GetTests)
+            else
             {
-                if ((test.Name == _test.Name) && (test.Description == _test.Description))
+                QuestionsSecondListBox.IsEnabled = false;
+                QuestionsSecondListBox.ItemsSource = new List<string>();
+                SecondResultButton.IsEnabled = false;
+
+                Result result = _test.GetResult(_firstPersonAnswers, _secondPersonAnswers);
+                result.TestName = _test.Name;
+
+                foreach (var person in _storage.GetPersons)
                 {
-                    test.AmountOfTimesTaken += 1;
-                    _storage.Save();
-                    break;
+                    if (person.Login == _user.Login)
+                    {
+                        (person as User).Results.Add(result);
+                        _storage.Save();
+                        _user = (person as User);
+                        break;
+                    }
                 }
-            }
-            ResultsWindow resultsWindow = new ResultsWindow(result, _user);
-            resultsWindow.Show();
-            this.Close();
+                foreach (var test in _storage.GetTests)
+                {
+                    if ((test.Name == _test.Name) && (test.Description == _test.Description))
+                    {
+                        test.AmountOfTimesTaken += 1;
+                        _storage.Save();
+                        break;
+                    }
+                }
+                ResultsWindow resultsWindow = new ResultsWindow(result, _user);
+                resultsWindow.Show();
+                this.Close();
+            }           
         }
 
         private void FillAnswersList()
@@ -137,6 +154,8 @@ namespace SpecialLink.Design.UserWindows.TestWindows
             {
                 _firstPersonAnswers.Add(0);
                 _secondPersonAnswers.Add(0);
+                _firstPersonAnswersChechk.Add(0);
+                _secondPersonAnswersCHeck.Add(0);
             }
         }
 
@@ -149,6 +168,7 @@ namespace SpecialLink.Design.UserWindows.TestWindows
                 if ((_test as QuestionBasedTest).Questions[i].QuestionText == question.QuestionText)
                 {
                     _firstPersonAnswers[i] = 0;
+                    _firstPersonAnswersChechk[i] = 2;
                     break;
                 }
             }
@@ -163,6 +183,7 @@ namespace SpecialLink.Design.UserWindows.TestWindows
                 if ((_test as QuestionBasedTest).Questions[i].QuestionText == question.QuestionText)
                 {
                     _firstPersonAnswers[i] = 1;
+                    _firstPersonAnswersChechk[i] = 2;
                     break;
                 }
             }
@@ -177,6 +198,7 @@ namespace SpecialLink.Design.UserWindows.TestWindows
                 if ((_test as QuestionBasedTest).Questions[i].QuestionText == question.QuestionText)
                 {
                     _secondPersonAnswers[i] = 0;
+                    _secondPersonAnswersCHeck[i] = 2;
                     break;
                 }
             }
@@ -191,6 +213,7 @@ namespace SpecialLink.Design.UserWindows.TestWindows
                 if ((_test as QuestionBasedTest).Questions[i].QuestionText == question.QuestionText)
                 {
                     _secondPersonAnswers[i] = 1;
+                    _secondPersonAnswersCHeck[i] = 2;
                     break;
                 }
             }

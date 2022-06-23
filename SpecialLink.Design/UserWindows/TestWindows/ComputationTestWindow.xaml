@@ -14,8 +14,8 @@
         <Button Cursor="Hand" Name="CalculateButton" Click="CalculateButton_Click" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="40">
             <TextBlock Text="♡" Foreground="GhostWhite" FontSize="26" FontWeight="Bold" TextWrapping="WrapWithOverflow" TextAlignment="Center"/>
         </Button>
-        <TextBox Background="GhostWhite" Name="FirstValueTextBox" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="80" BorderBrush="Plum" />
-        <TextBox Background="GhostWhite" Name="SecondValueTextBox" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="80" />
+        <TextBox Background="GhostWhite" Name="FirstValueTextBox" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="140" BorderBrush="Plum" BorderThickness="3" FontSize="15"/>
+        <TextBox Background="GhostWhite" Name="SecondValueTextBox" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="140" FontSize="15"/>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
