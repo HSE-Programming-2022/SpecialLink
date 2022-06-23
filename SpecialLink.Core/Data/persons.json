@@ -28,47 +28,6 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
-    "Name": "Машуля",
-    "Email": "ovechkina-2015@yandex.ru",
-    "ImageSource": "profile_8.jpg",
-    "Results": [
-      {
-        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
-        "NumberOfMatches": 3,
-        "TestName": "тест на дружбу",
-        "Score": 75,
-        "Explanation": "Ого! Да вы просто созданы друг для друга!"
-      },
-      {
-        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
-        "FirstValue": "вода",
-        "SecondValue": "кофе",
-        "TestName": "Любимый напиток",
-        "Score": 20,
-        "Explanation": "Будьте готовы к непониманию вашего выбора со стороны партнера. "
-      },
-      {
-        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
-        "FirstValue": "Мария",
-        "SecondValue": "Данила",
-        "TestName": "тест по именам",
-        "Score": 37,
-        "Explanation": "Нельзя сказать, что ваша совместимость оптимальна, но все же она не ноль :)"
-      },
-      {
-        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
-        "NumberOfMatches": 2,
-        "TestName": "Вопросы Анны Ахматовой",
-        "Score": 66,
-        "Explanation": "Вы достаточно хорошо знаете друг друга"
-      }
-    ],
-    "Login": "Pussy Destroyer",
-    "Password": "i47ByJ77ACyHlROdUuQdK9IY9JU=",
-    "Salt": -1102400086
-  },
-  {
-    "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
     "Name": "Виктория",
     "Email": "shchvirra02@gmail.com",
     "ImageSource": "profile_12.jpg",
@@ -188,7 +147,7 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-23T02:52:19.7582695+03:00",
+    "LastLogin": "2022-06-23T07:18:31.8830539+03:00",
     "Login": "admin",
     "Password": "Vy//fCfWv0vVmr13bAQEKrW4JOU=",
     "Salt": -1573236941
