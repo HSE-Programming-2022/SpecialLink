@@ -73,7 +73,7 @@
     "Name": "Тест бинарный",
     "Description": "0 или 1? вот в чём вопрос...",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 2
+    "AmountOfTimesTaken": 3
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -147,7 +147,7 @@
     "Name": "Тест по именам",
     "Description": "этот тест позволит вам узнать вашу соместимость, рассчитанную с использованием ваших имен.",
     "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 4
+    "AmountOfTimesTaken": 5
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -651,7 +651,7 @@
     "Name": "Кошки или собаки?",
     "Description": "этот тест определит ваши скрытые мотивы поведения в отношениях",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 2
+    "AmountOfTimesTaken": 3
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
@@ -712,7 +712,7 @@
     "Name": "Cчастливы ли вы вместе?",
     "Description": "Отвечайте искренне, ведь от этого зависит результат для вас обоих",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 2
+    "AmountOfTimesTaken": 3
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
@@ -821,6 +821,138 @@
     "Name": "Совместимость по предпочтениям в проведении досуга",
     "Description": "этот тест позволит вам понять, совместимы ли вы с человеком исходя из того, как вы предпочитаете проводить свое свободное время.",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 1
+    "AmountOfTimesTaken": 2
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
+    "Questions": [
+      {
+        "QuestionText": "Что вы оцениваете в первую очередь, когда приходите к кому-то в гости?",
+        "FirstAnswer": "доброжелательность хозяина",
+        "SecondAnswer": "мелкие детали в виде фоторамок, цветов и т.п.",
+        "Weight": 2
+      },
+      {
+        "QuestionText": "Каким должно быть ваше свидание с любимым человеком?",
+        "FirstAnswer": "шикарный ресторан или нечто дорогое и долгожданное",
+        "SecondAnswer": "время, где мы будем делать что-то вместе",
+        "Weight": 3
+      },
+      {
+        "QuestionText": "Из-за чего у вас может возникнуть ссора с родными?",
+        "FirstAnswer": "я часто обижаюсь на сказанное кем-то из семьи",
+        "SecondAnswer": "иногда мне не хватает внимания",
+        "Weight": 3
+      },
+      {
+        "QuestionText": "Какой из этих жестов, является для вас проявлением любви?",
+        "FirstAnswer": "поддержка и советы",
+        "SecondAnswer": "знаки внимания в качестве маленьких презентов",
+        "Weight": 4
+      },
+      {
+        "QuestionText": "Какую одежду вы предпочитаете?",
+        "FirstAnswer": "комфортную",
+        "SecondAnswer": "модную",
+        "Weight": 2
+      },
+      {
+        "QuestionText": "Как бы вы хотели провести выходной вечер с любимым?",
+        "FirstAnswer": "устроить что-то необычное",
+        "SecondAnswer": "сходить в ресторан или кафе",
+        "Weight": 3
+      },
+      {
+        "QuestionText": "Выберите, какое из этих свиданий было бы для вас идеальным?",
+        "FirstAnswer": "поход в горы или в лес",
+        "SecondAnswer": "вечер на яхте",
+        "Weight": 3
+      },
+      {
+        "QuestionText": "Что вы цените в людях больше всего?",
+        "FirstAnswer": "искренность",
+        "SecondAnswer": "сострадание",
+        "Weight": 3
+      },
+      {
+        "QuestionText": "Какие магазины вам нравится посещать?",
+        "FirstAnswer": "бутики",
+        "SecondAnswer": "книжные",
+        "Weight": 2
+      },
+      {
+        "QuestionText": "Какие качества вам не нравятся в людях?",
+        "FirstAnswer": "опоздания",
+        "SecondAnswer": "эгоизм",
+        "Weight": 3
+      },
+      {
+        "QuestionText": "Что бы вы хотели получить в подарок от своей второй половинки?",
+        "FirstAnswer": "связанное с моими интересами",
+        "SecondAnswer": "то, что пригодится в быту",
+        "Weight": 4
+      },
+      {
+        "QuestionText": "Свои чувства вы можете выразить ярче всего через…?",
+        "FirstAnswer": "прикосновения",
+        "SecondAnswer": "слова",
+        "Weight": 4
+      }
+    ],
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Ой, в ваших взаимотношениях может быть много ссор и неприятностей("
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Неплохо, неплохо! Ваши отношения стабильны, в них почти отсутствуют разногласия. Что может быть лучше?)"
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Это невероятный результат. Уровень вашей совместимости вызывает белую зависть у окружающих. А мы просто очень рады за вас."
+      }
+    ],
+    "Name": "Тест на стиль любви",
+    "Description": "Система стилей любви — это метод для изучения того, как человек выражает свои чувства. Этот тест позволит определить Ваш стиль.",
+    "ImageSource": "icon_2.jpg",
+    "AmountOfTimesTaken": 0
+  },
+  {
+    "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
+    "Explanations": [
+      {
+        "LowestScore": 0,
+        "HighestScore": 24,
+        "Explanation": "Результат неутешительный, в ваших отношениях возможны споры и ссоры. Будьте аккуратней друг с другом!"
+      },
+      {
+        "LowestScore": 25,
+        "HighestScore": 49,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "LowestScore": 50,
+        "HighestScore": 74,
+        "Explanation": "Процент вашей совместимости достаточно высок, однако, не стоит забывать, что проявлять внимание к партнеру тоже чрезвычайно важно."
+      },
+      {
+        "LowestScore": 75,
+        "HighestScore": 100,
+        "Explanation": "Вам повезло найти 'своего' человека. Цените его/ее/их!"
+      }
+    ],
+    "Name": "Тест по национальностям",
+    "Description": "Этот тест позволит узнать вашу совместимость по национальностям.",
+    "ImageSource": "icon_3.jpg",
+    "AmountOfTimesTaken": 0
   }
 ]
