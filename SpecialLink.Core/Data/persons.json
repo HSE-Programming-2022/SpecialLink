@@ -180,6 +180,29 @@
         "TestName": "Совместимость по предпочтениям в проведении досуга",
         "Score": 37,
         "Explanation": "В ваших отношениях могут быть разногласия и, время от времени, даже ссоры. Важно с самого начала обсудить значимые для вас вещи!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 1,
+        "TestName": "Вопросы Анны Ахматовой",
+        "Score": 33,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "0",
+        "SecondValue": "0",
+        "TestName": "Тест бинарный",
+        "Score": 99,
+        "Explanation": "два нолика это почти сотня"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "кофе",
+        "SecondValue": "чай",
+        "TestName": "Любимый напиток",
+        "Score": 40,
+        "Explanation": "\"Я первый поставил воду!\" -- вот что вы нередко будете слышать, если только любитель кофе в вашей паре не пурист и не варит его в турке."
       }
     ],
     "Login": "f-sunshine",

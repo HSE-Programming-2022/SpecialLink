@@ -46,7 +46,7 @@
     "Name": "Вопросы Анны Ахматовой",
     "Description": "Эти три вопроса Ахматова задавала людям, чтобы понять, какой у них типаж.",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 6
+    "AmountOfTimesTaken": 7
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -73,7 +73,7 @@
     "Name": "Тест бинарный",
     "Description": "0 или 1? вот в чём вопрос...",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 2
+    "AmountOfTimesTaken": 3
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -118,7 +118,7 @@
     "Name": "Любимый напиток",
     "Description": "определим вашу совместимость по вашем любимым напиткам <3",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 9
+    "AmountOfTimesTaken": 10
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
