@@ -41,23 +41,7 @@
     "Name": "Vika",
     "Email": "shchvirra02@gmail.com",
     "ImageSource": "profile_12.jpg",
-    "Results": [
-      {
-        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
-        "FirstValue": "Вика",
-        "SecondValue": "Вадим",
-        "TestName": "тест по именам",
-        "Score": 81,
-        "Explanation": "Поздравляем, ваши отношения имеют феноменальные шансы на успех. Цените вашего друга или партнера!"
-      },
-      {
-        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
-        "NumberOfMatches": 2,
-        "TestName": "Вопросы Анны Ахматовой",
-        "Score": 66,
-        "Explanation": "Вы достаточно хорошо знаете друг друга"
-      }
-    ],
+    "Results": [],
     "Login": "SLink3",
     "Password": "R5Ccze1dpQpuvH2yqBCaOv3i5t4=",
     "Salt": 542030542
@@ -90,9 +74,92 @@
         "TestName": "Cчастливы ли вы вместе?",
         "Score": 80,
         "Explanation": "Поздравляем, ваши отношения имеют феноменальные шансы на успех, если вы, конечно, честно проходили наш тест)) Цените вашего друга или партнера!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 10,
+        "TestName": "Тест на стиль любви",
+        "Score": 83,
+        "Explanation": "Это невероятный результат. Уровень вашей совместимости вызывает белую зависть у окружающих. А мы просто очень рады за вас."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 10,
+        "TestName": "Тест на стиль любви",
+        "Score": 80,
+        "Explanation": "Это невероятный результат. Уровень вашей совместимости вызывает белую зависть у окружающих. А мы просто очень рады за вас."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 0,
+        "TestName": "Вопросы Анны Ахматовой",
+        "Score": 0,
+        "Explanation": "Ой, в ваших взаимотношениях будет много ссор и неприятностей("
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 1,
+        "TestName": "Вопросы Анны Ахматовой",
+        "Score": 33,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Русская",
+        "SecondValue": "Русская",
+        "TestName": "Тест по национальностям",
+        "Score": 75,
+        "Explanation": "Вам повезло найти 'своего' человека. Цените его/ее/их!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.QuestionBasedResult, SpecialLink.Core",
+        "NumberOfMatches": 1,
+        "TestName": "Вопросы Анны Ахматовой",
+        "Score": 33,
+        "Explanation": "У вас есть шансы на будущее, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "кошка",
+        "SecondValue": "собака",
+        "TestName": "Кошки или собаки?",
+        "Score": 78,
+        "Explanation": "всё сложно: либо идеальная пара, либо постоянные ссоры"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "0",
+        "SecondValue": "1",
+        "TestName": "Тест бинарный",
+        "Score": 100,
+        "Explanation": "противоположности притягиваются!!!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Алексей",
+        "SecondValue": "Анастасия",
+        "TestName": "Тест по именам",
+        "Score": 82,
+        "Explanation": "Поздравляем, ваши отношения имеют феноменальные шансы на успех. Цените вашего друга или партнера!"
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Русская",
+        "SecondValue": "Армянин",
+        "TestName": "Тест по национальностям",
+        "Score": 30,
+        "Explanation": "У вас есть шансы, но их мало..."
+      },
+      {
+        "$type": "SpecialLink.Core.Models.Results.ComputingOrAnswerBasedResult, SpecialLink.Core",
+        "FirstValue": "Serg3wg3",
+        "SecondValue": "Wefef",
+        "TestName": "Тест по национальностям",
+        "Score": 32,
+        "Explanation": "У вас есть шансы, но их мало..."
       }
     ],
-    "Login": "12345",
+    "Login": "viksa20",
     "Password": "abgURkdzVP3plRPgDvc2kE6MNRE=",
     "Salt": 1794211985
   },
@@ -147,9 +214,26 @@
   },
   {
     "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
-    "LastLogin": "2022-06-23T07:18:31.8830539+03:00",
+    "LastLogin": "2022-06-23T09:11:55.6065588+03:00",
     "Login": "admin",
     "Password": "Vy//fCfWv0vVmr13bAQEKrW4JOU=",
     "Salt": -1573236941
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.Admin, SpecialLink.Core",
+    "LastLogin": "2022-06-23T09:18:25.5736965+03:00",
+    "Login": "admin2",
+    "Password": "EAoUfMn0jT7RBkuAZ2XmHKp4CcY=",
+    "Salt": 888160015
+  },
+  {
+    "$type": "SpecialLink.Core.Models.People.User, SpecialLink.Core",
+    "Name": "Марк",
+    "Email": "markSuperman@yandex.ru",
+    "ImageSource": "profile_1.jpg",
+    "Results": [],
+    "Login": "SLink5",
+    "Password": "RFRUnyAk4q/cW2NLrEtdiz8Q0Co=",
+    "Salt": -2070590006
   }
 ]

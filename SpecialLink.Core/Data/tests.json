@@ -46,7 +46,7 @@
     "Name": "Вопросы Анны Ахматовой",
     "Description": "Эти три вопроса Ахматова задавала людям, чтобы понять, какой у них типаж.",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 6
+    "AmountOfTimesTaken": 10
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -73,7 +73,7 @@
     "Name": "Тест бинарный",
     "Description": "0 или 1? вот в чём вопрос...",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 3
+    "AmountOfTimesTaken": 5
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -147,7 +147,7 @@
     "Name": "Тест по именам",
     "Description": "этот тест позволит вам узнать вашу соместимость, рассчитанную с использованием ваших имен.",
     "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 5
+    "AmountOfTimesTaken": 6
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.AnswerBasedTest, SpecialLink.Core",
@@ -651,7 +651,7 @@
     "Name": "Кошки или собаки?",
     "Description": "этот тест определит ваши скрытые мотивы поведения в отношениях",
     "ImageSource": "icon_1.jpg",
-    "AmountOfTimesTaken": 3
+    "AmountOfTimesTaken": 4
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.QuestionBasedTest, SpecialLink.Core",
@@ -924,7 +924,7 @@
     "Name": "Тест на стиль любви",
     "Description": "Система стилей любви — это метод для изучения того, как человек выражает свои чувства. Этот тест позволит определить Ваш стиль.",
     "ImageSource": "icon_2.jpg",
-    "AmountOfTimesTaken": 0
+    "AmountOfTimesTaken": 2
   },
   {
     "$type": "SpecialLink.Core.Models.Tests.ComputationBasedTest, SpecialLink.Core",
@@ -953,6 +953,6 @@
     "Name": "Тест по национальностям",
     "Description": "Этот тест позволит узнать вашу совместимость по национальностям.",
     "ImageSource": "icon_3.jpg",
-    "AmountOfTimesTaken": 0
+    "AmountOfTimesTaken": 3
   }
 ]

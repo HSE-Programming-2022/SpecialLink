@@ -52,6 +52,8 @@ namespace SpecialLink.Design.UserWindows
                     (person as User).Results = new List<Result>();
                     _storage.Save();
                     _user = (person as User);
+                    TestResultsListBox.ItemsSource = "";
+                    TestResultsListBox.ItemsSource = _user.Results;
                     MessageBox.Show("Вы успешно очистили историю прохождения тестов.");
                     break;
                 }
